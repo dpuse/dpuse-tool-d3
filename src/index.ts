@@ -9,6 +9,7 @@ import type { BarChartData } from '@/barChart';
 import { renderBarChart } from '@/barChart';
 import { renderErdDiagram } from '@/erdDiagram';
 import { renderNetworkDiagram } from '@/networkDiagram';
+import { renderPlotBarChart } from '@/plotBarChart';
 import { renderSankeyDiagram } from '@/sankeyDiagram';
 import { renderTreeDiagram } from '@/treeDiagram';
 import type { ErdDiagramData, ErdDiagramOptions } from '@/erdDiagram';
@@ -54,6 +55,19 @@ export class D3Tool {
             destroy: handle.destroy,
             resize: handle.resize,
             vendorId: 'billboard.js'
+        };
+    }
+
+    // Actions - Render bar chart (Observable Plot).
+    renderPlotBarChart(data: BarChartData, renderTo: HTMLElement, callback?: () => void): D3View {
+        const handle = renderPlotBarChart(data, renderTo);
+        callback?.();
+        return {
+            resize: handle.resize,
+            get svg() {
+                return handle.svg;
+            },
+            vendorId: 'observable-plot'
         };
     }
 

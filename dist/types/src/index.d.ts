@@ -23,6 +23,7 @@ export interface D3BarChartView extends PresentationView {
 }
 export declare class D3Tool {
     renderBarChart(data: BarChartData, renderTo: HTMLElement, callback?: () => void): D3BarChartView;
+    renderPlotBarChart(data: BarChartData, renderTo: HTMLElement, callback?: () => void): D3View;
     renderErdDiagram(data: ErdDiagramData, renderTo: HTMLElement, options?: ErdDiagramOptions, callback?: () => void): D3View;
     renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLElement, options?: NetworkDiagramOptions, callback?: () => void): D3NetworkView;
     renderSankeyDiagram(data: SankeyDiagramData, renderTo: HTMLElement, options?: SankeyDiagramOptions, callback?: () => void): D3View;
