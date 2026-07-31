@@ -8,9 +8,9 @@
             "..."
         ]
     },
-    "icon": "<svg viewBox=\"0 0 80 80\"><g fill=\"none\" stroke-linecap=\"round\" stroke-width=\"6\"><path d=\"M12 20 C 40 20, 40 40, 68 40\" stroke=\"#2a78d6\"></path><path d=\"M12 40 C 40 40, 40 40, 68 20\" stroke=\"#eb6834\"></path><path d=\"M12 60 C 40 60, 40 40, 68 60\" stroke=\"#1baf7a\"></path></g><g stroke=\"#0b0b0b\" stroke-width=\"1\"><rect x=\"6\" y=\"14\" width=\"8\" height=\"12\" fill=\"#2a78d6\"></rect><rect x=\"6\" y=\"34\" width=\"8\" height=\"12\" fill=\"#eb6834\"></rect><rect x=\"6\" y=\"54\" width=\"8\" height=\"12\" fill=\"#1baf7a\"></rect><rect x=\"66\" y=\"14\" width=\"8\" height=\"12\" fill=\"#eda100\"></rect><rect x=\"66\" y=\"54\" width=\"8\" height=\"12\" fill=\"#e87ba4\"></rect></g></svg>",
+    "icon": "<svg viewBox=\"-10 -10 116 111\"><clipPath id=\"clip\"><path d=\"M0,0h7.75a45.5,45.5 0 1 1 0,91h-7.75v-20h7.75a25.5,25.5 0 1 0 0,-51h-7.75zm36.2510,0h32a27.75,27.75 0 0 1 21.331,45.5a27.75,27.75 0 0 1 -21.331,45.5h-32a53.6895,53.6895 0 0 0 18.7464,-20h13.2526a7.75,7.75 0 1 0 0,-15.5h-7.75a53.6895,53.6895 0 0 0 0,-20h7.75a7.75,7.75 0 1 0 0,-15.5h-13.2526a53.6895,53.6895 0 0 0 -18.7464,-20z\"/></clipPath><linearGradient id=\"gradient-1\" gradientUnits=\"userSpaceOnUse\" x1=\"7\" y1=\"64\" x2=\"50\" y2=\"107\"><stop offset=\"0\" stop-color=\"#f9a03c\"/><stop offset=\"1\" stop-color=\"#f7974e\"/></linearGradient><linearGradient id=\"gradient-2\" gradientUnits=\"userSpaceOnUse\" x1=\"2\" y1=\"-2\" x2=\"87\" y2=\"84\"><stop offset=\"0\" stop-color=\"#f26d58\"/><stop offset=\"1\" stop-color=\"#f9a03c\"/></linearGradient><linearGradient id=\"gradient-3\" gradientUnits=\"userSpaceOnUse\" x1=\"45\" y1=\"-10\" x2=\"108\" y2=\"53\"><stop offset=\"0\" stop-color=\"#b84e51\"/><stop offset=\"1\" stop-color=\"#f68e48\"/></linearGradient><g clip-path=\"url(#clip)\"><path d=\"M-100,-102m-28,0v300h300z\" fill=\"url(#gradient-1)\"/><path d=\"M-100,-102m28,0h300v300z\" fill=\"url(#gradient-3)\"/><path d=\"M-100,-102l300,300\" fill=\"none\" stroke=\"url(#gradient-2)\" stroke-width=\"40\"/></g></svg>",
     "iconDark": null,
     "statusId": "alpha",
     "typeId": "tool",
-    "version": "0.0.7"
+    "version": "0.0.8"
 }
