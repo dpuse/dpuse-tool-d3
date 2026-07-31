@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "0.14.0",
-    "generatedAt": "2026-07-31T10:42:27.910Z",
+    "generatedAt": "2026-07-31T11:03:35.398Z",
     "integration": "vite",
     "sources": false,
     "gzip": false,
@@ -21,18 +21,35 @@
       "name": "[unassigned]",
       "type": "other",
       "format": "other",
-      "uncompressed": 13109,
+      "uncompressed": 18529,
       "gzip": 0,
-      "brotli": 694,
+      "brotli": 923,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
       "kind": "asset",
       "name": "dist/dpuse-tool-d3.es.js",
       "type": "script",
-      "uncompressed": 104513,
+      "uncompressed": 174980,
       "gzip": 0,
-      "brotli": 24478
+      "brotli": 41188
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/@dagrejs/dagre/dist/dagre.esm.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 40551
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/@dagrejs/dagre/dist/dagre.esm.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 48141,
+      "gzip": 0,
+      "brotli": 9055,
+      "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
       "kind": "filesystem",
@@ -237,7 +254,7 @@
       "format": "esm",
       "uncompressed": 242,
       "gzip": 0,
-      "brotli": 88,
+      "brotli": 95,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -282,7 +299,7 @@
       "format": "esm",
       "uncompressed": 242,
       "gzip": 0,
-      "brotli": 88,
+      "brotli": 95,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -411,7 +428,7 @@
       "format": "esm",
       "uncompressed": 166,
       "gzip": 0,
-      "brotli": 78,
+      "brotli": 88,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -489,9 +506,9 @@
       "name": "node_modules/d3-color/src/color.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 8392,
+      "uncompressed": 8402,
       "gzip": 0,
-      "brotli": 1754,
+      "brotli": 1933,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -515,7 +532,7 @@
       "format": "esm",
       "uncompressed": 173,
       "gzip": 0,
-      "brotli": 73,
+      "brotli": 81,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -551,9 +568,9 @@
       "name": "node_modules/d3-dispatch/src/dispatch.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1866,
+      "uncompressed": 1868,
       "gzip": 0,
-      "brotli": 459,
+      "brotli": 498,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -577,7 +594,7 @@
       "format": "esm",
       "uncompressed": 25,
       "gzip": 0,
-      "brotli": 19,
+      "brotli": 21,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -592,9 +609,9 @@
       "name": "node_modules/d3-drag/src/drag.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2857,
+      "uncompressed": 2860,
       "gzip": 0,
-      "brotli": 647,
+      "brotli": 713,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -611,7 +628,7 @@
       "format": "esm",
       "uncompressed": 839,
       "gzip": 0,
-      "brotli": 160,
+      "brotli": 174,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -633,9 +650,9 @@
       "name": "node_modules/d3-drag/src/nodrag.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 522,
+      "uncompressed": 525,
       "gzip": 0,
-      "brotli": 125,
+      "brotli": 138,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -650,9 +667,9 @@
       "name": "node_modules/d3-drag/src/noevent.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 177,
+      "uncompressed": 178,
       "gzip": 0,
-      "brotli": 81,
+      "brotli": 87,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -690,7 +707,7 @@
       "format": "esm",
       "uncompressed": 82,
       "gzip": 0,
-      "brotli": 42,
+      "brotli": 46,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -763,7 +780,7 @@
       "format": "esm",
       "uncompressed": 513,
       "gzip": 0,
-      "brotli": 136,
+      "brotli": 150,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -787,7 +804,7 @@
       "format": "esm",
       "uncompressed": 52,
       "gzip": 0,
-      "brotli": 32,
+      "brotli": 35,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -811,7 +828,7 @@
       "format": "esm",
       "uncompressed": 44,
       "gzip": 0,
-      "brotli": 31,
+      "brotli": 34,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -828,7 +845,7 @@
       "format": "esm",
       "uncompressed": 125,
       "gzip": 0,
-      "brotli": 71,
+      "brotli": 82,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -845,7 +862,7 @@
       "format": "esm",
       "uncompressed": 1894,
       "gzip": 0,
-      "brotli": 430,
+      "brotli": 471,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -862,7 +879,7 @@
       "format": "esm",
       "uncompressed": 1659,
       "gzip": 0,
-      "brotli": 403,
+      "brotli": 442,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -884,9 +901,9 @@
       "name": "node_modules/d3-force/src/simulation.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2122,
+      "uncompressed": 2123,
       "gzip": 0,
-      "brotli": 506,
+      "brotli": 560,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -902,6 +919,394 @@
       "type": "script",
       "format": "esm",
       "uncompressed": 1033
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-hierarchy/src/accessors.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 166
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-hierarchy/src/array.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 410
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-hierarchy/src/cluster.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 2093
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-hierarchy/src/constant.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 120
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-hierarchy/src/hierarchy/ancestors.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 138
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/d3-hierarchy/src/hierarchy/ancestors.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 82,
+      "gzip": 0,
+      "brotli": 53,
+      "parent": "dist/dpuse-tool-d3.es.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-hierarchy/src/hierarchy/count.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 263
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/d3-hierarchy/src/hierarchy/count.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 173,
+      "gzip": 0,
+      "brotli": 85,
+      "parent": "dist/dpuse-tool-d3.es.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-hierarchy/src/hierarchy/descendants.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 57
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/d3-hierarchy/src/hierarchy/descendants.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 43,
+      "gzip": 0,
+      "brotli": 29,
+      "parent": "dist/dpuse-tool-d3.es.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-hierarchy/src/hierarchy/each.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 156
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/d3-hierarchy/src/hierarchy/each.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 92,
+      "gzip": 0,
+      "brotli": 62,
+      "parent": "dist/dpuse-tool-d3.es.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-hierarchy/src/hierarchy/eachAfter.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 405
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/d3-hierarchy/src/hierarchy/eachAfter.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 231,
+      "gzip": 0,
+      "brotli": 114,
+      "parent": "dist/dpuse-tool-d3.es.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-hierarchy/src/hierarchy/eachBefore.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 334
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/d3-hierarchy/src/hierarchy/eachBefore.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 186,
+      "gzip": 0,
+      "brotli": 95,
+      "parent": "dist/dpuse-tool-d3.es.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-hierarchy/src/hierarchy/find.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 172
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/d3-hierarchy/src/hierarchy/find.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 93,
+      "gzip": 0,
+      "brotli": 65,
+      "parent": "dist/dpuse-tool-d3.es.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-hierarchy/src/hierarchy/index.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 2219
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/d3-hierarchy/src/hierarchy/index.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1006,
+      "gzip": 0,
+      "brotli": 335,
+      "parent": "dist/dpuse-tool-d3.es.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-hierarchy/src/hierarchy/iterator.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 367
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/d3-hierarchy/src/hierarchy/iterator.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 193,
+      "gzip": 0,
+      "brotli": 103,
+      "parent": "dist/dpuse-tool-d3.es.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-hierarchy/src/hierarchy/leaves.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 164
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/d3-hierarchy/src/hierarchy/leaves.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 99,
+      "gzip": 0,
+      "brotli": 53,
+      "parent": "dist/dpuse-tool-d3.es.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-hierarchy/src/hierarchy/links.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 246
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/d3-hierarchy/src/hierarchy/links.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 127,
+      "gzip": 0,
+      "brotli": 70,
+      "parent": "dist/dpuse-tool-d3.es.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-hierarchy/src/hierarchy/path.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 606
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/d3-hierarchy/src/hierarchy/path.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 353,
+      "gzip": 0,
+      "brotli": 125,
+      "parent": "dist/dpuse-tool-d3.es.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-hierarchy/src/hierarchy/sort.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 151
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/d3-hierarchy/src/hierarchy/sort.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 94,
+      "gzip": 0,
+      "brotli": 51,
+      "parent": "dist/dpuse-tool-d3.es.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-hierarchy/src/hierarchy/sum.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 264
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/d3-hierarchy/src/hierarchy/sum.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 165,
+      "gzip": 0,
+      "brotli": 83,
+      "parent": "dist/dpuse-tool-d3.es.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-hierarchy/src/index.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 867
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-hierarchy/src/lcg.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 245
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-hierarchy/src/pack/enclose.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 3150
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-hierarchy/src/pack/index.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 2059
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-hierarchy/src/pack/siblings.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 3310
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-hierarchy/src/partition.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1272
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-hierarchy/src/stratify.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 4106
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-hierarchy/src/tree.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 7063
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/d3-hierarchy/src/tree.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 2595,
+      "gzip": 0,
+      "brotli": 669,
+      "parent": "dist/dpuse-tool-d3.es.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-hierarchy/src/treemap/binary.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1292
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-hierarchy/src/treemap/dice.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 309
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-hierarchy/src/treemap/index.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 2822
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-hierarchy/src/treemap/resquarify.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1064
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-hierarchy/src/treemap/round.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 166
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-hierarchy/src/treemap/slice.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 309
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-hierarchy/src/treemap/sliceDice.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 176
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-hierarchy/src/treemap/squarify.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1874
     },
     {
       "kind": "filesystem",
@@ -938,7 +1343,7 @@
       "format": "esm",
       "uncompressed": 376,
       "gzip": 0,
-      "brotli": 122,
+      "brotli": 135,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -955,7 +1360,7 @@
       "format": "esm",
       "uncompressed": 25,
       "gzip": 0,
-      "brotli": 19,
+      "brotli": 21,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1028,7 +1433,7 @@
       "format": "esm",
       "uncompressed": 89,
       "gzip": 0,
-      "brotli": 42,
+      "brotli": 46,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1073,7 +1478,7 @@
       "format": "esm",
       "uncompressed": 290,
       "gzip": 0,
-      "brotli": 107,
+      "brotli": 118,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1097,7 +1502,7 @@
       "format": "esm",
       "uncompressed": 782,
       "gzip": 0,
-      "brotli": 247,
+      "brotli": 273,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1114,7 +1519,7 @@
       "format": "esm",
       "uncompressed": 485,
       "gzip": 0,
-      "brotli": 163,
+      "brotli": 172,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1131,7 +1536,7 @@
       "format": "esm",
       "uncompressed": 1329,
       "gzip": 0,
-      "brotli": 327,
+      "brotli": 362,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1148,7 +1553,7 @@
       "format": "esm",
       "uncompressed": 413,
       "gzip": 0,
-      "brotli": 148,
+      "brotli": 162,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1172,7 +1577,7 @@
       "format": "esm",
       "uncompressed": 1003,
       "gzip": 0,
-      "brotli": 279,
+      "brotli": 308,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1180,23 +1585,23 @@
       "name": "node_modules/d3-path/src/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 43
+      "uncompressed": 49
     },
     {
       "kind": "filesystem",
       "name": "node_modules/d3-path/src/path.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 4189
+      "uncompressed": 4537
     },
     {
       "kind": "chunk",
       "name": "node_modules/d3-path/src/path.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2492,
+      "uncompressed": 2544,
       "gzip": 0,
-      "brotli": 513,
+      "brotli": 639,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1213,7 +1618,7 @@
       "format": "esm",
       "uncompressed": 1291,
       "gzip": 0,
-      "brotli": 334,
+      "brotli": 366,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1230,7 +1635,7 @@
       "format": "esm",
       "uncompressed": 629,
       "gzip": 0,
-      "brotli": 201,
+      "brotli": 214,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1247,7 +1652,7 @@
       "format": "esm",
       "uncompressed": 116,
       "gzip": 0,
-      "brotli": 68,
+      "brotli": 74,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1264,7 +1669,7 @@
       "format": "esm",
       "uncompressed": 177,
       "gzip": 0,
-      "brotli": 67,
+      "brotli": 76,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1281,7 +1686,7 @@
       "format": "esm",
       "uncompressed": 855,
       "gzip": 0,
-      "brotli": 264,
+      "brotli": 287,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1305,7 +1710,7 @@
       "format": "esm",
       "uncompressed": 97,
       "gzip": 0,
-      "brotli": 47,
+      "brotli": 51,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1322,7 +1727,7 @@
       "format": "esm",
       "uncompressed": 982,
       "gzip": 0,
-      "brotli": 280,
+      "brotli": 300,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1339,7 +1744,7 @@
       "format": "esm",
       "uncompressed": 924,
       "gzip": 0,
-      "brotli": 264,
+      "brotli": 290,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1356,7 +1761,7 @@
       "format": "esm",
       "uncompressed": 37,
       "gzip": 0,
-      "brotli": 27,
+      "brotli": 29,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1373,7 +1778,7 @@
       "format": "esm",
       "uncompressed": 104,
       "gzip": 0,
-      "brotli": 49,
+      "brotli": 61,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1390,7 +1795,7 @@
       "format": "esm",
       "uncompressed": 450,
       "gzip": 0,
-      "brotli": 139,
+      "brotli": 150,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1407,7 +1812,7 @@
       "format": "esm",
       "uncompressed": 517,
       "gzip": 0,
-      "brotli": 145,
+      "brotli": 159,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1424,7 +1829,7 @@
       "format": "esm",
       "uncompressed": 108,
       "gzip": 0,
-      "brotli": 55,
+      "brotli": 60,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1441,8 +1846,436 @@
       "format": "esm",
       "uncompressed": 108,
       "gzip": 0,
-      "brotli": 52,
+      "brotli": 58,
       "parent": "dist/dpuse-tool-d3.es.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-path/src/index.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 43
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-path/src/path.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 4189
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/d3-sankey/node_modules/d3-path/src/path.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 2492,
+      "gzip": 0,
+      "brotli": 561,
+      "parent": "dist/dpuse-tool-d3.es.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/arc.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 8589
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/area.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 2929
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/areaRadial.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 944
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/array.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 42
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/array.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 32,
+      "gzip": 0,
+      "brotli": 26,
+      "parent": "dist/dpuse-tool-d3.es.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/constant.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 81
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/constant.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 52,
+      "gzip": 0,
+      "brotli": 34,
+      "parent": "dist/dpuse-tool-d3.es.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/curve/basis.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1436
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/curve/basisClosed.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1536
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/curve/basisOpen.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1072
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/curve/bundle.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1084
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/curve/cardinal.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1633
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/curve/cardinalClosed.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1611
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/curve/cardinalOpen.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1291
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/curve/catmullRom.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 2643
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/curve/catmullRomClosed.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 2092
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/curve/catmullRomOpen.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1766
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/curve/linear.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 738
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/curve/linearClosed.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 517
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/curve/monotone.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 3203
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/curve/natural.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1761
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/curve/radial.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 658
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/curve/step.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1367
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/descending.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 86
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/identity.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 43
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/index.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 2848
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/line.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1525
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/lineRadial.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 402
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/link/index.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 2230
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/link/index.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 947,
+      "gzip": 0,
+      "brotli": 239,
+      "parent": "dist/dpuse-tool-d3.es.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/math.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 470
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/noop.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 29
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/offset/diverging.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 431
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/offset/expand.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 322
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/offset/none.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 309
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/offset/silhouette.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 317
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/offset/wiggle.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 743
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/order/appearance.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 339
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/order/ascending.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 308
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/order/descending.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 115
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/order/insideOut.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 518
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/order/none.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 120
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/order/reverse.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 100
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/pie.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 2348
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/point.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 81
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/point.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 64,
+      "gzip": 0,
+      "brotli": 35,
+      "parent": "dist/dpuse-tool-d3.es.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/pointRadial.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 101
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/stack.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1444
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/symbol.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1184
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/symbol/circle.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 189
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/symbol/cross.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 476
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/symbol/diamond.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 307
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/symbol/square.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 137
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/symbol/star.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 612
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/symbol/triangle.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 255
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-sankey/node_modules/d3-shape/src/symbol/wye.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 733
     },
     {
       "kind": "filesystem",
@@ -1458,7 +2291,7 @@
       "format": "esm",
       "uncompressed": 69,
       "gzip": 0,
-      "brotli": 44,
+      "brotli": 48,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1475,7 +2308,7 @@
       "format": "esm",
       "uncompressed": 52,
       "gzip": 0,
-      "brotli": 32,
+      "brotli": 36,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1499,7 +2332,7 @@
       "format": "esm",
       "uncompressed": 6027,
       "gzip": 0,
-      "brotli": 1021,
+      "brotli": 1119,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1516,7 +2349,7 @@
       "format": "esm",
       "uncompressed": 147,
       "gzip": 0,
-      "brotli": 55,
+      "brotli": 61,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1531,9 +2364,9 @@
       "name": "node_modules/d3-selection/src/array.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 80,
+      "uncompressed": 81,
       "gzip": 0,
-      "brotli": 47,
+      "brotli": 51,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1550,7 +2383,7 @@
       "format": "esm",
       "uncompressed": 52,
       "gzip": 0,
-      "brotli": 32,
+      "brotli": 35,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1572,9 +2405,9 @@
       "name": "node_modules/d3-selection/src/creator.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 416,
+      "uncompressed": 422,
       "gzip": 0,
-      "brotli": 101,
+      "brotli": 116,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1603,9 +2436,9 @@
       "name": "node_modules/d3-selection/src/matcher.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 128,
+      "uncompressed": 130,
       "gzip": 0,
-      "brotli": 46,
+      "brotli": 56,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1620,9 +2453,9 @@
       "name": "node_modules/d3-selection/src/namespace.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 182,
+      "uncompressed": 185,
       "gzip": 0,
-      "brotli": 96,
+      "brotli": 93,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1637,9 +2470,9 @@
       "name": "node_modules/d3-selection/src/namespaces.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 210,
+      "uncompressed": 211,
       "gzip": 0,
-      "brotli": 69,
+      "brotli": 76,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1656,7 +2489,7 @@
       "format": "esm",
       "uncompressed": 444,
       "gzip": 0,
-      "brotli": 148,
+      "brotli": 161,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1680,7 +2513,7 @@
       "format": "esm",
       "uncompressed": 133,
       "gzip": 0,
-      "brotli": 60,
+      "brotli": 68,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1702,9 +2535,9 @@
       "name": "node_modules/d3-selection/src/selection/append.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 149,
+      "uncompressed": 150,
       "gzip": 0,
-      "brotli": 57,
+      "brotli": 61,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1719,9 +2552,9 @@
       "name": "node_modules/d3-selection/src/selection/attr.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 908,
+      "uncompressed": 909,
       "gzip": 0,
-      "brotli": 169,
+      "brotli": 184,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1738,7 +2571,7 @@
       "format": "esm",
       "uncompressed": 100,
       "gzip": 0,
-      "brotli": 44,
+      "brotli": 49,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1755,7 +2588,7 @@
       "format": "esm",
       "uncompressed": 1180,
       "gzip": 0,
-      "brotli": 272,
+      "brotli": 289,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1772,7 +2605,7 @@
       "format": "esm",
       "uncompressed": 290,
       "gzip": 0,
-      "brotli": 84,
+      "brotli": 91,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1787,9 +2620,9 @@
       "name": "node_modules/d3-selection/src/selection/data.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1405,
+      "uncompressed": 1407,
       "gzip": 0,
-      "brotli": 391,
+      "brotli": 430,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1806,7 +2639,7 @@
       "format": "esm",
       "uncompressed": 98,
       "gzip": 0,
-      "brotli": 53,
+      "brotli": 57,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1823,7 +2656,7 @@
       "format": "esm",
       "uncompressed": 495,
       "gzip": 0,
-      "brotli": 140,
+      "brotli": 151,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1840,7 +2673,7 @@
       "format": "esm",
       "uncompressed": 190,
       "gzip": 0,
-      "brotli": 84,
+      "brotli": 108,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1857,7 +2690,7 @@
       "format": "esm",
       "uncompressed": 39,
       "gzip": 0,
-      "brotli": 28,
+      "brotli": 31,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1872,9 +2705,9 @@
       "name": "node_modules/d3-selection/src/selection/enter.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 568,
+      "uncompressed": 571,
       "gzip": 0,
-      "brotli": 131,
+      "brotli": 146,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1891,7 +2724,7 @@
       "format": "esm",
       "uncompressed": 83,
       "gzip": 0,
-      "brotli": 43,
+      "brotli": 56,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1906,9 +2739,9 @@
       "name": "node_modules/d3-selection/src/selection/filter.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 289,
+      "uncompressed": 290,
       "gzip": 0,
-      "brotli": 120,
+      "brotli": 133,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1925,7 +2758,7 @@
       "format": "esm",
       "uncompressed": 339,
       "gzip": 0,
-      "brotli": 91,
+      "brotli": 100,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1940,9 +2773,9 @@
       "name": "node_modules/d3-selection/src/selection/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 635,
+      "uncompressed": 639,
       "gzip": 0,
-      "brotli": 211,
+      "brotli": 229,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1957,9 +2790,9 @@
       "name": "node_modules/d3-selection/src/selection/insert.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 274,
+      "uncompressed": 276,
       "gzip": 0,
-      "brotli": 83,
+      "brotli": 96,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1976,7 +2809,7 @@
       "format": "esm",
       "uncompressed": 159,
       "gzip": 0,
-      "brotli": 79,
+      "brotli": 86,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -1993,7 +2826,7 @@
       "format": "esm",
       "uncompressed": 272,
       "gzip": 0,
-      "brotli": 102,
+      "brotli": 109,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -2010,7 +2843,7 @@
       "format": "esm",
       "uncompressed": 146,
       "gzip": 0,
-      "brotli": 50,
+      "brotli": 51,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -2027,7 +2860,7 @@
       "format": "esm",
       "uncompressed": 363,
       "gzip": 0,
-      "brotli": 132,
+      "brotli": 145,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -2044,7 +2877,7 @@
       "format": "esm",
       "uncompressed": 178,
       "gzip": 0,
-      "brotli": 80,
+      "brotli": 89,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -2061,7 +2894,7 @@
       "format": "esm",
       "uncompressed": 43,
       "gzip": 0,
-      "brotli": 27,
+      "brotli": 29,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -2078,7 +2911,7 @@
       "format": "esm",
       "uncompressed": 1380,
       "gzip": 0,
-      "brotli": 349,
+      "brotli": 386,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -2095,7 +2928,7 @@
       "format": "esm",
       "uncompressed": 248,
       "gzip": 0,
-      "brotli": 96,
+      "brotli": 107,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -2112,7 +2945,7 @@
       "format": "esm",
       "uncompressed": 376,
       "gzip": 0,
-      "brotli": 103,
+      "brotli": 123,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -2129,7 +2962,7 @@
       "format": "esm",
       "uncompressed": 113,
       "gzip": 0,
-      "brotli": 48,
+      "brotli": 53,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -2146,7 +2979,7 @@
       "format": "esm",
       "uncompressed": 109,
       "gzip": 0,
-      "brotli": 52,
+      "brotli": 58,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -2161,9 +2994,9 @@
       "name": "node_modules/d3-selection/src/selection/select.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 350,
+      "uncompressed": 352,
       "gzip": 0,
-      "brotli": 131,
+      "brotli": 137,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -2178,9 +3011,9 @@
       "name": "node_modules/d3-selection/src/selection/selectAll.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 352,
+      "uncompressed": 357,
       "gzip": 0,
-      "brotli": 127,
+      "brotli": 137,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -2195,9 +3028,9 @@
       "name": "node_modules/d3-selection/src/selection/selectChild.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 244,
+      "uncompressed": 252,
       "gzip": 0,
-      "brotli": 83,
+      "brotli": 91,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -2212,9 +3045,9 @@
       "name": "node_modules/d3-selection/src/selection/selectChildren.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 252,
+      "uncompressed": 260,
       "gzip": 0,
-      "brotli": 83,
+      "brotli": 95,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -2231,7 +3064,7 @@
       "format": "esm",
       "uncompressed": 64,
       "gzip": 0,
-      "brotli": 44,
+      "brotli": 48,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -2248,7 +3081,7 @@
       "format": "esm",
       "uncompressed": 406,
       "gzip": 0,
-      "brotli": 152,
+      "brotli": 169,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -2265,7 +3098,7 @@
       "format": "esm",
       "uncompressed": 43,
       "gzip": 0,
-      "brotli": 27,
+      "brotli": 31,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -2282,7 +3115,7 @@
       "format": "esm",
       "uncompressed": 577,
       "gzip": 0,
-      "brotli": 138,
+      "brotli": 147,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -2299,7 +3132,7 @@
       "format": "esm",
       "uncompressed": 347,
       "gzip": 0,
-      "brotli": 95,
+      "brotli": 105,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -2314,9 +3147,9 @@
       "name": "node_modules/d3-selection/src/selector.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 103,
+      "uncompressed": 106,
       "gzip": 0,
-      "brotli": 48,
+      "brotli": 54,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -2331,9 +3164,9 @@
       "name": "node_modules/d3-selection/src/selectorAll.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 118,
+      "uncompressed": 121,
       "gzip": 0,
-      "brotli": 51,
+      "brotli": 53,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -2350,7 +3183,7 @@
       "format": "esm",
       "uncompressed": 70,
       "gzip": 0,
-      "brotli": 40,
+      "brotli": 53,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -2367,7 +3200,7 @@
       "format": "esm",
       "uncompressed": 110,
       "gzip": 0,
-      "brotli": 45,
+      "brotli": 50,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -2375,14 +3208,14 @@
       "name": "node_modules/d3-shape/src/arc.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 8589
+      "uncompressed": 8844
     },
     {
       "kind": "filesystem",
       "name": "node_modules/d3-shape/src/area.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2929
+      "uncompressed": 3218
     },
     {
       "kind": "filesystem",
@@ -2396,16 +3229,16 @@
       "name": "node_modules/d3-shape/src/array.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 42
+      "uncompressed": 242
     },
     {
       "kind": "chunk",
       "name": "node_modules/d3-shape/src/array.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 32,
+      "uncompressed": 117,
       "gzip": 0,
-      "brotli": 23,
+      "brotli": 62,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -2420,9 +3253,9 @@
       "name": "node_modules/d3-shape/src/constant.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 52,
+      "uncompressed": 51,
       "gzip": 0,
-      "brotli": 32,
+      "brotli": 34,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -2430,7 +3263,7 @@
       "name": "node_modules/d3-shape/src/curve/basis.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1436
+      "uncompressed": 1448
     },
     {
       "kind": "filesystem",
@@ -2444,7 +3277,24 @@
       "name": "node_modules/d3-shape/src/curve/basisOpen.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1072
+      "uncompressed": 1078
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-shape/src/curve/bump.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1749
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/d3-shape/src/curve/bump.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 790,
+      "gzip": 0,
+      "brotli": 209,
+      "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
       "kind": "filesystem",
@@ -2458,7 +3308,7 @@
       "name": "node_modules/d3-shape/src/curve/cardinal.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1633
+      "uncompressed": 1639
     },
     {
       "kind": "filesystem",
@@ -2472,14 +3322,14 @@
       "name": "node_modules/d3-shape/src/curve/cardinalOpen.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1291
+      "uncompressed": 1297
     },
     {
       "kind": "filesystem",
       "name": "node_modules/d3-shape/src/curve/catmullRom.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2643
+      "uncompressed": 2649
     },
     {
       "kind": "filesystem",
@@ -2493,14 +3343,24 @@
       "name": "node_modules/d3-shape/src/curve/catmullRomOpen.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1766
+      "uncompressed": 1772
     },
     {
       "kind": "filesystem",
       "name": "node_modules/d3-shape/src/curve/linear.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 738
+      "uncompressed": 744
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/d3-shape/src/curve/linear.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 594,
+      "gzip": 0,
+      "brotli": 159,
+      "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
       "kind": "filesystem",
@@ -2535,7 +3395,7 @@
       "name": "node_modules/d3-shape/src/curve/step.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1367
+      "uncompressed": 1373
     },
     {
       "kind": "filesystem",
@@ -2556,14 +3416,24 @@
       "name": "node_modules/d3-shape/src/index.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2848
+      "uncompressed": 3355
     },
     {
       "kind": "filesystem",
       "name": "node_modules/d3-shape/src/line.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1525
+      "uncompressed": 1733
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/d3-shape/src/line.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 976,
+      "gzip": 0,
+      "brotli": 266,
+      "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
       "kind": "filesystem",
@@ -2574,19 +3444,19 @@
     },
     {
       "kind": "filesystem",
-      "name": "node_modules/d3-shape/src/link/index.js",
+      "name": "node_modules/d3-shape/src/link.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2230
+      "uncompressed": 1835
     },
     {
       "kind": "chunk",
-      "name": "node_modules/d3-shape/src/link/index.js",
+      "name": "node_modules/d3-shape/src/link.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 947,
+      "uncompressed": 939,
       "gzip": 0,
-      "brotli": 215,
+      "brotli": 214,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -2594,7 +3464,7 @@
       "name": "node_modules/d3-shape/src/math.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 470
+      "uncompressed": 492
     },
     {
       "kind": "filesystem",
@@ -2682,10 +3552,27 @@
     },
     {
       "kind": "filesystem",
+      "name": "node_modules/d3-shape/src/path.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 393
+    },
+    {
+      "kind": "chunk",
+      "name": "node_modules/d3-shape/src/path.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 241,
+      "gzip": 0,
+      "brotli": 105,
+      "parent": "dist/dpuse-tool-d3.es.js"
+    },
+    {
+      "kind": "filesystem",
       "name": "node_modules/d3-shape/src/pie.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2348
+      "uncompressed": 2396
     },
     {
       "kind": "filesystem",
@@ -2701,7 +3588,7 @@
       "format": "esm",
       "uncompressed": 64,
       "gzip": 0,
-      "brotli": 32,
+      "brotli": 35,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -2716,63 +3603,105 @@
       "name": "node_modules/d3-shape/src/stack.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1444
+      "uncompressed": 1428
     },
     {
       "kind": "filesystem",
       "name": "node_modules/d3-shape/src/symbol.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1184
+      "uncompressed": 1839
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-shape/src/symbol/asterisk.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 377
     },
     {
       "kind": "filesystem",
       "name": "node_modules/d3-shape/src/symbol/circle.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 189
+      "uncompressed": 182
     },
     {
       "kind": "filesystem",
       "name": "node_modules/d3-shape/src/symbol/cross.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 476
+      "uncompressed": 497
     },
     {
       "kind": "filesystem",
       "name": "node_modules/d3-shape/src/symbol/diamond.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 307
+      "uncompressed": 329
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-shape/src/symbol/diamond2.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 249
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-shape/src/symbol/plus.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 248
     },
     {
       "kind": "filesystem",
       "name": "node_modules/d3-shape/src/symbol/square.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 137
+      "uncompressed": 160
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-shape/src/symbol/square2.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 250
     },
     {
       "kind": "filesystem",
       "name": "node_modules/d3-shape/src/symbol/star.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 612
+      "uncompressed": 603
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-shape/src/symbol/times.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 251
     },
     {
       "kind": "filesystem",
       "name": "node_modules/d3-shape/src/symbol/triangle.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 255
+      "uncompressed": 273
+    },
+    {
+      "kind": "filesystem",
+      "name": "node_modules/d3-shape/src/symbol/triangle2.js",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 319
     },
     {
       "kind": "filesystem",
       "name": "node_modules/d3-shape/src/symbol/wye.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 733
+      "uncompressed": 734
     },
     {
       "kind": "filesystem",
@@ -2802,7 +3731,7 @@
       "format": "esm",
       "uncompressed": 126,
       "gzip": 0,
-      "brotli": 63,
+      "brotli": 70,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -2817,9 +3746,9 @@
       "name": "node_modules/d3-timer/src/timer.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1614,
+      "uncompressed": 1626,
       "gzip": 0,
-      "brotli": 422,
+      "brotli": 456,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -2850,7 +3779,7 @@
       "format": "esm",
       "uncompressed": 340,
       "gzip": 0,
-      "brotli": 136,
+      "brotli": 150,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -2867,7 +3796,7 @@
       "format": "esm",
       "uncompressed": 59,
       "gzip": 0,
-      "brotli": 34,
+      "brotli": 40,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -2884,7 +3813,7 @@
       "format": "esm",
       "uncompressed": 66,
       "gzip": 0,
-      "brotli": 40,
+      "brotli": 43,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -2901,7 +3830,7 @@
       "format": "esm",
       "uncompressed": 549,
       "gzip": 0,
-      "brotli": 208,
+      "brotli": 237,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -2916,9 +3845,9 @@
       "name": "node_modules/d3-transition/src/transition/attr.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1237,
+      "uncompressed": 1238,
       "gzip": 0,
-      "brotli": 218,
+      "brotli": 246,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -2933,9 +3862,9 @@
       "name": "node_modules/d3-transition/src/transition/attrTween.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 755,
+      "uncompressed": 756,
       "gzip": 0,
-      "brotli": 175,
+      "brotli": 190,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -2952,7 +3881,7 @@
       "format": "esm",
       "uncompressed": 310,
       "gzip": 0,
-      "brotli": 94,
+      "brotli": 108,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -2969,7 +3898,7 @@
       "format": "esm",
       "uncompressed": 317,
       "gzip": 0,
-      "brotli": 101,
+      "brotli": 108,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -2986,7 +3915,7 @@
       "format": "esm",
       "uncompressed": 218,
       "gzip": 0,
-      "brotli": 95,
+      "brotli": 105,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -3003,7 +3932,7 @@
       "format": "esm",
       "uncompressed": 240,
       "gzip": 0,
-      "brotli": 95,
+      "brotli": 100,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -3020,7 +3949,7 @@
       "format": "esm",
       "uncompressed": 347,
       "gzip": 0,
-      "brotli": 125,
+      "brotli": 137,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -3035,9 +3964,9 @@
       "name": "node_modules/d3-transition/src/transition/filter.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 311,
+      "uncompressed": 312,
       "gzip": 0,
-      "brotli": 123,
+      "brotli": 132,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -3054,7 +3983,7 @@
       "format": "esm",
       "uncompressed": 631,
       "gzip": 0,
-      "brotli": 202,
+      "brotli": 217,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -3069,9 +3998,9 @@
       "name": "node_modules/d3-transition/src/transition/interpolate.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 124,
+      "uncompressed": 126,
       "gzip": 0,
-      "brotli": 59,
+      "brotli": 66,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -3088,7 +4017,7 @@
       "format": "esm",
       "uncompressed": 387,
       "gzip": 0,
-      "brotli": 135,
+      "brotli": 147,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -3105,7 +4034,7 @@
       "format": "esm",
       "uncompressed": 447,
       "gzip": 0,
-      "brotli": 157,
+      "brotli": 175,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -3122,7 +4051,7 @@
       "format": "esm",
       "uncompressed": 210,
       "gzip": 0,
-      "brotli": 88,
+      "brotli": 85,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -3137,9 +4066,9 @@
       "name": "node_modules/d3-transition/src/transition/schedule.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 1914,
+      "uncompressed": 1915,
       "gzip": 0,
-      "brotli": 450,
+      "brotli": 496,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -3154,9 +4083,9 @@
       "name": "node_modules/d3-transition/src/transition/select.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 422,
+      "uncompressed": 423,
       "gzip": 0,
-      "brotli": 153,
+      "brotli": 167,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -3171,9 +4100,9 @@
       "name": "node_modules/d3-transition/src/transition/selectAll.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 415,
+      "uncompressed": 416,
       "gzip": 0,
-      "brotli": 157,
+      "brotli": 174,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -3190,7 +4119,7 @@
       "format": "esm",
       "uncompressed": 97,
       "gzip": 0,
-      "brotli": 51,
+      "brotli": 53,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -3207,7 +4136,7 @@
       "format": "esm",
       "uncompressed": 1209,
       "gzip": 0,
-      "brotli": 280,
+      "brotli": 306,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -3224,7 +4153,7 @@
       "format": "esm",
       "uncompressed": 505,
       "gzip": 0,
-      "brotli": 152,
+      "brotli": 167,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -3241,7 +4170,7 @@
       "format": "esm",
       "uncompressed": 277,
       "gzip": 0,
-      "brotli": 90,
+      "brotli": 99,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -3258,7 +4187,7 @@
       "format": "esm",
       "uncompressed": 444,
       "gzip": 0,
-      "brotli": 131,
+      "brotli": 150,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -3275,7 +4204,7 @@
       "format": "esm",
       "uncompressed": 352,
       "gzip": 0,
-      "brotli": 142,
+      "brotli": 162,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -3292,7 +4221,7 @@
       "format": "esm",
       "uncompressed": 992,
       "gzip": 0,
-      "brotli": 283,
+      "brotli": 308,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -3309,7 +4238,7 @@
       "format": "esm",
       "uncompressed": 25,
       "gzip": 0,
-      "brotli": 19,
+      "brotli": 21,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -3326,7 +4255,7 @@
       "format": "esm",
       "uncompressed": 359,
       "gzip": 0,
-      "brotli": 92,
+      "brotli": 103,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -3350,7 +4279,7 @@
       "format": "esm",
       "uncompressed": 118,
       "gzip": 0,
-      "brotli": 53,
+      "brotli": 58,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -3367,7 +4296,7 @@
       "format": "esm",
       "uncompressed": 1133,
       "gzip": 0,
-      "brotli": 232,
+      "brotli": 253,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -3382,9 +4311,9 @@
       "name": "node_modules/d3-zoom/src/zoom.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 9406,
+      "uncompressed": 9407,
       "gzip": 0,
-      "brotli": 1739,
+      "brotli": 1907,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -3396,19 +4325,36 @@
     },
     {
       "kind": "filesystem",
+      "name": "src/erdDiagram.ts",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 4192
+    },
+    {
+      "kind": "chunk",
+      "name": "src/erdDiagram.ts",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 2709,
+      "gzip": 0,
+      "brotli": 758,
+      "parent": "dist/dpuse-tool-d3.es.js"
+    },
+    {
+      "kind": "filesystem",
       "name": "src/index.ts",
       "type": "script",
       "format": "esm",
-      "uncompressed": 724
+      "uncompressed": 1304
     },
     {
       "kind": "chunk",
       "name": "src/index.ts",
       "type": "script",
       "format": "esm",
-      "uncompressed": 364,
+      "uncompressed": 631,
       "gzip": 0,
-      "brotli": 109,
+      "brotli": 138,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -3425,7 +4371,7 @@
       "format": "esm",
       "uncompressed": 3057,
       "gzip": 0,
-      "brotli": 727,
+      "brotli": 798,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -3442,7 +4388,7 @@
       "format": "esm",
       "uncompressed": 782,
       "gzip": 0,
-      "brotli": 222,
+      "brotli": 244,
       "parent": "dist/dpuse-tool-d3.es.js"
     },
     {
@@ -3459,7 +4405,24 @@
       "format": "esm",
       "uncompressed": 3074,
       "gzip": 0,
-      "brotli": 712,
+      "brotli": 787,
+      "parent": "dist/dpuse-tool-d3.es.js"
+    },
+    {
+      "kind": "filesystem",
+      "name": "src/treeDiagram.ts",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 3383
+    },
+    {
+      "kind": "chunk",
+      "name": "src/treeDiagram.ts",
+      "type": "script",
+      "format": "esm",
+      "uncompressed": 1985,
+      "gzip": 0,
+      "brotli": 588,
       "parent": "dist/dpuse-tool-d3.es.js"
     }
   ],
@@ -3472,6 +4435,12 @@
     }
   ],
   "dependencies": [
+    {
+      "name": "@dagrejs/dagre",
+      "paths": [
+        "node_modules/@dagrejs/dagre"
+      ]
+    },
     {
       "name": "d3-array",
       "paths": [
@@ -3509,6 +4478,12 @@
       ]
     },
     {
+      "name": "d3-hierarchy",
+      "paths": [
+        "node_modules/d3-hierarchy"
+      ]
+    },
+    {
       "name": "d3-interpolate",
       "paths": [
         "node_modules/d3-interpolate"
@@ -3517,7 +4492,8 @@
     {
       "name": "d3-path",
       "paths": [
-        "node_modules/d3-path"
+        "node_modules/d3-path",
+        "node_modules/d3-sankey/node_modules/d3-path"
       ]
     },
     {
@@ -3541,7 +4517,8 @@
     {
       "name": "d3-shape",
       "paths": [
-        "node_modules/d3-shape"
+        "node_modules/d3-shape",
+        "node_modules/d3-sankey/node_modules/d3-shape"
       ]
     },
     {
@@ -3569,6 +4546,31 @@
       ]
     }
   ],
-  "issues": [],
+  "issues": [
+    {
+      "type": "duplicated-dependency",
+      "severity": "warning",
+      "message": "Dependency \"d3-path\" appears to be bundled from multiple paths.",
+      "data": {
+        "name": "d3-path",
+        "paths": [
+          "node_modules/d3-path",
+          "node_modules/d3-sankey/node_modules/d3-path"
+        ]
+      }
+    },
+    {
+      "type": "duplicated-dependency",
+      "severity": "warning",
+      "message": "Dependency \"d3-shape\" appears to be bundled from multiple paths.",
+      "data": {
+        "name": "d3-shape",
+        "paths": [
+          "node_modules/d3-shape",
+          "node_modules/d3-sankey/node_modules/d3-shape"
+        ]
+      }
+    }
+  ],
   "sourcemaps": []
 }
