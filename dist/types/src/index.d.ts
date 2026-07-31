@@ -1,8 +1,11 @@
+import { Chart } from 'billboard.js';
 import { PresentationView } from '@dpuse/dpuse-shared/component/presentation';
+import { BarChartData } from './barChart';
 import { ErdDiagramData, ErdDiagramOptions } from './erdDiagram';
 import { NetworkDiagramData, NetworkDiagramOptions } from './networkDiagram';
 import { SankeyDiagramData, SankeyDiagramOptions } from './sankeyDiagram';
 import { TreeDiagramNode, TreeDiagramOptions } from './treeDiagram';
+export type { BarChartData, BarChartSeries } from './barChart';
 export type { ErdDiagramData, ErdDiagramEdge, ErdDiagramNode, ErdDiagramNodeTypeId, ErdDiagramOptions } from './erdDiagram';
 export type { NetworkDiagramData, NetworkDiagramLink, NetworkDiagramNode, NetworkDiagramOptions } from './networkDiagram';
 export type { SankeyDiagramData, SankeyDiagramLink, SankeyDiagramNode, SankeyDiagramOptions } from './sankeyDiagram';
@@ -14,7 +17,12 @@ export interface D3NetworkView extends D3View {
     destroy: () => void;
     triggerAutoLayout: () => void;
 }
+export interface D3BarChartView extends PresentationView {
+    chart: Chart;
+    destroy: () => void;
+}
 export declare class D3Tool {
+    renderBarChart(data: BarChartData, renderTo: HTMLElement, callback?: () => void): D3BarChartView;
     renderErdDiagram(data: ErdDiagramData, renderTo: HTMLElement, options?: ErdDiagramOptions, callback?: () => void): D3View;
     renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLElement, options?: NetworkDiagramOptions, callback?: () => void): D3NetworkView;
     renderSankeyDiagram(data: SankeyDiagramData, renderTo: HTMLElement, options?: SankeyDiagramOptions, callback?: () => void): D3View;

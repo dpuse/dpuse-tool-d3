@@ -11,6 +11,7 @@ import config from './config.json';
 
 export default defineConfig({
     build: {
+        cssTarget: 'esnext',
         lib: {
             entry: fileURLToPath(new URL('src/index.ts', import.meta.url)),
             fileName: (format) => `${config.id}.${format}.js`,

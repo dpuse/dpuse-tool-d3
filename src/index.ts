@@ -1,7 +1,12 @@
+// ── External Dependencies & Registrations
+import type { Chart } from 'billboard.js';
+
 // ── DPUse Framework
 import type { PresentationView } from '@dpuse/dpuse-shared/component/presentation';
 
 // ── Local
+import type { BarChartData } from '@/barChart';
+import { renderBarChart } from '@/barChart';
 import { renderErdDiagram } from '@/erdDiagram';
 import { renderNetworkDiagram } from '@/networkDiagram';
 import { renderSankeyDiagram } from '@/sankeyDiagram';
@@ -11,6 +16,7 @@ import type { NetworkDiagramData, NetworkDiagramOptions } from '@/networkDiagram
 import type { SankeyDiagramData, SankeyDiagramOptions } from '@/sankeyDiagram';
 import type { TreeDiagramNode, TreeDiagramOptions } from '@/treeDiagram';
 
+export type { BarChartData, BarChartSeries } from '@/barChart';
 export type { ErdDiagramData, ErdDiagramEdge, ErdDiagramNode, ErdDiagramNodeTypeId, ErdDiagramOptions } from '@/erdDiagram';
 export type { NetworkDiagramData, NetworkDiagramLink, NetworkDiagramNode, NetworkDiagramOptions } from '@/networkDiagram';
 export type { SankeyDiagramData, SankeyDiagramLink, SankeyDiagramNode, SankeyDiagramOptions } from '@/sankeyDiagram';
@@ -27,6 +33,11 @@ export interface D3NetworkView extends D3View {
     triggerAutoLayout: () => void;
 }
 
+export interface D3BarChartView extends PresentationView {
+    chart: Chart;
+    destroy: () => void;
+}
+
 // ── Constants ────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 const D3_ID = 'd3';
@@ -34,6 +45,18 @@ const D3_ID = 'd3';
 // ── Tools ────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 export class D3Tool {
+    // Actions - Render bar chart.
+    renderBarChart(data: BarChartData, renderTo: HTMLElement, callback?: () => void): D3BarChartView {
+        const handle = renderBarChart(data, renderTo);
+        callback?.();
+        return {
+            chart: handle.chart,
+            destroy: handle.destroy,
+            resize: handle.resize,
+            vendorId: 'billboard.js'
+        };
+    }
+
     // Actions - Render ERD diagram.
     renderErdDiagram(data: ErdDiagramData, renderTo: HTMLElement, options?: ErdDiagramOptions, callback?: () => void): D3View {
         const handle = renderErdDiagram(data, renderTo, options);

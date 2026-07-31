@@ -1,8 +1,8 @@
 {
     "name": "@dpuse/dpuse-tool-d3",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "private": false,
-    "description": "A TypeScript wrapper for D3 that implements the Data Positioning chart-rendering interface, providing ERD (dagre), Sankey (d3-sankey), network (d3-force), and tree (d3-hierarchy) diagram renderers.",
+    "description": "A TypeScript wrapper for D3 and Billboard.js that implements the Data Positioning chart-rendering interface, providing ERD (dagre), Sankey (d3-sankey), network (d3-force), tree (d3-hierarchy), and bar chart (billboard.js) renderers.",
     "license": "MIT",
     "author": "Jonathan Terrell <terrell.jm@gmail.com>",
     "type": "module",
@@ -57,6 +57,7 @@
     "dependencies": {
         "@dagrejs/dagre": "^3.0.0",
         "@dpuse/dpuse-shared": "^0.3.758",
+        "billboard.js": "^4.0.3",
         "d3-drag": "^3.0.0",
         "d3-force": "^3.0.0",
         "d3-hierarchy": "^3.1.2",
