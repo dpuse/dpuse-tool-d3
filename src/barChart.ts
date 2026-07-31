@@ -1,7 +1,7 @@
 // ── External Dependencies & Registrations
 import 'billboard.js/dist/billboard.css';
 import type { Chart } from 'billboard.js';
-import { bar, bb } from 'billboard.js';
+import { bar, bb, grid } from 'billboard.js';
 
 // ── Types ────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
@@ -27,6 +27,7 @@ export function renderBarChart(data: BarChartData, renderTo: HTMLElement): BarCh
     const columns = data.series.map((series): [string, ...number[]] => [series.name, ...series.values]);
 
     const chart = bb.generate({
+        ...grid(),
         axis: { x: { categories: data.categories, type: 'category' } },
         bindto: renderTo,
         data: { columns, type: bar() }
