@@ -1,0 +1,16 @@
+{
+    "id": "dpuse-tool-d3",
+    "label": {
+        "en": "D3 Visualiser"
+    },
+    "description": {
+        "en": [
+            "..."
+        ]
+    },
+    "icon": "<svg viewBox=\"0 0 80 80\"><g fill=\"none\" stroke-linecap=\"round\" stroke-width=\"6\"><path d=\"M12 20 C 40 20, 40 40, 68 40\" stroke=\"#2a78d6\"></path><path d=\"M12 40 C 40 40, 40 40, 68 20\" stroke=\"#eb6834\"></path><path d=\"M12 60 C 40 60, 40 40, 68 60\" stroke=\"#1baf7a\"></path></g><g stroke=\"#0b0b0b\" stroke-width=\"1\"><rect x=\"6\" y=\"14\" width=\"8\" height=\"12\" fill=\"#2a78d6\"></rect><rect x=\"6\" y=\"34\" width=\"8\" height=\"12\" fill=\"#eb6834\"></rect><rect x=\"6\" y=\"54\" width=\"8\" height=\"12\" fill=\"#1baf7a\"></rect><rect x=\"66\" y=\"14\" width=\"8\" height=\"12\" fill=\"#eda100\"></rect><rect x=\"66\" y=\"54\" width=\"8\" height=\"12\" fill=\"#e87ba4\"></rect></g></svg>",
+    "iconDark": null,
+    "statusId": "alpha",
+    "typeId": "tool",
+    "version": "0.0.2"
+}

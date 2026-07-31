@@ -1,0 +1,52 @@
+{
+    "@dpuse/dpuse-shared@0.3.758": {
+        "licenses": "MIT",
+        "repository": "https://github.com/dpuse/dpuse-shared",
+        "publisher": "Jonathan Terrell",
+        "email": "terrell.jm@gmail.com",
+        "path": "node_modules/@dpuse/dpuse-shared",
+        "licenseFile": "downloads/@dpuse/dpuse-shared@0.3.758-LICENSE.txt"
+    },
+    "d3-array@2.12.1": {
+        "licenses": "BSD-3-Clause",
+        "repository": "https://github.com/d3/d3-array",
+        "publisher": "Mike Bostock",
+        "path": "node_modules/d3-array",
+        "licenseFile": "downloads/d3-array@2.12.1-LICENSE.txt"
+    },
+    "d3-path@1.0.9": {
+        "licenses": "BSD-3-Clause",
+        "repository": "https://github.com/d3/d3-path",
+        "publisher": "Mike Bostock",
+        "path": "node_modules/d3-path",
+        "licenseFile": "downloads/d3-path@1.0.9-LICENSE.txt"
+    },
+    "d3-sankey@0.12.3": {
+        "licenses": "BSD-3-Clause",
+        "repository": "https://github.com/d3/d3-sankey",
+        "publisher": "Mike Bostock",
+        "path": "node_modules/d3-sankey",
+        "licenseFile": "downloads/d3-sankey@0.12.3-LICENSE.txt"
+    },
+    "d3-selection@3.0.0": {
+        "licenses": "ISC",
+        "repository": "https://github.com/d3/d3-selection",
+        "publisher": "Mike Bostock",
+        "path": "node_modules/d3-selection",
+        "licenseFile": "downloads/d3-selection@3.0.0-LICENSE.txt"
+    },
+    "d3-shape@1.3.7": {
+        "licenses": "BSD-3-Clause",
+        "repository": "https://github.com/d3/d3-shape",
+        "publisher": "Mike Bostock",
+        "path": "node_modules/d3-shape",
+        "licenseFile": "downloads/d3-shape@1.3.7-LICENSE.txt"
+    },
+    "internmap@1.0.1": {
+        "licenses": "ISC",
+        "repository": "https://github.com/mbostock/internmap",
+        "publisher": "Mike Bostock",
+        "path": "node_modules/internmap",
+        "licenseFile": "downloads/internmap@1.0.1-LICENSE.txt"
+    }
+}
