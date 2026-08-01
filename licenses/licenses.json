@@ -1,4 +1,20 @@
 {
+    "@dagrejs/dagre@3.0.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/dagrejs/dagre",
+        "publisher": "Chris Pettitt",
+        "email": "cpettitt@gmail.com",
+        "path": "node_modules/@dagrejs/dagre",
+        "licenseFile": "downloads/@dagrejs/dagre@3.0.0-LICENSE.txt"
+    },
+    "@dagrejs/graphlib@4.0.1": {
+        "licenses": "MIT",
+        "repository": "https://github.com/dagrejs/graphlib",
+        "publisher": "Chris Pettitt",
+        "email": "cpettitt@gmail.com",
+        "path": "node_modules/@dagrejs/graphlib",
+        "licenseFile": "downloads/@dagrejs/graphlib@4.0.1-LICENSE.txt"
+    },
     "@dpuse/dpuse-shared@0.3.758": {
         "licenses": "MIT",
         "repository": "https://github.com/dpuse/dpuse-shared",
@@ -7,19 +23,193 @@
         "path": "node_modules/@dpuse/dpuse-shared",
         "licenseFile": "downloads/@dpuse/dpuse-shared@0.3.758-LICENSE.txt"
     },
-    "d3-array@2.12.1": {
-        "licenses": "BSD-3-Clause",
+    "@observablehq/plot@0.6.17": {
+        "licenses": "ISC",
+        "repository": "https://github.com/observablehq/plot",
+        "publisher": "Observable, Inc.",
+        "path": "node_modules/@observablehq/plot",
+        "licenseFile": "downloads/@observablehq/plot@0.6.17-LICENSE.txt"
+    },
+    "@types/d3-selection@3.0.11": {
+        "licenses": "MIT",
+        "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+        "path": "node_modules/@types/d3-selection",
+        "licenseFile": "downloads/@types/d3-selection@3.0.11-LICENSE.txt"
+    },
+    "@types/d3-transition@3.0.9": {
+        "licenses": "MIT",
+        "repository": "https://github.com/DefinitelyTyped/DefinitelyTyped",
+        "path": "node_modules/@types/d3-transition",
+        "licenseFile": "downloads/@types/d3-transition@3.0.9-LICENSE.txt"
+    },
+    "billboard.js@4.0.3": {
+        "licenses": "MIT",
+        "repository": "https://github.com/naver/billboard.js",
+        "publisher": "NAVER Corp.",
+        "path": "node_modules/billboard.js",
+        "licenseFile": "downloads/billboard.js@4.0.3-LICENSE.txt"
+    },
+    "binary-search-bounds@2.0.5": {
+        "licenses": "MIT",
+        "repository": "https://github.com/mikolalysenko/binary-search-bounds",
+        "publisher": "Mikola Lysenko",
+        "path": "node_modules/binary-search-bounds",
+        "licenseFile": "downloads/binary-search-bounds@2.0.5-LICENSE.txt"
+    },
+    "commander@7.2.0": {
+        "licenses": "MIT",
+        "repository": "https://github.com/tj/commander.js",
+        "publisher": "TJ Holowaychuk",
+        "email": "tj@vision-media.ca",
+        "path": "node_modules/commander",
+        "licenseFile": "downloads/commander@7.2.0-LICENSE.txt"
+    },
+    "d3-array@3.2.4": {
+        "licenses": "ISC",
         "repository": "https://github.com/d3/d3-array",
         "publisher": "Mike Bostock",
         "path": "node_modules/d3-array",
-        "licenseFile": "downloads/d3-array@2.12.1-LICENSE.txt"
+        "licenseFile": "downloads/d3-array@3.2.4-LICENSE.txt"
     },
-    "d3-path@1.0.9": {
+    "d3-axis@3.0.0": {
+        "licenses": "ISC",
+        "repository": "https://github.com/d3/d3-axis",
+        "publisher": "Mike Bostock",
+        "path": "node_modules/d3-axis",
+        "licenseFile": "downloads/d3-axis@3.0.0-LICENSE.txt"
+    },
+    "d3-brush@3.0.0": {
+        "licenses": "ISC",
+        "repository": "https://github.com/d3/d3-brush",
+        "publisher": "Mike Bostock",
+        "path": "node_modules/d3-brush",
+        "licenseFile": "downloads/d3-brush@3.0.0-LICENSE.txt"
+    },
+    "d3-chord@3.0.1": {
+        "licenses": "ISC",
+        "repository": "https://github.com/d3/d3-chord",
+        "publisher": "Mike Bostock",
+        "path": "node_modules/d3-chord",
+        "licenseFile": "downloads/d3-chord@3.0.1-LICENSE.txt"
+    },
+    "d3-color@3.1.0": {
+        "licenses": "ISC",
+        "repository": "https://github.com/d3/d3-color",
+        "publisher": "Mike Bostock",
+        "path": "node_modules/d3-color",
+        "licenseFile": "downloads/d3-color@3.1.0-LICENSE.txt"
+    },
+    "d3-contour@4.0.2": {
+        "licenses": "ISC",
+        "repository": "https://github.com/d3/d3-contour",
+        "publisher": "Mike Bostock",
+        "path": "node_modules/d3-contour",
+        "licenseFile": "downloads/d3-contour@4.0.2-LICENSE.txt"
+    },
+    "d3-delaunay@6.0.4": {
+        "licenses": "ISC",
+        "repository": "https://github.com/d3/d3-delaunay",
+        "publisher": "Mike Bostock",
+        "path": "node_modules/d3-delaunay",
+        "licenseFile": "downloads/d3-delaunay@6.0.4-LICENSE.txt"
+    },
+    "d3-dispatch@3.0.1": {
+        "licenses": "ISC",
+        "repository": "https://github.com/d3/d3-dispatch",
+        "publisher": "Mike Bostock",
+        "path": "node_modules/d3-dispatch",
+        "licenseFile": "downloads/d3-dispatch@3.0.1-LICENSE.txt"
+    },
+    "d3-drag@3.0.0": {
+        "licenses": "ISC",
+        "repository": "https://github.com/d3/d3-drag",
+        "publisher": "Mike Bostock",
+        "path": "node_modules/d3-drag",
+        "licenseFile": "downloads/d3-drag@3.0.0-LICENSE.txt"
+    },
+    "d3-dsv@3.0.1": {
+        "licenses": "ISC",
+        "repository": "https://github.com/d3/d3-dsv",
+        "publisher": "Mike Bostock",
+        "path": "node_modules/d3-dsv",
+        "licenseFile": "downloads/d3-dsv@3.0.1-LICENSE.txt"
+    },
+    "d3-ease@3.0.1": {
         "licenses": "BSD-3-Clause",
+        "repository": "https://github.com/d3/d3-ease",
+        "publisher": "Mike Bostock",
+        "path": "node_modules/d3-ease",
+        "licenseFile": "downloads/d3-ease@3.0.1-LICENSE.txt"
+    },
+    "d3-fetch@3.0.1": {
+        "licenses": "ISC",
+        "repository": "https://github.com/d3/d3-fetch",
+        "publisher": "Mike Bostock",
+        "path": "node_modules/d3-fetch",
+        "licenseFile": "downloads/d3-fetch@3.0.1-LICENSE.txt"
+    },
+    "d3-force@3.0.0": {
+        "licenses": "ISC",
+        "repository": "https://github.com/d3/d3-force",
+        "publisher": "Mike Bostock",
+        "path": "node_modules/d3-force",
+        "licenseFile": "downloads/d3-force@3.0.0-LICENSE.txt"
+    },
+    "d3-format@3.1.2": {
+        "licenses": "ISC",
+        "repository": "https://github.com/d3/d3-format",
+        "publisher": "Mike Bostock",
+        "path": "node_modules/d3-format",
+        "licenseFile": "downloads/d3-format@3.1.2-LICENSE.txt"
+    },
+    "d3-geo@3.1.1": {
+        "licenses": "ISC",
+        "repository": "https://github.com/d3/d3-geo",
+        "publisher": "Mike Bostock",
+        "path": "node_modules/d3-geo",
+        "licenseFile": "downloads/d3-geo@3.1.1-LICENSE.txt"
+    },
+    "d3-hierarchy@3.1.2": {
+        "licenses": "ISC",
+        "repository": "https://github.com/d3/d3-hierarchy",
+        "publisher": "Mike Bostock",
+        "path": "node_modules/d3-hierarchy",
+        "licenseFile": "downloads/d3-hierarchy@3.1.2-LICENSE.txt"
+    },
+    "d3-interpolate@3.0.1": {
+        "licenses": "ISC",
+        "repository": "https://github.com/d3/d3-interpolate",
+        "publisher": "Mike Bostock",
+        "path": "node_modules/d3-interpolate",
+        "licenseFile": "downloads/d3-interpolate@3.0.1-LICENSE.txt"
+    },
+    "d3-path@3.1.0": {
+        "licenses": "ISC",
         "repository": "https://github.com/d3/d3-path",
         "publisher": "Mike Bostock",
         "path": "node_modules/d3-path",
-        "licenseFile": "downloads/d3-path@1.0.9-LICENSE.txt"
+        "licenseFile": "downloads/d3-path@3.1.0-LICENSE.txt"
+    },
+    "d3-polygon@3.0.1": {
+        "licenses": "ISC",
+        "repository": "https://github.com/d3/d3-polygon",
+        "publisher": "Mike Bostock",
+        "path": "node_modules/d3-polygon",
+        "licenseFile": "downloads/d3-polygon@3.0.1-LICENSE.txt"
+    },
+    "d3-quadtree@3.0.1": {
+        "licenses": "ISC",
+        "repository": "https://github.com/d3/d3-quadtree",
+        "publisher": "Mike Bostock",
+        "path": "node_modules/d3-quadtree",
+        "licenseFile": "downloads/d3-quadtree@3.0.1-LICENSE.txt"
+    },
+    "d3-random@3.0.1": {
+        "licenses": "ISC",
+        "repository": "https://github.com/d3/d3-random",
+        "publisher": "Mike Bostock",
+        "path": "node_modules/d3-random",
+        "licenseFile": "downloads/d3-random@3.0.1-LICENSE.txt"
     },
     "d3-sankey@0.12.3": {
         "licenses": "BSD-3-Clause",
@@ -28,6 +218,20 @@
         "path": "node_modules/d3-sankey",
         "licenseFile": "downloads/d3-sankey@0.12.3-LICENSE.txt"
     },
+    "d3-scale-chromatic@3.1.0": {
+        "licenses": "ISC",
+        "repository": "https://github.com/d3/d3-scale-chromatic",
+        "publisher": "Mike Bostock",
+        "path": "node_modules/d3-scale-chromatic",
+        "licenseFile": "downloads/d3-scale-chromatic@3.1.0-LICENSE.txt"
+    },
+    "d3-scale@4.0.2": {
+        "licenses": "ISC",
+        "repository": "https://github.com/d3/d3-scale",
+        "publisher": "Mike Bostock",
+        "path": "node_modules/d3-scale",
+        "licenseFile": "downloads/d3-scale@4.0.2-LICENSE.txt"
+    },
     "d3-selection@3.0.0": {
         "licenses": "ISC",
         "repository": "https://github.com/d3/d3-selection",
@@ -35,12 +239,69 @@
         "path": "node_modules/d3-selection",
         "licenseFile": "downloads/d3-selection@3.0.0-LICENSE.txt"
     },
-    "d3-shape@1.3.7": {
-        "licenses": "BSD-3-Clause",
+    "d3-shape@3.2.0": {
+        "licenses": "ISC",
         "repository": "https://github.com/d3/d3-shape",
         "publisher": "Mike Bostock",
         "path": "node_modules/d3-shape",
-        "licenseFile": "downloads/d3-shape@1.3.7-LICENSE.txt"
+        "licenseFile": "downloads/d3-shape@3.2.0-LICENSE.txt"
+    },
+    "d3-time-format@4.1.0": {
+        "licenses": "ISC",
+        "repository": "https://github.com/d3/d3-time-format",
+        "publisher": "Mike Bostock",
+        "path": "node_modules/d3-time-format",
+        "licenseFile": "downloads/d3-time-format@4.1.0-LICENSE.txt"
+    },
+    "d3-time@3.1.0": {
+        "licenses": "ISC",
+        "repository": "https://github.com/d3/d3-time",
+        "publisher": "Mike Bostock",
+        "path": "node_modules/d3-time",
+        "licenseFile": "downloads/d3-time@3.1.0-LICENSE.txt"
+    },
+    "d3-timer@3.0.1": {
+        "licenses": "ISC",
+        "repository": "https://github.com/d3/d3-timer",
+        "publisher": "Mike Bostock",
+        "path": "node_modules/d3-timer",
+        "licenseFile": "downloads/d3-timer@3.0.1-LICENSE.txt"
+    },
+    "d3-transition@3.0.1": {
+        "licenses": "ISC",
+        "repository": "https://github.com/d3/d3-transition",
+        "publisher": "Mike Bostock",
+        "path": "node_modules/d3-transition",
+        "licenseFile": "downloads/d3-transition@3.0.1-LICENSE.txt"
+    },
+    "d3-zoom@3.0.0": {
+        "licenses": "ISC",
+        "repository": "https://github.com/d3/d3-zoom",
+        "publisher": "Mike Bostock",
+        "path": "node_modules/d3-zoom",
+        "licenseFile": "downloads/d3-zoom@3.0.0-LICENSE.txt"
+    },
+    "d3@7.9.0": {
+        "licenses": "ISC",
+        "repository": "https://github.com/d3/d3",
+        "publisher": "Mike Bostock",
+        "path": "node_modules/d3",
+        "licenseFile": "downloads/d3@7.9.0-LICENSE.txt"
+    },
+    "delaunator@5.1.0": {
+        "licenses": "ISC",
+        "repository": "https://github.com/mapbox/delaunator",
+        "publisher": "Vladimir Agafonkin",
+        "path": "node_modules/delaunator",
+        "licenseFile": "downloads/delaunator@5.1.0-LICENSE.txt"
+    },
+    "iconv-lite@0.6.3": {
+        "licenses": "MIT",
+        "repository": "https://github.com/ashtuchkin/iconv-lite",
+        "publisher": "Alexander Shtuchkin",
+        "email": "ashtuchkin@gmail.com",
+        "path": "node_modules/d3-dsv/node_modules/iconv-lite",
+        "licenseFile": "downloads/iconv-lite@0.6.3-LICENSE.txt"
     },
     "internmap@1.0.1": {
         "licenses": "ISC",
@@ -48,5 +309,41 @@
         "publisher": "Mike Bostock",
         "path": "node_modules/internmap",
         "licenseFile": "downloads/internmap@1.0.1-LICENSE.txt"
+    },
+    "interval-tree-1d@1.0.4": {
+        "licenses": "MIT",
+        "repository": "https://github.com/mikolalysenko/interval-tree-1d",
+        "publisher": "Mikola Lysenko",
+        "path": "node_modules/interval-tree-1d",
+        "licenseFile": "downloads/interval-tree-1d@1.0.4-LICENSE.txt"
+    },
+    "isoformat@0.2.1": {
+        "licenses": "ISC",
+        "repository": "https://github.com/mbostock/isoformat",
+        "publisher": "Mike Bostock",
+        "path": "node_modules/isoformat",
+        "licenseFile": "downloads/isoformat@0.2.1-LICENSE.txt"
+    },
+    "robust-predicates@3.0.3": {
+        "licenses": "Unlicense",
+        "repository": "https://github.com/mourner/robust-predicates",
+        "publisher": "Vladimir Agafonkin",
+        "path": "node_modules/robust-predicates",
+        "licenseFile": "downloads/robust-predicates@3.0.3-LICENSE.txt"
+    },
+    "rw@1.3.3": {
+        "licenses": "BSD-3-Clause",
+        "repository": "https://github.com/mbostock/rw",
+        "publisher": "Mike Bostock",
+        "path": "node_modules/rw",
+        "licenseFile": "downloads/rw@1.3.3-LICENSE.txt"
+    },
+    "safer-buffer@2.1.2": {
+        "licenses": "MIT",
+        "repository": "https://github.com/ChALkeR/safer-buffer",
+        "publisher": "Nikita Skovoroda",
+        "email": "chalkerx@gmail.com",
+        "path": "node_modules/safer-buffer",
+        "licenseFile": "downloads/safer-buffer@2.1.2-LICENSE.txt"
     }
 }

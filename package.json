@@ -1,6 +1,6 @@
 {
     "name": "@dpuse/dpuse-tool-d3",
-    "version": "0.0.8",
+    "version": "0.0.9",
     "private": false,
     "description": "A TypeScript wrapper for D3, Billboard.js, and Observable Plot that implements the Data Positioning chart-rendering interface, providing ERD (dagre), Sankey (d3-sankey), network (d3-force), tree (d3-hierarchy), and bar chart (billboard.js, Observable Plot) renderers.",
     "license": "MIT",
@@ -44,7 +44,7 @@
         "check": "node -e \"import('@dpuse/dpuse-development').then(m => m.checkConfigFiles())\" && node -e \"import('@dpuse/dpuse-development').then(m => m.checkDependencies())\"",
         "document": "npm run documentOpening && npm run documentUsage && npm run documentDependencies && npm run documentGovernance",
         "documentBundleSizes": "node -e \"import('@dpuse/dpuse-development').then(m => m.documentBundleSizes())\"",
-        "documentDependencies": "node -e \"import('@dpuse/dpuse-development').then(m => m.documentDependencies('BSD-3-Clause;ISC;MIT'))\"",
+        "documentDependencies": "node -e \"import('@dpuse/dpuse-development').then(m => m.documentDependencies('BSD-3-Clause;ISC;MIT;Unlicense'))\"",
         "documentGovernance": "node -e \"import('@dpuse/dpuse-development').then(m => m.documentGovernance())\"",
         "documentOpening": "node -e \"import('@dpuse/dpuse-development').then(m => m.documentOpening())\"",
         "documentUsage": "node -e \"import('@dpuse/dpuse-development').then(m => m.documentUsage())\"",
@@ -87,5 +87,10 @@
         "vite-plugin-dts": "^5.0.3",
         "vitest": "^4.1.10",
         "wrangler": "^4.118.0"
+    },
+    "overrides": {
+        "d3-array": "^3.2.4",
+        "d3-path": "^3.1.0",
+        "d3-shape": "^3.2.0"
     }
 }
