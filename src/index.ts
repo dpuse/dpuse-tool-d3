@@ -4,25 +4,23 @@ import type { Chart } from 'billboard.js';
 // ── DPUse Framework
 import type { PresentationView } from '@dpuse/dpuse-shared/component/presentation';
 
-// ── Local
+// ── Local Framework
 import type { BarChartData } from '@/barChart';
+import type { ObservablePlotChartTypeId } from '@/observablePlot';
 import { renderBarChart } from '@/barChart';
-import { renderNetworkDiagram } from '@/networkDiagram';
-import { renderPlotBarChart } from '@/plotBarChart';
-import { renderSankeyDiagram } from '@/sankeyDiagram';
-import { renderTreeDiagram } from '@/treeDiagram';
 import type { ErdDiagramData, ErdDiagramOptions } from '@/erdDiagram';
 import type { NetworkDiagramData, NetworkDiagramOptions } from '@/networkDiagram';
 import type { SankeyDiagramData, SankeyDiagramOptions } from '@/sankeyDiagram';
 import type { TreeDiagramNode, TreeDiagramOptions } from '@/treeDiagram';
 
+// ── Types ────────────────────────────────────────────────────────────────────────────────────────────────────────────
+
 export type { BarChartData, BarChartSeries } from '@/barChart';
 export type { ErdDiagramData, ErdDiagramEdge, ErdDiagramNode, ErdDiagramNodeTypeId, ErdDiagramOptions } from '@/erdDiagram';
 export type { NetworkDiagramData, NetworkDiagramLink, NetworkDiagramNode, NetworkDiagramOptions } from '@/networkDiagram';
+export type { ObservablePlotChartTypeId } from '@/observablePlot';
 export type { SankeyDiagramData, SankeyDiagramLink, SankeyDiagramNode, SankeyDiagramOptions } from '@/sankeyDiagram';
 export type { TreeDiagramNode, TreeDiagramNodeRoleId, TreeDiagramOptions } from '@/treeDiagram';
-
-// ── Types ────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 export interface D3View extends PresentationView {
     svg: SVGSVGElement;
@@ -57,9 +55,10 @@ export class D3Tool {
         };
     }
 
-    // Actions - Render bar chart (Observable Plot).
-    renderPlotBarChart(data: BarChartData, renderTo: HTMLElement, callback?: () => void): D3View {
-        const handle = renderPlotBarChart(data, renderTo);
+    // Actions - Render Observable Plot visualisation.
+    async renderObservablePlot(typeId: ObservablePlotChartTypeId, data: BarChartData, renderTo: HTMLElement, callback?: () => void): Promise<D3View> {
+        const { renderObservablePlot } = await import('@/observablePlot');
+        const handle = renderObservablePlot(typeId, data, renderTo);
         callback?.();
         return {
             resize: handle.resize,
@@ -85,7 +84,8 @@ export class D3Tool {
     }
 
     // Actions - Render network diagram.
-    renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLElement, options?: NetworkDiagramOptions, callback?: () => void): D3NetworkView {
+    async renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLElement, options?: NetworkDiagramOptions, callback?: () => void): Promise<D3NetworkView> {
+        const { renderNetworkDiagram } = await import('@/networkDiagram');
         const handle = renderNetworkDiagram(data, renderTo, options);
         callback?.();
         return {
@@ -100,7 +100,8 @@ export class D3Tool {
     }
 
     // Actions - Render Sankey diagram.
-    renderSankeyDiagram(data: SankeyDiagramData, renderTo: HTMLElement, options?: SankeyDiagramOptions, callback?: () => void): D3View {
+    async renderSankeyDiagram(data: SankeyDiagramData, renderTo: HTMLElement, options?: SankeyDiagramOptions, callback?: () => void): Promise<D3View> {
+        const { renderSankeyDiagram } = await import('@/sankeyDiagram');
         const handle = renderSankeyDiagram(data, renderTo, options);
         callback?.();
         return {
@@ -113,7 +114,8 @@ export class D3Tool {
     }
 
     // Actions - Render tree diagram.
-    renderTreeDiagram(data: TreeDiagramNode, renderTo: HTMLElement, options?: TreeDiagramOptions, callback?: () => void): D3View {
+    async renderTreeDiagram(data: TreeDiagramNode, renderTo: HTMLElement, options?: TreeDiagramOptions, callback?: () => void): Promise<D3View> {
+        const { renderTreeDiagram } = await import('@/treeDiagram');
         const handle = renderTreeDiagram(data, renderTo, options);
         callback?.();
         return {

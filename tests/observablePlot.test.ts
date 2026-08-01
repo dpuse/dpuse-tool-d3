@@ -19,12 +19,12 @@ const data: BarChartData = {
 
 // ── Tests ────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
-describe('D3Tool.renderPlotBarChart', () => {
-    it('renders an SVG with one bar per category/series combination', () => {
+describe('D3Tool.renderObservablePlot', () => {
+    it('renders an SVG with one bar per category/series combination', async () => {
         const renderTo = document.createElement('div');
         document.body.append(renderTo);
 
-        const view = new D3Tool().renderPlotBarChart(data, renderTo);
+        const view = await new D3Tool().renderObservablePlot('bar', data, renderTo);
 
         expect(view.vendorId).toBe('observable-plot');
         expect(view.svg.tagName.toLowerCase()).toBe('svg');
@@ -33,20 +33,20 @@ describe('D3Tool.renderPlotBarChart', () => {
         expect(view.svg.querySelectorAll('rect')).toHaveLength(expectedBarCount);
     });
 
-    it('invokes the callback once the initial render completes', () => {
+    it('invokes the callback once the initial render completes', async () => {
         const renderTo = document.createElement('div');
         let called = false;
 
-        new D3Tool().renderPlotBarChart(data, renderTo, () => {
+        await new D3Tool().renderObservablePlot('bar', data, renderTo, () => {
             called = true;
         });
 
         expect(called).toBe(true);
     });
 
-    it('resize() redraws into the same container without throwing', () => {
+    it('resize() redraws into the same container without throwing', async () => {
         const renderTo = document.createElement('div');
-        const view = new D3Tool().renderPlotBarChart(data, renderTo);
+        const view = await new D3Tool().renderObservablePlot('bar', data, renderTo);
 
         expect(() => {
             view.resize();

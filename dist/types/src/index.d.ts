@@ -1,6 +1,7 @@
 import { Chart } from 'billboard.js';
 import { PresentationView } from '@dpuse/dpuse-shared/component/presentation';
 import { BarChartData } from './barChart';
+import { ObservablePlotChartTypeId } from './observablePlot';
 import { ErdDiagramData, ErdDiagramOptions } from './erdDiagram';
 import { NetworkDiagramData, NetworkDiagramOptions } from './networkDiagram';
 import { SankeyDiagramData, SankeyDiagramOptions } from './sankeyDiagram';
@@ -8,6 +9,7 @@ import { TreeDiagramNode, TreeDiagramOptions } from './treeDiagram';
 export type { BarChartData, BarChartSeries } from './barChart';
 export type { ErdDiagramData, ErdDiagramEdge, ErdDiagramNode, ErdDiagramNodeTypeId, ErdDiagramOptions } from './erdDiagram';
 export type { NetworkDiagramData, NetworkDiagramLink, NetworkDiagramNode, NetworkDiagramOptions } from './networkDiagram';
+export type { ObservablePlotChartTypeId } from './observablePlot';
 export type { SankeyDiagramData, SankeyDiagramLink, SankeyDiagramNode, SankeyDiagramOptions } from './sankeyDiagram';
 export type { TreeDiagramNode, TreeDiagramNodeRoleId, TreeDiagramOptions } from './treeDiagram';
 export interface D3View extends PresentationView {
@@ -23,9 +25,9 @@ export interface D3BarChartView extends PresentationView {
 }
 export declare class D3Tool {
     renderBarChart(data: BarChartData, renderTo: HTMLElement, callback?: () => void): D3BarChartView;
-    renderPlotBarChart(data: BarChartData, renderTo: HTMLElement, callback?: () => void): D3View;
+    renderObservablePlot(typeId: ObservablePlotChartTypeId, data: BarChartData, renderTo: HTMLElement, callback?: () => void): Promise<D3View>;
     renderErdDiagram(data: ErdDiagramData, renderTo: HTMLElement, options?: ErdDiagramOptions, callback?: () => void): Promise<D3View>;
-    renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLElement, options?: NetworkDiagramOptions, callback?: () => void): D3NetworkView;
-    renderSankeyDiagram(data: SankeyDiagramData, renderTo: HTMLElement, options?: SankeyDiagramOptions, callback?: () => void): D3View;
-    renderTreeDiagram(data: TreeDiagramNode, renderTo: HTMLElement, options?: TreeDiagramOptions, callback?: () => void): D3View;
+    renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLElement, options?: NetworkDiagramOptions, callback?: () => void): Promise<D3NetworkView>;
+    renderSankeyDiagram(data: SankeyDiagramData, renderTo: HTMLElement, options?: SankeyDiagramOptions, callback?: () => void): Promise<D3View>;
+    renderTreeDiagram(data: TreeDiagramNode, renderTo: HTMLElement, options?: TreeDiagramOptions, callback?: () => void): Promise<D3View>;
 }

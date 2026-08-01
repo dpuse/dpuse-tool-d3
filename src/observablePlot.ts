@@ -1,5 +1,5 @@
 // ── External Dependencies & Registrations
-import * as Plot from '@observablehq/plot';
+import { barY, plot, ruleY } from '@observablehq/plot';
 
 // ── Local
 import type { BarChartData } from '@/barChart';
@@ -8,12 +8,14 @@ export type { BarChartData, BarChartSeries } from '@/barChart';
 
 // ── Types ────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
-export interface PlotBarChartHandle {
+export type ObservablePlotChartTypeId = 'bar';
+
+export interface ObservablePlotHandle {
     resize: () => void;
     svg: SVGSVGElement;
 }
 
-interface PlotBarChartRow {
+interface ObservablePlotBarRow {
     category: string;
     seriesName: string;
     value: number;
@@ -26,23 +28,28 @@ const DEFAULT_HEIGHT = 400;
 
 // ── Actions ──────────────────────────────────────────────────────────────────────────────────────────────────────────
 
-export function renderPlotBarChart(data: BarChartData, renderTo: HTMLElement): PlotBarChartHandle {
-    const rows = toTidyRows(data);
-
+export function renderObservablePlot(typeId: ObservablePlotChartTypeId, data: BarChartData, renderTo: HTMLElement): ObservablePlotHandle {
     function draw(): SVGSVGElement {
         renderTo.replaceChildren();
 
         const width = renderTo.clientWidth || DEFAULT_WIDTH;
         const height = renderTo.clientHeight || DEFAULT_HEIGHT;
 
-        const figure = Plot.plot({
-            fx: { label: null },
-            height,
-            marks: [Plot.barY(rows, { fx: 'category', tip: true, x: 'seriesName', y: 'value', fill: 'seriesName' }), Plot.ruleY([0])],
-            width,
-            x: { axis: null },
-            y: { grid: true }
-        });
+        let figure: HTMLElement | SVGSVGElement;
+        switch (typeId) {
+            case 'bar': {
+                const rows = toBarRows(data);
+                figure = plot({
+                    fx: { label: null },
+                    height,
+                    marks: [barY(rows, { fx: 'category', tip: true, x: 'seriesName', y: 'value', fill: 'seriesName' }), ruleY([0])],
+                    width,
+                    x: { axis: null },
+                    y: { grid: true }
+                });
+                break;
+            }
+        }
 
         renderTo.append(figure);
 
@@ -64,8 +71,8 @@ export function renderPlotBarChart(data: BarChartData, renderTo: HTMLElement): P
 
 // ── Helpers ──────────────────────────────────────────────────────────────────────────────────────────────────────────
 
-function toTidyRows(data: BarChartData): PlotBarChartRow[] {
-    const rows: PlotBarChartRow[] = [];
+function toBarRows(data: BarChartData): ObservablePlotBarRow[] {
+    const rows: ObservablePlotBarRow[] = [];
     for (const series of data.series) {
         for (const [index, category] of data.categories.entries()) {
             rows.push({ category, seriesName: series.name, value: series.values[index] ?? 0 });

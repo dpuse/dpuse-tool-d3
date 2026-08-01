@@ -31,11 +31,11 @@ const LINK_COUNT = 4;
 // ── Tests ────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 describe('D3Tool.renderTreeDiagram', () => {
-    it('renders an SVG with one rect and one labelled group per node, one path per link', () => {
+    it('renders an SVG with one rect and one labelled group per node, one path per link', async () => {
         const renderTo = document.createElement('div');
         document.body.append(renderTo);
 
-        const view = new D3Tool().renderTreeDiagram(data, renderTo);
+        const view = await new D3Tool().renderTreeDiagram(data, renderTo);
 
         expect(view.vendorId).toBe('d3');
         expect(view.svg.tagName.toLowerCase()).toBe('svg');
@@ -46,20 +46,20 @@ describe('D3Tool.renderTreeDiagram', () => {
         expect(labels).toEqual(expect.arrayContaining(['Geography', 'Europe', 'United Kingdom', 'Germany', 'North America']));
     });
 
-    it('invokes the callback once the initial render completes', () => {
+    it('invokes the callback once the initial render completes', async () => {
         const renderTo = document.createElement('div');
         let called = false;
 
-        new D3Tool().renderTreeDiagram(data, renderTo, undefined, () => {
+        await new D3Tool().renderTreeDiagram(data, renderTo, undefined, () => {
             called = true;
         });
 
         expect(called).toBe(true);
     });
 
-    it('resize() redraws into the same container without throwing', () => {
+    it('resize() redraws into the same container without throwing', async () => {
         const renderTo = document.createElement('div');
-        const view = new D3Tool().renderTreeDiagram(data, renderTo);
+        const view = await new D3Tool().renderTreeDiagram(data, renderTo);
 
         expect(() => {
             view.resize();

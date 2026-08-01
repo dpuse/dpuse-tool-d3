@@ -20,11 +20,11 @@ const data: NetworkDiagramData = {
 // ── Tests ────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 describe('D3Tool.renderNetworkDiagram', () => {
-    it('renders an SVG with one line per link and one labelled node per node', () => {
+    it('renders an SVG with one line per link and one labelled node per node', async () => {
         const renderTo = document.createElement('div');
         document.body.append(renderTo);
 
-        const view = new D3Tool().renderNetworkDiagram(data, renderTo);
+        const view = await new D3Tool().renderNetworkDiagram(data, renderTo);
 
         expect(view.vendorId).toBe('d3');
         expect(view.svg.tagName.toLowerCase()).toBe('svg');
@@ -35,20 +35,20 @@ describe('D3Tool.renderNetworkDiagram', () => {
         expect(labels).toEqual(expect.arrayContaining(data.nodes.map((node) => node.id)));
     });
 
-    it('invokes the callback once the initial render completes', () => {
+    it('invokes the callback once the initial render completes', async () => {
         const renderTo = document.createElement('div');
         let called = false;
 
-        new D3Tool().renderNetworkDiagram(data, renderTo, undefined, () => {
+        await new D3Tool().renderNetworkDiagram(data, renderTo, undefined, () => {
             called = true;
         });
 
         expect(called).toBe(true);
     });
 
-    it('triggerAutoLayout() and resize() run without throwing', () => {
+    it('triggerAutoLayout() and resize() run without throwing', async () => {
         const renderTo = document.createElement('div');
-        const view = new D3Tool().renderNetworkDiagram(data, renderTo);
+        const view = await new D3Tool().renderNetworkDiagram(data, renderTo);
 
         expect(() => {
             view.triggerAutoLayout();
@@ -58,9 +58,9 @@ describe('D3Tool.renderNetworkDiagram', () => {
         }).not.toThrow();
     });
 
-    it('destroy() removes the SVG from the container', () => {
+    it('destroy() removes the SVG from the container', async () => {
         const renderTo = document.createElement('div');
-        const view = new D3Tool().renderNetworkDiagram(data, renderTo);
+        const view = await new D3Tool().renderNetworkDiagram(data, renderTo);
 
         view.destroy();
 
