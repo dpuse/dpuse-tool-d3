@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120">
+<g transform="translate(0,120) scale(0.1,-0.1)" fill="#000000">
+<path d="M260 80 c0 -6 125 -10 355 -10 230 0 355 4 355 10 0 6 -125 10 -355
+10 -230 0 -355 -4 -355 -10z"/>
+</g>
+<g transform="translate(0,120) scale(0.1,-0.1)" fill="#1f77b4">
+<path d="M720 605 l0 -515 105 0 105 0 0 515 0 515 -105 0 -105 0 0 -515z"/>
+</g>
+<g transform="translate(0,120) scale(0.1,-0.1)" fill="#f87070">
+<path d="M510 605 l0 -515 105 0 105 0 0 515 0 515 -105 0 -105 0 0 -515z"/>
+</g>
+<g transform="translate(0,120) scale(0.1,-0.1)" fill="#2acefd">
+<path d="M300 465 l0 -375 105 0 105 0 0 375 0 375 -105 0 -105 0 0 -375z"/>
+</g>
+</svg>

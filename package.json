@@ -1,6 +1,6 @@
 {
     "name": "@dpuse/dpuse-tool-d3",
-    "version": "0.0.16",
+    "version": "0.0.17",
     "private": false,
     "description": "A TypeScript wrapper for D3, Billboard.js, and Observable Plot that implements the Data Positioning chart-rendering interface, providing ERD (dagre), Sankey (d3-sankey), network (d3-force), tree (d3-hierarchy), and bar chart (billboard.js, Observable Plot) renderers.",
     "license": "MIT",
