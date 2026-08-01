@@ -48,57 +48,57 @@ const view = d3Tool.renderSankeyDiagram(data, renderTo);
 
 License data is collected automatically on each release using [license-checker](https://github.com/RSeidelsohn/license-checker-rseidelsohn). The following table lists all production dependencies. These dependencies (including transitive ones) have been checked and confirmed to use BSD-3-Clause, ISC, MIT, or Unlicense — all permissive, commercially-friendly licenses. Users of the uploaded library are covered by these checks; developers cloning this repository should independently verify development dependencies.
 
-| Dependency                                                                    | Version | License(s)   | Document                                                              |
-| :---------------------------------------------------------------------------- | :-----: | :----------- | :-------------------------------------------------------------------- |
-| [@dagrejs/dagre](https://github.com/dagrejs/dagre)                            |  3.0.0  | MIT          | [LICENSE](licenses/downloads/@dagrejs/dagre@3.0.0-LICENSE.txt)        |
-| [@dagrejs/graphlib](https://github.com/dagrejs/graphlib)                      |  4.0.1  | MIT          | [LICENSE](licenses/downloads/@dagrejs/graphlib@4.0.1-LICENSE.txt)     |
-| [@dpuse/dpuse-shared](https://github.com/dpuse/dpuse-shared)                  | 0.3.758 | MIT          | [LICENSE](licenses/downloads/@dpuse/dpuse-shared@0.3.758-LICENSE.txt) |
-| [@observablehq/plot](https://github.com/observablehq/plot)                    | 0.6.17  | ISC          | [LICENSE](licenses/downloads/@observablehq/plot@0.6.17-LICENSE.txt)   |
-| [@types/d3-selection](https://github.com/DefinitelyTyped/DefinitelyTyped)     | 3.0.11  | MIT          | [LICENSE](licenses/downloads/@types/d3-selection@3.0.11-LICENSE.txt)  |
-| [@types/d3-transition](https://github.com/DefinitelyTyped/DefinitelyTyped)    |  3.0.9  | MIT          | [LICENSE](licenses/downloads/@types/d3-transition@3.0.9-LICENSE.txt)  |
-| [billboard.js](https://github.com/naver/billboard.js)                         |  4.0.3  | MIT          | [LICENSE](licenses/downloads/billboard.js@4.0.3-LICENSE.txt)          |
-| [binary-search-bounds](https://github.com/mikolalysenko/binary-search-bounds) |  2.0.5  | MIT          | [LICENSE](licenses/downloads/binary-search-bounds@2.0.5-LICENSE.txt)  |
-| [commander](https://github.com/tj/commander.js)                               |  7.2.0  | MIT          | [LICENSE](licenses/downloads/commander@7.2.0-LICENSE.txt)             |
-| [d3-array](https://github.com/d3/d3-array)                                    |  3.2.4  | ISC          | [LICENSE](licenses/downloads/d3-array@3.2.4-LICENSE.txt)              |
-| [d3-axis](https://github.com/d3/d3-axis)                                      |  3.0.0  | ISC          | [LICENSE](licenses/downloads/d3-axis@3.0.0-LICENSE.txt)               |
-| [d3-brush](https://github.com/d3/d3-brush)                                    |  3.0.0  | ISC          | [LICENSE](licenses/downloads/d3-brush@3.0.0-LICENSE.txt)              |
-| [d3-chord](https://github.com/d3/d3-chord)                                    |  3.0.1  | ISC          | [LICENSE](licenses/downloads/d3-chord@3.0.1-LICENSE.txt)              |
-| [d3-color](https://github.com/d3/d3-color)                                    |  3.1.0  | ISC          | [LICENSE](licenses/downloads/d3-color@3.1.0-LICENSE.txt)              |
-| [d3-contour](https://github.com/d3/d3-contour)                                |  4.0.2  | ISC          | [LICENSE](licenses/downloads/d3-contour@4.0.2-LICENSE.txt)            |
-| [d3-delaunay](https://github.com/d3/d3-delaunay)                              |  6.0.4  | ISC          | [LICENSE](licenses/downloads/d3-delaunay@6.0.4-LICENSE.txt)           |
-| [d3-dispatch](https://github.com/d3/d3-dispatch)                              |  3.0.1  | ISC          | [LICENSE](licenses/downloads/d3-dispatch@3.0.1-LICENSE.txt)           |
-| [d3-drag](https://github.com/d3/d3-drag)                                      |  3.0.0  | ISC          | [LICENSE](licenses/downloads/d3-drag@3.0.0-LICENSE.txt)               |
-| [d3-dsv](https://github.com/d3/d3-dsv)                                        |  3.0.1  | ISC          | [LICENSE](licenses/downloads/d3-dsv@3.0.1-LICENSE.txt)                |
-| [d3-ease](https://github.com/d3/d3-ease)                                      |  3.0.1  | BSD-3-Clause | [LICENSE](licenses/downloads/d3-ease@3.0.1-LICENSE.txt)               |
-| [d3-fetch](https://github.com/d3/d3-fetch)                                    |  3.0.1  | ISC          | [LICENSE](licenses/downloads/d3-fetch@3.0.1-LICENSE.txt)              |
-| [d3-force](https://github.com/d3/d3-force)                                    |  3.0.0  | ISC          | [LICENSE](licenses/downloads/d3-force@3.0.0-LICENSE.txt)              |
-| [d3-format](https://github.com/d3/d3-format)                                  |  3.1.2  | ISC          | [LICENSE](licenses/downloads/d3-format@3.1.2-LICENSE.txt)             |
-| [d3-geo](https://github.com/d3/d3-geo)                                        |  3.1.1  | ISC          | [LICENSE](licenses/downloads/d3-geo@3.1.1-LICENSE.txt)                |
-| [d3-hierarchy](https://github.com/d3/d3-hierarchy)                            |  3.1.2  | ISC          | [LICENSE](licenses/downloads/d3-hierarchy@3.1.2-LICENSE.txt)          |
-| [d3-interpolate](https://github.com/d3/d3-interpolate)                        |  3.0.1  | ISC          | [LICENSE](licenses/downloads/d3-interpolate@3.0.1-LICENSE.txt)        |
-| [d3-path](https://github.com/d3/d3-path)                                      |  3.1.0  | ISC          | [LICENSE](licenses/downloads/d3-path@3.1.0-LICENSE.txt)               |
-| [d3-polygon](https://github.com/d3/d3-polygon)                                |  3.0.1  | ISC          | [LICENSE](licenses/downloads/d3-polygon@3.0.1-LICENSE.txt)            |
-| [d3-quadtree](https://github.com/d3/d3-quadtree)                              |  3.0.1  | ISC          | [LICENSE](licenses/downloads/d3-quadtree@3.0.1-LICENSE.txt)           |
-| [d3-random](https://github.com/d3/d3-random)                                  |  3.0.1  | ISC          | [LICENSE](licenses/downloads/d3-random@3.0.1-LICENSE.txt)             |
-| [d3-sankey](https://github.com/d3/d3-sankey)                                  | 0.12.3  | BSD-3-Clause | [LICENSE](licenses/downloads/d3-sankey@0.12.3-LICENSE.txt)            |
-| [d3-scale-chromatic](https://github.com/d3/d3-scale-chromatic)                |  3.1.0  | ISC          | [LICENSE](licenses/downloads/d3-scale-chromatic@3.1.0-LICENSE.txt)    |
-| [d3-scale](https://github.com/d3/d3-scale)                                    |  4.0.2  | ISC          | [LICENSE](licenses/downloads/d3-scale@4.0.2-LICENSE.txt)              |
-| [d3-selection](https://github.com/d3/d3-selection)                            |  3.0.0  | ISC          | [LICENSE](licenses/downloads/d3-selection@3.0.0-LICENSE.txt)          |
-| [d3-shape](https://github.com/d3/d3-shape)                                    |  3.2.0  | ISC          | [LICENSE](licenses/downloads/d3-shape@3.2.0-LICENSE.txt)              |
-| [d3-time-format](https://github.com/d3/d3-time-format)                        |  4.1.0  | ISC          | [LICENSE](licenses/downloads/d3-time-format@4.1.0-LICENSE.txt)        |
-| [d3-time](https://github.com/d3/d3-time)                                      |  3.1.0  | ISC          | [LICENSE](licenses/downloads/d3-time@3.1.0-LICENSE.txt)               |
-| [d3-timer](https://github.com/d3/d3-timer)                                    |  3.0.1  | ISC          | [LICENSE](licenses/downloads/d3-timer@3.0.1-LICENSE.txt)              |
-| [d3-transition](https://github.com/d3/d3-transition)                          |  3.0.1  | ISC          | [LICENSE](licenses/downloads/d3-transition@3.0.1-LICENSE.txt)         |
-| [d3-zoom](https://github.com/d3/d3-zoom)                                      |  3.0.0  | ISC          | [LICENSE](licenses/downloads/d3-zoom@3.0.0-LICENSE.txt)               |
-| [d3](https://github.com/d3/d3)                                                |  7.9.0  | ISC          | [LICENSE](licenses/downloads/d3@7.9.0-LICENSE.txt)                    |
-| [delaunator](https://github.com/mapbox/delaunator)                            |  5.1.0  | ISC          | [LICENSE](licenses/downloads/delaunator@5.1.0-LICENSE.txt)            |
-| [iconv-lite](https://github.com/ashtuchkin/iconv-lite)                        |  0.6.3  | MIT          | [LICENSE](licenses/downloads/iconv-lite@0.6.3-LICENSE.txt)            |
-| [internmap](https://github.com/mbostock/internmap)                            |  2.0.3  | ISC          | [LICENSE](licenses/downloads/internmap@2.0.3-LICENSE.txt)             |
-| [interval-tree-1d](https://github.com/mikolalysenko/interval-tree-1d)         |  1.0.4  | MIT          | [LICENSE](licenses/downloads/interval-tree-1d@1.0.4-LICENSE.txt)      |
-| [isoformat](https://github.com/mbostock/isoformat)                            |  0.2.1  | ISC          | [LICENSE](licenses/downloads/isoformat@0.2.1-LICENSE.txt)             |
-| [robust-predicates](https://github.com/mourner/robust-predicates)             |  3.0.3  | Unlicense    | [LICENSE](licenses/downloads/robust-predicates@3.0.3-LICENSE.txt)     |
-| [rw](https://github.com/mbostock/rw)                                          |  1.3.3  | BSD-3-Clause | [LICENSE](licenses/downloads/rw@1.3.3-LICENSE.txt)                    |
-| [safer-buffer](https://github.com/ChALkeR/safer-buffer)                       |  2.1.2  | MIT          | [LICENSE](licenses/downloads/safer-buffer@2.1.2-LICENSE.txt)          |
+|Dependency|Version|License(s)|Document|
+|:-|:-:|:-|:-|
+|[@dagrejs/dagre](https://github.com/dagrejs/dagre)|3.0.0|MIT|[LICENSE](licenses/downloads/@dagrejs/dagre@3.0.0-LICENSE.txt)|
+|[@dagrejs/graphlib](https://github.com/dagrejs/graphlib)|4.0.1|MIT|[LICENSE](licenses/downloads/@dagrejs/graphlib@4.0.1-LICENSE.txt)|
+|[@dpuse/dpuse-shared](https://github.com/dpuse/dpuse-shared)|0.3.758|MIT|[LICENSE](licenses/downloads/@dpuse/dpuse-shared@0.3.758-LICENSE.txt)|
+|[@observablehq/plot](https://github.com/observablehq/plot)|0.6.17|ISC|[LICENSE](licenses/downloads/@observablehq/plot@0.6.17-LICENSE.txt)|
+|[@types/d3-selection](https://github.com/DefinitelyTyped/DefinitelyTyped)|3.0.11|MIT|[LICENSE](licenses/downloads/@types/d3-selection@3.0.11-LICENSE.txt)|
+|[@types/d3-transition](https://github.com/DefinitelyTyped/DefinitelyTyped)|3.0.9|MIT|[LICENSE](licenses/downloads/@types/d3-transition@3.0.9-LICENSE.txt)|
+|[billboard.js](https://github.com/naver/billboard.js)|4.0.3|MIT|[LICENSE](licenses/downloads/billboard.js@4.0.3-LICENSE.txt)|
+|[binary-search-bounds](https://github.com/mikolalysenko/binary-search-bounds)|2.0.5|MIT|[LICENSE](licenses/downloads/binary-search-bounds@2.0.5-LICENSE.txt)|
+|[commander](https://github.com/tj/commander.js)|7.2.0|MIT|[LICENSE](licenses/downloads/commander@7.2.0-LICENSE.txt)|
+|[d3-array](https://github.com/d3/d3-array)|3.2.4|ISC|[LICENSE](licenses/downloads/d3-array@3.2.4-LICENSE.txt)|
+|[d3-axis](https://github.com/d3/d3-axis)|3.0.0|ISC|[LICENSE](licenses/downloads/d3-axis@3.0.0-LICENSE.txt)|
+|[d3-brush](https://github.com/d3/d3-brush)|3.0.0|ISC|[LICENSE](licenses/downloads/d3-brush@3.0.0-LICENSE.txt)|
+|[d3-chord](https://github.com/d3/d3-chord)|3.0.1|ISC|[LICENSE](licenses/downloads/d3-chord@3.0.1-LICENSE.txt)|
+|[d3-color](https://github.com/d3/d3-color)|3.1.0|ISC|[LICENSE](licenses/downloads/d3-color@3.1.0-LICENSE.txt)|
+|[d3-contour](https://github.com/d3/d3-contour)|4.0.2|ISC|[LICENSE](licenses/downloads/d3-contour@4.0.2-LICENSE.txt)|
+|[d3-delaunay](https://github.com/d3/d3-delaunay)|6.0.4|ISC|[LICENSE](licenses/downloads/d3-delaunay@6.0.4-LICENSE.txt)|
+|[d3-dispatch](https://github.com/d3/d3-dispatch)|3.0.1|ISC|[LICENSE](licenses/downloads/d3-dispatch@3.0.1-LICENSE.txt)|
+|[d3-drag](https://github.com/d3/d3-drag)|3.0.0|ISC|[LICENSE](licenses/downloads/d3-drag@3.0.0-LICENSE.txt)|
+|[d3-dsv](https://github.com/d3/d3-dsv)|3.0.1|ISC|[LICENSE](licenses/downloads/d3-dsv@3.0.1-LICENSE.txt)|
+|[d3-ease](https://github.com/d3/d3-ease)|3.0.1|BSD-3-Clause|[LICENSE](licenses/downloads/d3-ease@3.0.1-LICENSE.txt)|
+|[d3-fetch](https://github.com/d3/d3-fetch)|3.0.1|ISC|[LICENSE](licenses/downloads/d3-fetch@3.0.1-LICENSE.txt)|
+|[d3-force](https://github.com/d3/d3-force)|3.0.0|ISC|[LICENSE](licenses/downloads/d3-force@3.0.0-LICENSE.txt)|
+|[d3-format](https://github.com/d3/d3-format)|3.1.2|ISC|[LICENSE](licenses/downloads/d3-format@3.1.2-LICENSE.txt)|
+|[d3-geo](https://github.com/d3/d3-geo)|3.1.1|ISC|[LICENSE](licenses/downloads/d3-geo@3.1.1-LICENSE.txt)|
+|[d3-hierarchy](https://github.com/d3/d3-hierarchy)|3.1.2|ISC|[LICENSE](licenses/downloads/d3-hierarchy@3.1.2-LICENSE.txt)|
+|[d3-interpolate](https://github.com/d3/d3-interpolate)|3.0.1|ISC|[LICENSE](licenses/downloads/d3-interpolate@3.0.1-LICENSE.txt)|
+|[d3-path](https://github.com/d3/d3-path)|3.1.0|ISC|[LICENSE](licenses/downloads/d3-path@3.1.0-LICENSE.txt)|
+|[d3-polygon](https://github.com/d3/d3-polygon)|3.0.1|ISC|[LICENSE](licenses/downloads/d3-polygon@3.0.1-LICENSE.txt)|
+|[d3-quadtree](https://github.com/d3/d3-quadtree)|3.0.1|ISC|[LICENSE](licenses/downloads/d3-quadtree@3.0.1-LICENSE.txt)|
+|[d3-random](https://github.com/d3/d3-random)|3.0.1|ISC|[LICENSE](licenses/downloads/d3-random@3.0.1-LICENSE.txt)|
+|[d3-sankey](https://github.com/d3/d3-sankey)|0.12.3|BSD-3-Clause|[LICENSE](licenses/downloads/d3-sankey@0.12.3-LICENSE.txt)|
+|[d3-scale-chromatic](https://github.com/d3/d3-scale-chromatic)|3.1.0|ISC|[LICENSE](licenses/downloads/d3-scale-chromatic@3.1.0-LICENSE.txt)|
+|[d3-scale](https://github.com/d3/d3-scale)|4.0.2|ISC|[LICENSE](licenses/downloads/d3-scale@4.0.2-LICENSE.txt)|
+|[d3-selection](https://github.com/d3/d3-selection)|3.0.0|ISC|[LICENSE](licenses/downloads/d3-selection@3.0.0-LICENSE.txt)|
+|[d3-shape](https://github.com/d3/d3-shape)|3.2.0|ISC|[LICENSE](licenses/downloads/d3-shape@3.2.0-LICENSE.txt)|
+|[d3-time-format](https://github.com/d3/d3-time-format)|4.1.0|ISC|[LICENSE](licenses/downloads/d3-time-format@4.1.0-LICENSE.txt)|
+|[d3-time](https://github.com/d3/d3-time)|3.1.0|ISC|[LICENSE](licenses/downloads/d3-time@3.1.0-LICENSE.txt)|
+|[d3-timer](https://github.com/d3/d3-timer)|3.0.1|ISC|[LICENSE](licenses/downloads/d3-timer@3.0.1-LICENSE.txt)|
+|[d3-transition](https://github.com/d3/d3-transition)|3.0.1|ISC|[LICENSE](licenses/downloads/d3-transition@3.0.1-LICENSE.txt)|
+|[d3-zoom](https://github.com/d3/d3-zoom)|3.0.0|ISC|[LICENSE](licenses/downloads/d3-zoom@3.0.0-LICENSE.txt)|
+|[d3](https://github.com/d3/d3)|7.9.0|ISC|[LICENSE](licenses/downloads/d3@7.9.0-LICENSE.txt)|
+|[delaunator](https://github.com/mapbox/delaunator)|5.1.0|ISC|[LICENSE](licenses/downloads/delaunator@5.1.0-LICENSE.txt)|
+|[iconv-lite](https://github.com/ashtuchkin/iconv-lite)|0.6.3|MIT|[LICENSE](licenses/downloads/iconv-lite@0.6.3-LICENSE.txt)|
+|[internmap](https://github.com/mbostock/internmap)|2.0.3|ISC|[LICENSE](licenses/downloads/internmap@2.0.3-LICENSE.txt)|
+|[interval-tree-1d](https://github.com/mikolalysenko/interval-tree-1d)|1.0.4|MIT|[LICENSE](licenses/downloads/interval-tree-1d@1.0.4-LICENSE.txt)|
+|[isoformat](https://github.com/mbostock/isoformat)|0.2.1|ISC|[LICENSE](licenses/downloads/isoformat@0.2.1-LICENSE.txt)|
+|[robust-predicates](https://github.com/mourner/robust-predicates)|3.0.3|Unlicense|[LICENSE](licenses/downloads/robust-predicates@3.0.3-LICENSE.txt)|
+|[rw](https://github.com/mbostock/rw)|1.3.3|BSD-3-Clause|[LICENSE](licenses/downloads/rw@1.3.3-LICENSE.txt)|
+|[safer-buffer](https://github.com/ChALkeR/safer-buffer)|2.1.2|MIT|[LICENSE](licenses/downloads/safer-buffer@2.1.2-LICENSE.txt)|
 
 <!-- DEPENDENCY_LICENSES_END -->
 
@@ -107,112 +107,110 @@ License data is collected automatically on each release using [license-checker](
 The dependency tree below lists every package in this project — direct and transitive — along with its installed version, release date, and update status. Packages flagged ❗ have a newer version available; ⚠️ indicates a package that hasn't been updated in the last 6 months or longer. Neither flag necessarily indicates a problem: we let new releases stabilise before upgrading, and some packages are simply mature and stable, requiring no active development.
 
 - **[@dagrejs/dagre](https://github.com/dagrejs/dagre)** 3.0.0 — **4 months** ago: 2026-03-22
-    - **[@dagrejs/graphlib](https://github.com/dagrejs/graphlib)** 4.0.1 — **4 months** ago: 2026-03-08
+  - **[@dagrejs/graphlib](https://github.com/dagrejs/graphlib)** 4.0.1 — **4 months** ago: 2026-03-08
 - **[@dpuse/dpuse-shared](https://github.com/dpuse/dpuse-shared)** 0.3.758 — this month: 2026-07-27
 - **[@observablehq/plot](https://github.com/observablehq/plot)** 0.6.17 — **17 months** ago: 2025-02-14 ⚠️
-    - **[d3](https://github.com/d3/d3)** 7.9.0 — **28 months** ago: 2024-03-12 ⚠️
-        - **[d3-array](https://github.com/d3/d3-array)** 3.2.4 — **38 months** ago: 2023-05-30 ⚠️
-        - **[d3-axis](https://github.com/d3/d3-axis)** 3.0.0 — **61 months** ago: 2021-06-09 ⚠️
-        - **[d3-brush](https://github.com/d3/d3-brush)** 3.0.0 — **61 months** ago: 2021-06-10 ⚠️
-        - **[d3-chord](https://github.com/d3/d3-chord)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
-            - **[d3-path](https://github.com/d3/d3-path)** 3.1.0 — **43 months** ago: 2022-12-19 ⚠️
-        - **[d3-color](https://github.com/d3/d3-color)** 3.1.0 — **52 months** ago: 2022-03-28 ⚠️
-        - **[d3-contour](https://github.com/d3/d3-contour)** 4.0.2 — **42 months** ago: 2023-01-11 ⚠️
-            - **[d3-array](https://github.com/d3/d3-array)** 3.2.4 — **38 months** ago: 2023-05-30 ⚠️
-        - **[d3-delaunay](https://github.com/d3/d3-delaunay)** 6.0.4 — **40 months** ago: 2023-04-01 ⚠️
-            - **[delaunator](https://github.com/mapbox/delaunator)** 5.1.0 — **4 months** ago: 2026-03-23
-                - **[robust-predicates](https://github.com/mourner/robust-predicates)** 3.0.3 — **4 months** ago: 2026-03-22
-        - **[d3-dispatch](https://github.com/d3/d3-dispatch)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
-        - **[d3-drag](https://github.com/d3/d3-drag)** 3.0.0 — **61 months** ago: 2021-06-09 ⚠️
-        - **[d3-dsv](https://github.com/d3/d3-dsv)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
-            - **[commander](https://github.com/tj/commander.js)** 7.2.0 — **64 months** ago: 2021-03-21 ⚠️ → **latest**: 15.0.0 — **2 months** ago: 2026-05-29 ❗
-            - **[iconv-lite](https://github.com/ashtuchkin/iconv-lite)** 0.6.3 — **62 months** ago: 2021-05-24 ⚠️ → **latest**: 0.7.3 — this month: 2026-07-03 ❗
-                - **[safer-buffer](https://github.com/ChALkeR/safer-buffer)** 2.1.2 — **99 months** ago: 2018-04-08 ⚠️
-            - **[rw](https://github.com/mbostock/rw)** 1.3.3 — **114 months** ago: 2017-01-20 ⚠️
-        - **[d3-ease](https://github.com/d3/d3-ease)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
-        - **[d3-fetch](https://github.com/d3/d3-fetch)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
-            - **[d3-dsv](https://github.com/d3/d3-dsv)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
-        - **[d3-force](https://github.com/d3/d3-force)** 3.0.0 — **61 months** ago: 2021-06-05 ⚠️
-        - **[d3-format](https://github.com/d3/d3-format)** 3.1.2 — **6 months** ago: 2026-01-14
-        - **[d3-geo](https://github.com/d3/d3-geo)** 3.1.1 — **28 months** ago: 2024-03-12 ⚠️
-            - **[d3-array](https://github.com/d3/d3-array)** 3.2.4 — **38 months** ago: 2023-05-30 ⚠️
-        - **[d3-hierarchy](https://github.com/d3/d3-hierarchy)** 3.1.2 — **51 months** ago: 2022-04-02 ⚠️
-        - **[d3-interpolate](https://github.com/d3/d3-interpolate)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
-        - **[d3-path](https://github.com/d3/d3-path)** 3.1.0 — **43 months** ago: 2022-12-19 ⚠️
-        - **[d3-polygon](https://github.com/d3/d3-polygon)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
-        - **[d3-quadtree](https://github.com/d3/d3-quadtree)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
-        - **[d3-random](https://github.com/d3/d3-random)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
-        - **[d3-scale-chromatic](https://github.com/d3/d3-scale-chromatic)** 3.1.0 — **28 months** ago: 2024-03-12 ⚠️
-            - **[d3-color](https://github.com/d3/d3-color)** 3.1.0 — **52 months** ago: 2022-03-28 ⚠️
-            - **[d3-interpolate](https://github.com/d3/d3-interpolate)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
-        - **[d3-scale](https://github.com/d3/d3-scale)** 4.0.2 — **58 months** ago: 2021-09-24 ⚠️
-        - **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — **61 months** ago: 2021-06-07 ⚠️
-        - **[d3-shape](https://github.com/d3/d3-shape)** 3.2.0 — **43 months** ago: 2022-12-20 ⚠️
-        - **[d3-time-format](https://github.com/d3/d3-time-format)** 4.1.0 — **55 months** ago: 2021-12-04 ⚠️
-        - **[d3-time](https://github.com/d3/d3-time)** 3.1.0 — **43 months** ago: 2022-12-02 ⚠️
-            - **[d3-array](https://github.com/d3/d3-array)** 3.2.4 — **38 months** ago: 2023-05-30 ⚠️
-        - **[d3-timer](https://github.com/d3/d3-timer)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
-        - **[d3-transition](https://github.com/d3/d3-transition)** 3.0.1 — **61 months** ago: 2021-06-09 ⚠️
-        - **[d3-zoom](https://github.com/d3/d3-zoom)** 3.0.0 — **61 months** ago: 2021-06-10 ⚠️
-    - **[interval-tree-1d](https://github.com/mikolalysenko/interval-tree-1d)** 1.0.4 — **61 months** ago: 2021-06-03 ⚠️
-        - **[binary-search-bounds](https://github.com/mikolalysenko/binary-search-bounds)** 2.0.5 — **66 months** ago: 2021-01-25 ⚠️
-    - **[isoformat](https://github.com/mbostock/isoformat)** 0.2.1 — **58 months** ago: 2021-09-24 ⚠️
-- **[billboard.js](https://github.com/naver/billboard.js)** 4.0.3 — this month: 2026-07-06
-    - **[@types/d3-selection](https://github.com/DefinitelyTyped/DefinitelyTyped)** 3.0.11 — **21 months** ago: 2024-10-07 ⚠️
-    - **[@types/d3-transition](https://github.com/DefinitelyTyped/DefinitelyTyped)** 3.0.9 — **21 months** ago: 2024-10-07 ⚠️
-        - **[@types/d3-selection](https://github.com/DefinitelyTyped/DefinitelyTyped)** 3.0.11 — **21 months** ago: 2024-10-07 ⚠️
+  - **[d3](https://github.com/d3/d3)** 7.9.0 — **28 months** ago: 2024-03-12 ⚠️
+    - **[d3-array](https://github.com/d3/d3-array)** 3.2.4 — **38 months** ago: 2023-05-30 ⚠️
     - **[d3-axis](https://github.com/d3/d3-axis)** 3.0.0 — **61 months** ago: 2021-06-09 ⚠️
     - **[d3-brush](https://github.com/d3/d3-brush)** 3.0.0 — **61 months** ago: 2021-06-10 ⚠️
-        - **[d3-dispatch](https://github.com/d3/d3-dispatch)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
-        - **[d3-drag](https://github.com/d3/d3-drag)** 3.0.0 — **61 months** ago: 2021-06-09 ⚠️
-        - **[d3-interpolate](https://github.com/d3/d3-interpolate)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
-        - **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — **61 months** ago: 2021-06-07 ⚠️
-        - **[d3-transition](https://github.com/d3/d3-transition)** 3.0.1 — **61 months** ago: 2021-06-09 ⚠️
+    - **[d3-chord](https://github.com/d3/d3-chord)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
+      - **[d3-path](https://github.com/d3/d3-path)** 3.1.0 — **43 months** ago: 2022-12-19 ⚠️
+    - **[d3-color](https://github.com/d3/d3-color)** 3.1.0 — **52 months** ago: 2022-03-28 ⚠️
+    - **[d3-contour](https://github.com/d3/d3-contour)** 4.0.2 — **42 months** ago: 2023-01-11 ⚠️
+      - **[d3-array](https://github.com/d3/d3-array)** 3.2.4 — **38 months** ago: 2023-05-30 ⚠️
+    - **[d3-delaunay](https://github.com/d3/d3-delaunay)** 6.0.4 — **40 months** ago: 2023-04-01 ⚠️
+      - **[delaunator](https://github.com/mapbox/delaunator)** 5.1.0 — **4 months** ago: 2026-03-23
+        - **[robust-predicates](https://github.com/mourner/robust-predicates)** 3.0.3 — **4 months** ago: 2026-03-22
+    - **[d3-dispatch](https://github.com/d3/d3-dispatch)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
     - **[d3-drag](https://github.com/d3/d3-drag)** 3.0.0 — **61 months** ago: 2021-06-09 ⚠️
+    - **[d3-dsv](https://github.com/d3/d3-dsv)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
+      - **[commander](https://github.com/tj/commander.js)** 7.2.0 — **64 months** ago: 2021-03-21 ⚠️ → **latest**: 15.0.0 — **2 months** ago: 2026-05-29 ❗
+      - **[iconv-lite](https://github.com/ashtuchkin/iconv-lite)** 0.6.3 — **62 months** ago: 2021-05-24 ⚠️ → **latest**: 0.7.3 — this month: 2026-07-03 ❗
+        - **[safer-buffer](https://github.com/ChALkeR/safer-buffer)** 2.1.2 — **99 months** ago: 2018-04-08 ⚠️
+      - **[rw](https://github.com/mbostock/rw)** 1.3.3 — **114 months** ago: 2017-01-20 ⚠️
+    - **[d3-ease](https://github.com/d3/d3-ease)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
+    - **[d3-fetch](https://github.com/d3/d3-fetch)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
+      - **[d3-dsv](https://github.com/d3/d3-dsv)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
+    - **[d3-force](https://github.com/d3/d3-force)** 3.0.0 — **61 months** ago: 2021-06-05 ⚠️
+    - **[d3-format](https://github.com/d3/d3-format)** 3.1.2 — **6 months** ago: 2026-01-14
+    - **[d3-geo](https://github.com/d3/d3-geo)** 3.1.1 — **28 months** ago: 2024-03-12 ⚠️
+      - **[d3-array](https://github.com/d3/d3-array)** 3.2.4 — **38 months** ago: 2023-05-30 ⚠️
     - **[d3-hierarchy](https://github.com/d3/d3-hierarchy)** 3.1.2 — **51 months** ago: 2022-04-02 ⚠️
     - **[d3-interpolate](https://github.com/d3/d3-interpolate)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
-        - **[d3-color](https://github.com/d3/d3-color)** 3.1.0 — **52 months** ago: 2022-03-28 ⚠️
+    - **[d3-path](https://github.com/d3/d3-path)** 3.1.0 — **43 months** ago: 2022-12-19 ⚠️
+    - **[d3-polygon](https://github.com/d3/d3-polygon)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
+    - **[d3-quadtree](https://github.com/d3/d3-quadtree)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
+    - **[d3-random](https://github.com/d3/d3-random)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
+    - **[d3-scale-chromatic](https://github.com/d3/d3-scale-chromatic)** 3.1.0 — **28 months** ago: 2024-03-12 ⚠️
+      - **[d3-color](https://github.com/d3/d3-color)** 3.1.0 — **52 months** ago: 2022-03-28 ⚠️
+      - **[d3-interpolate](https://github.com/d3/d3-interpolate)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
     - **[d3-scale](https://github.com/d3/d3-scale)** 4.0.2 — **58 months** ago: 2021-09-24 ⚠️
-        - **[d3-array](https://github.com/d3/d3-array)** 3.2.4 — **38 months** ago: 2023-05-30 ⚠️
-        - **[d3-format](https://github.com/d3/d3-format)** 3.1.2 — **6 months** ago: 2026-01-14
-        - **[d3-interpolate](https://github.com/d3/d3-interpolate)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
-        - **[d3-time-format](https://github.com/d3/d3-time-format)** 4.1.0 — **55 months** ago: 2021-12-04 ⚠️
-        - **[d3-time](https://github.com/d3/d3-time)** 3.1.0 — **43 months** ago: 2022-12-02 ⚠️
     - **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — **61 months** ago: 2021-06-07 ⚠️
     - **[d3-shape](https://github.com/d3/d3-shape)** 3.2.0 — **43 months** ago: 2022-12-20 ⚠️
     - **[d3-time-format](https://github.com/d3/d3-time-format)** 4.1.0 — **55 months** ago: 2021-12-04 ⚠️
-        - **[d3-time](https://github.com/d3/d3-time)** 3.1.0 — **43 months** ago: 2022-12-02 ⚠️
-    - **[d3-transition](https://github.com/d3/d3-transition)** 3.0.1 — **61 months** ago: 2021-06-09 ⚠️
-        - **[d3-color](https://github.com/d3/d3-color)** 3.1.0 — **52 months** ago: 2022-03-28 ⚠️
-        - **[d3-dispatch](https://github.com/d3/d3-dispatch)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
-        - **[d3-ease](https://github.com/d3/d3-ease)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
-        - **[d3-interpolate](https://github.com/d3/d3-interpolate)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
-        - **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — **61 months** ago: 2021-06-07 ⚠️
-        - **[d3-timer](https://github.com/d3/d3-timer)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
-    - **[d3-zoom](https://github.com/d3/d3-zoom)** 3.0.0 — **61 months** ago: 2021-06-10 ⚠️
-- **[d3-drag](https://github.com/d3/d3-drag)** 3.0.0 — **61 months** ago: 2021-06-09 ⚠️
-    - **[d3-dispatch](https://github.com/d3/d3-dispatch)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
-    - **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — **61 months** ago: 2021-06-07 ⚠️
-- **[d3-force](https://github.com/d3/d3-force)** 3.0.0 — **61 months** ago: 2021-06-05 ⚠️
-    - **[d3-dispatch](https://github.com/d3/d3-dispatch)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
-    - **[d3-quadtree](https://github.com/d3/d3-quadtree)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
+    - **[d3-time](https://github.com/d3/d3-time)** 3.1.0 — **43 months** ago: 2022-12-02 ⚠️
+      - **[d3-array](https://github.com/d3/d3-array)** 3.2.4 — **38 months** ago: 2023-05-30 ⚠️
     - **[d3-timer](https://github.com/d3/d3-timer)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
-- **[d3-hierarchy](https://github.com/d3/d3-hierarchy)** 3.1.2 — **51 months** ago: 2022-04-02 ⚠️
-- **[d3-sankey](https://github.com/d3/d3-sankey)** 0.12.3 — **82 months** ago: 2019-09-02 ⚠️
-    - **[d3-array](https://github.com/d3/d3-array)** 3.2.4 — **38 months** ago: 2023-05-30 ⚠️
-        - **[internmap](https://github.com/mbostock/internmap)** 2.0.3 — **58 months** ago: 2021-09-20 ⚠️
-    - **[d3-shape](https://github.com/d3/d3-shape)** 3.2.0 — **43 months** ago: 2022-12-20 ⚠️
-- **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — **61 months** ago: 2021-06-07 ⚠️
-- **[d3-shape](https://github.com/d3/d3-shape)** 3.2.0 — **43 months** ago: 2022-12-20 ⚠️
-    - **[d3-path](https://github.com/d3/d3-path)** 3.1.0 — **43 months** ago: 2022-12-19 ⚠️
-- **[d3-zoom](https://github.com/d3/d3-zoom)** 3.0.0 — **61 months** ago: 2021-06-10 ⚠️
+    - **[d3-transition](https://github.com/d3/d3-transition)** 3.0.1 — **61 months** ago: 2021-06-09 ⚠️
+    - **[d3-zoom](https://github.com/d3/d3-zoom)** 3.0.0 — **61 months** ago: 2021-06-10 ⚠️
+  - **[interval-tree-1d](https://github.com/mikolalysenko/interval-tree-1d)** 1.0.4 — **61 months** ago: 2021-06-03 ⚠️
+    - **[binary-search-bounds](https://github.com/mikolalysenko/binary-search-bounds)** 2.0.5 — **66 months** ago: 2021-01-25 ⚠️
+  - **[isoformat](https://github.com/mbostock/isoformat)** 0.2.1 — **58 months** ago: 2021-09-24 ⚠️
+- **[billboard.js](https://github.com/naver/billboard.js)** 4.0.3 — this month: 2026-07-06
+  - **[@types/d3-selection](https://github.com/DefinitelyTyped/DefinitelyTyped)** 3.0.11 — **21 months** ago: 2024-10-07 ⚠️
+  - **[@types/d3-transition](https://github.com/DefinitelyTyped/DefinitelyTyped)** 3.0.9 — **21 months** ago: 2024-10-07 ⚠️
+    - **[@types/d3-selection](https://github.com/DefinitelyTyped/DefinitelyTyped)** 3.0.11 — **21 months** ago: 2024-10-07 ⚠️
+  - **[d3-axis](https://github.com/d3/d3-axis)** 3.0.0 — **61 months** ago: 2021-06-09 ⚠️
+  - **[d3-brush](https://github.com/d3/d3-brush)** 3.0.0 — **61 months** ago: 2021-06-10 ⚠️
     - **[d3-dispatch](https://github.com/d3/d3-dispatch)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
     - **[d3-drag](https://github.com/d3/d3-drag)** 3.0.0 — **61 months** ago: 2021-06-09 ⚠️
     - **[d3-interpolate](https://github.com/d3/d3-interpolate)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
     - **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — **61 months** ago: 2021-06-07 ⚠️
     - **[d3-transition](https://github.com/d3/d3-transition)** 3.0.1 — **61 months** ago: 2021-06-09 ⚠️
-
-commander & iconv-lite: only used by d3-dsv's CLI scripts (bin/dsv2json etc.), not by the library code path you actually import. They never end up in your bundle, and npm audit shows 0 vulnerabilities — overriding just adds noise for no real benefit.
+  - **[d3-drag](https://github.com/d3/d3-drag)** 3.0.0 — **61 months** ago: 2021-06-09 ⚠️
+  - **[d3-hierarchy](https://github.com/d3/d3-hierarchy)** 3.1.2 — **51 months** ago: 2022-04-02 ⚠️
+  - **[d3-interpolate](https://github.com/d3/d3-interpolate)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
+    - **[d3-color](https://github.com/d3/d3-color)** 3.1.0 — **52 months** ago: 2022-03-28 ⚠️
+  - **[d3-scale](https://github.com/d3/d3-scale)** 4.0.2 — **58 months** ago: 2021-09-24 ⚠️
+    - **[d3-array](https://github.com/d3/d3-array)** 3.2.4 — **38 months** ago: 2023-05-30 ⚠️
+    - **[d3-format](https://github.com/d3/d3-format)** 3.1.2 — **6 months** ago: 2026-01-14
+    - **[d3-interpolate](https://github.com/d3/d3-interpolate)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
+    - **[d3-time-format](https://github.com/d3/d3-time-format)** 4.1.0 — **55 months** ago: 2021-12-04 ⚠️
+    - **[d3-time](https://github.com/d3/d3-time)** 3.1.0 — **43 months** ago: 2022-12-02 ⚠️
+  - **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — **61 months** ago: 2021-06-07 ⚠️
+  - **[d3-shape](https://github.com/d3/d3-shape)** 3.2.0 — **43 months** ago: 2022-12-20 ⚠️
+  - **[d3-time-format](https://github.com/d3/d3-time-format)** 4.1.0 — **55 months** ago: 2021-12-04 ⚠️
+    - **[d3-time](https://github.com/d3/d3-time)** 3.1.0 — **43 months** ago: 2022-12-02 ⚠️
+  - **[d3-transition](https://github.com/d3/d3-transition)** 3.0.1 — **61 months** ago: 2021-06-09 ⚠️
+    - **[d3-color](https://github.com/d3/d3-color)** 3.1.0 — **52 months** ago: 2022-03-28 ⚠️
+    - **[d3-dispatch](https://github.com/d3/d3-dispatch)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
+    - **[d3-ease](https://github.com/d3/d3-ease)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
+    - **[d3-interpolate](https://github.com/d3/d3-interpolate)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
+    - **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — **61 months** ago: 2021-06-07 ⚠️
+    - **[d3-timer](https://github.com/d3/d3-timer)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
+  - **[d3-zoom](https://github.com/d3/d3-zoom)** 3.0.0 — **61 months** ago: 2021-06-10 ⚠️
+- **[d3-drag](https://github.com/d3/d3-drag)** 3.0.0 — **61 months** ago: 2021-06-09 ⚠️
+  - **[d3-dispatch](https://github.com/d3/d3-dispatch)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
+  - **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — **61 months** ago: 2021-06-07 ⚠️
+- **[d3-force](https://github.com/d3/d3-force)** 3.0.0 — **61 months** ago: 2021-06-05 ⚠️
+  - **[d3-dispatch](https://github.com/d3/d3-dispatch)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
+  - **[d3-quadtree](https://github.com/d3/d3-quadtree)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
+  - **[d3-timer](https://github.com/d3/d3-timer)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
+- **[d3-hierarchy](https://github.com/d3/d3-hierarchy)** 3.1.2 — **51 months** ago: 2022-04-02 ⚠️
+- **[d3-sankey](https://github.com/d3/d3-sankey)** 0.12.3 — **82 months** ago: 2019-09-02 ⚠️
+  - **[d3-array](https://github.com/d3/d3-array)** 3.2.4 — **38 months** ago: 2023-05-30 ⚠️
+    - **[internmap](https://github.com/mbostock/internmap)** 2.0.3 — **58 months** ago: 2021-09-20 ⚠️
+  - **[d3-shape](https://github.com/d3/d3-shape)** 3.2.0 — **43 months** ago: 2022-12-20 ⚠️
+- **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — **61 months** ago: 2021-06-07 ⚠️
+- **[d3-shape](https://github.com/d3/d3-shape)** 3.2.0 — **43 months** ago: 2022-12-20 ⚠️
+  - **[d3-path](https://github.com/d3/d3-path)** 3.1.0 — **43 months** ago: 2022-12-19 ⚠️
+- **[d3-zoom](https://github.com/d3/d3-zoom)** 3.0.0 — **61 months** ago: 2021-06-10 ⚠️
+  - **[d3-dispatch](https://github.com/d3/d3-dispatch)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
+  - **[d3-drag](https://github.com/d3/d3-drag)** 3.0.0 — **61 months** ago: 2021-06-09 ⚠️
+  - **[d3-interpolate](https://github.com/d3/d3-interpolate)** 3.0.1 — **61 months** ago: 2021-06-05 ⚠️
+  - **[d3-selection](https://github.com/d3/d3-selection)** 3.0.0 — **61 months** ago: 2021-06-07 ⚠️
+  - **[d3-transition](https://github.com/d3/d3-transition)** 3.0.1 — **61 months** ago: 2021-06-09 ⚠️
 
 <!-- DEPENDENCY_TREE_END -->
 
@@ -359,7 +357,15 @@ DPUse (Data Positioning & Use) is an in-browser application that positions your 
 
 ## Introduction
 
-...
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120"><g transform="translate(0,120) scale(0.1,-0.1)" fill="#000000"><path d="M260 80 c0 -6 125 -10 355 -10 230 0 355 4 355 10 0 6 -125 10 -355 10 -230 0 -355 -4 -355 -10z"/></g><g transform="translate(0,120) scale(0.1,-0.1)" fill="#1f77b4"><path d="M720 605 l0 -515 105 0 105 0 0 515 0 515 -105 0 -105 0 0 -515z"/></g><g transform="translate(0,120) scale(0.1,-0.1)" fill="#f87070"><path d="M510 605 l0 -515 105 0 105 0 0 515 0 515 -105 0 -105 0 0 -515z"/></g><g transform="translate(0,120) scale(0.1,-0.1)" fill="#2acefd"><path d="M300 465 l0 -375 105 0 105 0 0 375 0 375 -105 0 -105 0 0 -375z"/></g></svg> Billboard.js
+
+Observable Plot
+
+d3-hierarchy
+
+d3-sankey
+
+dpuse-erd
 
 <!-- OPENING_END -->
 
