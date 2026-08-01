@@ -303,12 +303,12 @@
         "path": "node_modules/d3-dsv/node_modules/iconv-lite",
         "licenseFile": "downloads/iconv-lite@0.6.3-LICENSE.txt"
     },
-    "internmap@1.0.1": {
+    "internmap@2.0.3": {
         "licenses": "ISC",
         "repository": "https://github.com/mbostock/internmap",
         "publisher": "Mike Bostock",
         "path": "node_modules/internmap",
-        "licenseFile": "downloads/internmap@1.0.1-LICENSE.txt"
+        "licenseFile": "downloads/internmap@2.0.3-LICENSE.txt"
     },
     "interval-tree-1d@1.0.4": {
         "licenses": "MIT",

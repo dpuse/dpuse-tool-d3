@@ -1,7 +1,7 @@
 //#region src/index.ts
 var e = class {
 	async renderBillboardJS(e, t, n) {
-		let { renderBillboardJS: r } = await import("./billboardJs-DHDJ97w1.js"), i = r(e, t);
+		let { renderBillboardJS: r } = await import("./billboardJs-BTW-G9h0.js"), i = r(e, t);
 		return n?.(), {
 			chart: i.chart,
 			destroy: i.destroy,
@@ -10,7 +10,7 @@ var e = class {
 		};
 	}
 	async renderObservablePlot(e, t, n, r) {
-		let { renderObservablePlot: i } = await import("./observablePlot-CNlbR_T4.js"), a = i(e, t, n);
+		let { renderObservablePlot: i } = await import("./observablePlot-D7o8-dnK.js"), a = i(e, t, n);
 		return r?.(), {
 			resize: a.resize,
 			get svg() {

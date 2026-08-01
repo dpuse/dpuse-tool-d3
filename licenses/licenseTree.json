@@ -1,5 +1,5 @@
 {
-  "version": "0.0.8",
+  "version": "0.0.12",
   "name": "@dpuse/dpuse-tool-d3",
   "dependencies": {
     "@dagrejs/dagre": {
@@ -419,8 +419,8 @@
           "overridden": false,
           "dependencies": {
             "internmap": {
-              "version": "1.0.1",
-              "resolved": "https://registry.npmjs.org/internmap/-/internmap-1.0.1.tgz",
+              "version": "2.0.3",
+              "resolved": "https://registry.npmjs.org/internmap/-/internmap-2.0.3.tgz",
               "overridden": false
             }
           }
