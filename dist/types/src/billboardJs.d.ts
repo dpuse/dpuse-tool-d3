@@ -7,9 +7,9 @@ export interface BarChartData {
     categories: string[];
     series: BarChartSeries[];
 }
-export interface BarChartHandle {
+export interface BillboardJSHandle {
     chart: Chart;
     destroy: () => void;
     resize: () => void;
 }
-export declare function renderBarChart(data: BarChartData, renderTo: HTMLElement): BarChartHandle;
+export declare function renderBillboardJS(data: BarChartData, renderTo: HTMLElement): BillboardJSHandle;

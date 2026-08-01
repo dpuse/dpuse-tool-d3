@@ -1,12 +1,12 @@
 import { Chart } from 'billboard.js';
 import { PresentationView } from '@dpuse/dpuse-shared/component/presentation';
-import { BarChartData } from './barChart';
+import { BarChartData } from './billboardJs';
 import { ObservablePlotChartTypeId } from './observablePlot';
 import { ErdDiagramData, ErdDiagramOptions } from './erdDiagram';
 import { NetworkDiagramData, NetworkDiagramOptions } from './networkDiagram';
 import { SankeyDiagramData, SankeyDiagramOptions } from './sankeyDiagram';
 import { TreeDiagramNode, TreeDiagramOptions } from './treeDiagram';
-export type { BarChartData, BarChartSeries } from './barChart';
+export type { BarChartData, BarChartSeries } from './billboardJs';
 export type { ErdDiagramData, ErdDiagramEdge, ErdDiagramNode, ErdDiagramNodeTypeId, ErdDiagramOptions } from './erdDiagram';
 export type { NetworkDiagramData, NetworkDiagramLink, NetworkDiagramNode, NetworkDiagramOptions } from './networkDiagram';
 export type { ObservablePlotChartTypeId } from './observablePlot';
@@ -24,7 +24,7 @@ export interface D3BarChartView extends PresentationView {
     destroy: () => void;
 }
 export declare class D3Tool {
-    renderBarChart(data: BarChartData, renderTo: HTMLElement, callback?: () => void): D3BarChartView;
+    renderBillboardJS(data: BarChartData, renderTo: HTMLElement, callback?: () => void): Promise<D3BarChartView>;
     renderObservablePlot(typeId: ObservablePlotChartTypeId, data: BarChartData, renderTo: HTMLElement, callback?: () => void): Promise<D3View>;
     renderErdDiagram(data: ErdDiagramData, renderTo: HTMLElement, options?: ErdDiagramOptions, callback?: () => void): Promise<D3View>;
     renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLElement, options?: NetworkDiagramOptions, callback?: () => void): Promise<D3NetworkView>;

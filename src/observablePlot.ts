@@ -2,9 +2,9 @@
 import { barY, plot, ruleY } from '@observablehq/plot';
 
 // ── Local
-import type { BarChartData } from '@/barChart';
+import type { BarChartData } from '@/billboardJs';
 
-export type { BarChartData, BarChartSeries } from '@/barChart';
+export type { BarChartData, BarChartSeries } from '@/billboardJs';
 
 // ── Types ────────────────────────────────────────────────────────────────────────────────────────────────────────────
 

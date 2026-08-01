@@ -238,8 +238,8 @@ _Note: Sonda's Vite reports currently exclude CSS files, since Vite does not gen
 
 |Chunk/Module/File|Composition|
 |:------ |:-----------|
-| dist/dpuse-tool-d3.es.js | 270.2 kB · brotli 67.3 kB |
-| &nbsp;&nbsp;&nbsp;&nbsp;billboard.js | `███████░░░░░░░░░░░░░` 32.8% |
+| dist/billboardJs-DHDJ97w1.js | 268.7 kB · brotli 67.0 kB |
+| &nbsp;&nbsp;&nbsp;&nbsp;billboard.js | `███████░░░░░░░░░░░░░` 32.7% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dist-esm/ChartInternal/Axis/Axis.js | `█░░░░░░░░░░░░░░░░░░░` 2.9% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dist-esm/ChartInternal/data/data.js | `░░░░░░░░░░░░░░░░░░░░` 2.4% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;dist-esm/ChartInternal/internals/legend.js | `░░░░░░░░░░░░░░░░░░░░` 2.0% |
@@ -343,9 +343,7 @@ _Note: Sonda's Vite reports currently exclude CSS files, since Vite does not gen
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;src/curve/bundle.js | `░░░░░░░░░░░░░░░░░░░░` 0.1% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;src/curve/linearClosed.js | `░░░░░░░░░░░░░░░░░░░░` 0.1% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;src/noop.js | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
-| &nbsp;&nbsp;&nbsp;&nbsp;src | `░░░░░░░░░░░░░░░░░░░░` 0.2% |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;index.ts | `░░░░░░░░░░░░░░░░░░░░` 0.2% |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;barChart.ts | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
+| &nbsp;&nbsp;&nbsp;&nbsp;src → billboardJs.ts | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-selection → src/selectAll.js | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
 | dist/observablePlot-CNlbR_T4.js | 226.3 kB · brotli 56.7 kB |
 | &nbsp;&nbsp;&nbsp;&nbsp;@observablehq/plot | `████░░░░░░░░░░░░░░░░` 18.9% |
@@ -807,6 +805,9 @@ _Note: Sonda's Vite reports currently exclude CSS files, since Vite does not gen
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;src/point.js | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;src/constant.js | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
 | &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.1% |
+| dist/dpuse-tool-d3.es.js | 1.6 kB · brotli 439 B |
+| &nbsp;&nbsp;&nbsp;&nbsp;src → index.ts | `░░░░░░░░░░░░░░░░░░░░` 0.2% |
+| &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.0% |
 | dist/link-Dti9fi9g.js | 1.1 kB · brotli 435 B |
 | &nbsp;&nbsp;&nbsp;&nbsp;d3-shape → src/link.js | `░░░░░░░░░░░░░░░░░░░░` 0.1% |
 | &nbsp;&nbsp;&nbsp;&nbsp;(unassigned) → [unassigned] | `░░░░░░░░░░░░░░░░░░░░` 0.0% |

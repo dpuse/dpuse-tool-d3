@@ -19,12 +19,12 @@ const data: BarChartData = {
 
 // ── Tests ────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
-describe('D3Tool.renderBarChart', () => {
-    it('renders a chart with one bar group per series into the container', () => {
+describe('D3Tool.renderBillboardJS', () => {
+    it('renders a chart with one bar group per series into the container', async () => {
         const renderTo = document.createElement('div');
         document.body.append(renderTo);
 
-        const view = new D3Tool().renderBarChart(data, renderTo);
+        const view = await new D3Tool().renderBillboardJS(data, renderTo);
 
         expect(view.vendorId).toBe('billboard.js');
         expect(renderTo.querySelectorAll('svg')).toHaveLength(1);
@@ -32,20 +32,20 @@ describe('D3Tool.renderBarChart', () => {
         expect(renderTo.querySelectorAll('.bb-target')).toHaveLength(data.series.length);
     });
 
-    it('invokes the callback once the initial render completes', () => {
+    it('invokes the callback once the initial render completes', async () => {
         const renderTo = document.createElement('div');
         let called = false;
 
-        new D3Tool().renderBarChart(data, renderTo, () => {
+        await new D3Tool().renderBillboardJS(data, renderTo, () => {
             called = true;
         });
 
         expect(called).toBe(true);
     });
 
-    it('resize() and destroy() run without throwing', () => {
+    it('resize() and destroy() run without throwing', async () => {
         const renderTo = document.createElement('div');
-        const view = new D3Tool().renderBarChart(data, renderTo);
+        const view = await new D3Tool().renderBillboardJS(data, renderTo);
 
         expect(() => {
             view.resize();

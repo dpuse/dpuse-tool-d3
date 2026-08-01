@@ -15,7 +15,7 @@ export interface BarChartData {
     series: BarChartSeries[];
 }
 
-export interface BarChartHandle {
+export interface BillboardJSHandle {
     chart: Chart;
     destroy: () => void;
     resize: () => void;
@@ -23,7 +23,8 @@ export interface BarChartHandle {
 
 // ── Actions ──────────────────────────────────────────────────────────────────────────────────────────────────────────
 
-export function renderBarChart(data: BarChartData, renderTo: HTMLElement): BarChartHandle {
+// Billboard.js's SVG entry point (there's also a heavier `billboard.js/canvas` entry, unused here - see the D3Tool.renderBillboardJS comment).
+export function renderBillboardJS(data: BarChartData, renderTo: HTMLElement): BillboardJSHandle {
     const columns = data.series.map((series): [string, ...number[]] => [series.name, ...series.values]);
 
     const chart = bb.generate({

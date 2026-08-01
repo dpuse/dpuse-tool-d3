@@ -1,5 +1,5 @@
-import { BarChartData } from './barChart';
-export type { BarChartData, BarChartSeries } from './barChart';
+import { BarChartData } from './billboardJs';
+export type { BarChartData, BarChartSeries } from './billboardJs';
 export type ObservablePlotChartTypeId = 'bar';
 export interface ObservablePlotHandle {
     resize: () => void;

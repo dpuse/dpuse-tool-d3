@@ -5,9 +5,8 @@ import type { Chart } from 'billboard.js';
 import type { PresentationView } from '@dpuse/dpuse-shared/component/presentation';
 
 // ── Local Framework
-import type { BarChartData } from '@/barChart';
+import type { BarChartData } from '@/billboardJs';
 import type { ObservablePlotChartTypeId } from '@/observablePlot';
-import { renderBarChart } from '@/barChart';
 import type { ErdDiagramData, ErdDiagramOptions } from '@/erdDiagram';
 import type { NetworkDiagramData, NetworkDiagramOptions } from '@/networkDiagram';
 import type { SankeyDiagramData, SankeyDiagramOptions } from '@/sankeyDiagram';
@@ -15,7 +14,7 @@ import type { TreeDiagramNode, TreeDiagramOptions } from '@/treeDiagram';
 
 // ── Types ────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
-export type { BarChartData, BarChartSeries } from '@/barChart';
+export type { BarChartData, BarChartSeries } from '@/billboardJs';
 export type { ErdDiagramData, ErdDiagramEdge, ErdDiagramNode, ErdDiagramNodeTypeId, ErdDiagramOptions } from '@/erdDiagram';
 export type { NetworkDiagramData, NetworkDiagramLink, NetworkDiagramNode, NetworkDiagramOptions } from '@/networkDiagram';
 export type { ObservablePlotChartTypeId } from '@/observablePlot';
@@ -43,9 +42,10 @@ const D3_ID = 'd3';
 // ── Tools ────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 export class D3Tool {
-    // Actions - Render bar chart.
-    renderBarChart(data: BarChartData, renderTo: HTMLElement, callback?: () => void): D3BarChartView {
-        const handle = renderBarChart(data, renderTo);
+    // Actions - Render chart (Billboard.js, SVG only - see the `billboard.js/canvas` entry point for canvas rendering, unused here).
+    async renderBillboardJS(data: BarChartData, renderTo: HTMLElement, callback?: () => void): Promise<D3BarChartView> {
+        const { renderBillboardJS } = await import('@/billboardJs');
+        const handle = renderBillboardJS(data, renderTo);
         callback?.();
         return {
             chart: handle.chart,
