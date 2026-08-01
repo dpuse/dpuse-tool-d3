@@ -7,7 +7,6 @@ import type { PresentationView } from '@dpuse/dpuse-shared/component/presentatio
 // ── Local
 import type { BarChartData } from '@/barChart';
 import { renderBarChart } from '@/barChart';
-import { renderErdDiagram } from '@/erdDiagram';
 import { renderNetworkDiagram } from '@/networkDiagram';
 import { renderPlotBarChart } from '@/plotBarChart';
 import { renderSankeyDiagram } from '@/sankeyDiagram';
@@ -72,7 +71,8 @@ export class D3Tool {
     }
 
     // Actions - Render ERD diagram.
-    renderErdDiagram(data: ErdDiagramData, renderTo: HTMLElement, options?: ErdDiagramOptions, callback?: () => void): D3View {
+    async renderErdDiagram(data: ErdDiagramData, renderTo: HTMLElement, options?: ErdDiagramOptions, callback?: () => void): Promise<D3View> {
+        const { renderErdDiagram } = await import('@/erdDiagram');
         const handle = renderErdDiagram(data, renderTo, options);
         callback?.();
         return {

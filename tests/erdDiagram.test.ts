@@ -26,11 +26,11 @@ const data: ErdDiagramData = {
 // ── Tests ────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 describe('D3Tool.renderErdDiagram', () => {
-    it('renders an SVG with one rect and one labelled group per node', () => {
+    it('renders an SVG with one rect and one labelled group per node', async () => {
         const renderTo = document.createElement('div');
         document.body.append(renderTo);
 
-        const view = new D3Tool().renderErdDiagram(data, renderTo);
+        const view = await new D3Tool().renderErdDiagram(data, renderTo);
 
         expect(view.vendorId).toBe('d3');
         expect(view.svg.tagName.toLowerCase()).toBe('svg');
@@ -40,29 +40,29 @@ describe('D3Tool.renderErdDiagram', () => {
         expect(labels).toEqual(expect.arrayContaining(data.nodes.map((node) => node.label)));
     });
 
-    it('draws one path per edge, including self-edges', () => {
+    it('draws one path per edge, including self-edges', async () => {
         const renderTo = document.createElement('div');
-        const view = new D3Tool().renderErdDiagram(data, renderTo);
+        const view = await new D3Tool().renderErdDiagram(data, renderTo);
 
         // The arrowhead marker (in <defs>) is also a <path>, so edge paths are counted separately from it.
         const edgePaths = Array.from(view.svg.querySelectorAll('path')).filter((path) => path.closest('defs') == null);
         expect(edgePaths).toHaveLength(data.edges.length);
     });
 
-    it('invokes the callback once the initial render completes', () => {
+    it('invokes the callback once the initial render completes', async () => {
         const renderTo = document.createElement('div');
         let called = false;
 
-        new D3Tool().renderErdDiagram(data, renderTo, undefined, () => {
+        await new D3Tool().renderErdDiagram(data, renderTo, undefined, () => {
             called = true;
         });
 
         expect(called).toBe(true);
     });
 
-    it('resize() redraws into the same container without throwing', () => {
+    it('resize() redraws into the same container without throwing', async () => {
         const renderTo = document.createElement('div');
-        const view = new D3Tool().renderErdDiagram(data, renderTo);
+        const view = await new D3Tool().renderErdDiagram(data, renderTo);
 
         expect(() => {
             view.resize();
