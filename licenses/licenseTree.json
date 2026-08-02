@@ -1,6 +1,6 @@
 {
-  "version": "0.0.15",
-  "name": "@dpuse/dpuse-tool-d3",
+  "version": "0.0.17",
+  "name": "@dpuse/dpuse-tool-d3-visualiser",
   "dependencies": {
     "@dagrejs/dagre": {
       "version": "3.0.0",
@@ -15,8 +15,8 @@
       }
     },
     "@dpuse/dpuse-shared": {
-      "version": "0.3.758",
-      "resolved": "https://registry.npmjs.org/@dpuse/dpuse-shared/-/dpuse-shared-0.3.758.tgz",
+      "version": "0.3.760",
+      "resolved": "https://registry.npmjs.org/@dpuse/dpuse-shared/-/dpuse-shared-0.3.760.tgz",
       "overridden": false
     },
     "@observablehq/plot": {

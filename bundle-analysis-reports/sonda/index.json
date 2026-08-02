@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "0.14.0",
-    "generatedAt": "2026-08-01T14:39:12.684Z",
+    "generatedAt": "2026-08-02T12:19:28.724Z",
     "integration": "vite",
     "sources": false,
     "gzip": false,
@@ -21,10 +21,10 @@
       "name": "[unassigned]",
       "type": "other",
       "format": "other",
-      "uncompressed": 251,
+      "uncompressed": 262,
       "gzip": 0,
-      "brotli": 99,
-      "parent": "dist/dpuse-tool-d3.es.js"
+      "brotli": 108,
+      "parent": "dist/dpuse-tool-d3-visualiser.es.js"
     },
     {
       "kind": "chunk",
@@ -212,11 +212,11 @@
     },
     {
       "kind": "asset",
-      "name": "dist/dpuse-tool-d3.es.js",
+      "name": "dist/dpuse-tool-d3-visualiser.es.js",
       "type": "script",
-      "uncompressed": 1641,
+      "uncompressed": 1652,
       "gzip": 0,
-      "brotli": 441
+      "brotli": 455
     },
     {
       "kind": "asset",
@@ -11128,8 +11128,8 @@
       "format": "esm",
       "uncompressed": 1390,
       "gzip": 0,
-      "brotli": 342,
-      "parent": "dist/dpuse-tool-d3.es.js"
+      "brotli": 347,
+      "parent": "dist/dpuse-tool-d3-visualiser.es.js"
     },
     {
       "kind": "filesystem",
@@ -11256,7 +11256,7 @@
     },
     {
       "kind": "entrypoint",
-      "source": "dist/dpuse-tool-d3.es.js",
+      "source": "dist/dpuse-tool-d3-visualiser.es.js",
       "target": "src/index.ts",
       "original": null
     },

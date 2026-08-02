@@ -15,13 +15,13 @@
         "path": "node_modules/@dagrejs/graphlib",
         "licenseFile": "downloads/@dagrejs/graphlib@4.0.1-LICENSE.txt"
     },
-    "@dpuse/dpuse-shared@0.3.758": {
+    "@dpuse/dpuse-shared@0.3.760": {
         "licenses": "MIT",
         "repository": "https://github.com/dpuse/dpuse-shared",
         "publisher": "Jonathan Terrell",
         "email": "terrell.jm@gmail.com",
         "path": "node_modules/@dpuse/dpuse-shared",
-        "licenseFile": "downloads/@dpuse/dpuse-shared@0.3.758-LICENSE.txt"
+        "licenseFile": "downloads/@dpuse/dpuse-shared@0.3.760-LICENSE.txt"
     },
     "@observablehq/plot@0.6.17": {
         "licenses": "ISC",

@@ -65,4 +65,4 @@ var e = class {
 //#endregion
 export { e as D3Tool };
 
-//# sourceMappingURL=dpuse-tool-d3.es.js.map
+//# sourceMappingURL=dpuse-tool-d3-visualiser.es.js.map

@@ -1,5 +1,5 @@
 {
-    "id": "dpuse-tool-d3",
+    "id": "dpuse-tool-d3-visualiser",
     "label": {
         "en": "D3 Visualiser"
     },
@@ -34,5 +34,5 @@
     "iconDark": null,
     "statusId": "alpha",
     "typeId": "tool",
-    "version": "0.0.17"
+    "version": "0.0.18"
 }
