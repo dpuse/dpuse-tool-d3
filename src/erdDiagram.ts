@@ -28,6 +28,7 @@ export interface ErdDiagramOptions {
     nodeColors?: Record<ErdDiagramNodeTypeId, { fill: string; stroke: string }>;
     nodeHeight?: number;
     nodeWidth?: number;
+    orderConstraints?: { left: string; right: string }[];
     padding?: number;
     selfEdgeSize?: number;
 }
@@ -57,6 +58,7 @@ export function renderErdDiagram(data: ErdDiagramData, renderTo: HTMLElement, op
     const padding = options.padding ?? DEFAULT_PADDING;
     const selfEdgeSize = options.selfEdgeSize ?? DEFAULT_SELF_EDGE_SIZE;
     const nodeColors = options.nodeColors ?? DEFAULT_NODE_COLORS;
+    const orderConstraints = options.orderConstraints ?? [];
 
     function draw(): SVGSVGElement {
         select(renderTo).selectAll('svg').remove();
@@ -71,7 +73,7 @@ export function renderErdDiagram(data: ErdDiagramData, renderTo: HTMLElement, op
             else graph.setEdge(edge.source, edge.target);
         }
 
-        dagre.layout(graph);
+        dagre.layout(graph, { constraints: orderConstraints });
 
         const { width: graphWidth = 0, height: graphHeight = 0 } = graph.graph();
         const viewBoxWidth = graphWidth + padding * 2;

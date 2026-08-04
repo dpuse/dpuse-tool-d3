@@ -19,6 +19,10 @@ export interface ErdDiagramOptions {
     }>;
     nodeHeight?: number;
     nodeWidth?: number;
+    orderConstraints?: {
+        left: string;
+        right: string;
+    }[];
     padding?: number;
     selfEdgeSize?: number;
 }
