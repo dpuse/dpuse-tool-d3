@@ -56,7 +56,7 @@ const DEFAULT_CORNER_RADIUS = 6;
 const DEFAULT_NODE_COLORS: Record<ErdDiagramNodeTypeId, ErdDiagramNodeStyle> = {
     external: { fill: '#f0f0f0', stroke: '#b0b0b0' },
     local: { fill: '#dae8fc', stroke: '#9fc0e8' },
-    optional: { fill: '#fafafa', stroke: '#c9c9c9', strokeDasharray: '4 3' }
+    optional: { fill: '#eef4fc', stroke: '#c3d9f2', strokeDasharray: '4 3' }
 };
 // Neutral, deliberately not matching any single node type's stroke colour — connectors are structural, not typed.
 const DEFAULT_EDGE_COLOR = '#c0c0c0';

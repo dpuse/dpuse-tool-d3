@@ -2145,8 +2145,8 @@ var zn = 160, Bn = 50, Vn = 8, Hn = 24, Un = 6, Wn = {
 		stroke: "#9fc0e8"
 	},
 	optional: {
-		fill: "#fafafa",
-		stroke: "#c9c9c9",
+		fill: "#eef4fc",
+		stroke: "#c3d9f2",
 		strokeDasharray: "4 3"
 	}
 }, Gn = "#c0c0c0", Kn = "dpuse-tool-d3-erd-arrow";
@@ -2209,4 +2209,4 @@ function Yn(e, t) {
 //#endregion
 export { qn as renderErdDiagram };
 
-//# sourceMappingURL=erdDiagram-CxejXoNh.js.map
+//# sourceMappingURL=erdDiagram-Ds-nrw7Q.js.map

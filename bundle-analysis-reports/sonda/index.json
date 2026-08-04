@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "0.14.0",
-    "generatedAt": "2026-08-04T12:21:33.370Z",
+    "generatedAt": "2026-08-04T14:10:40.006Z",
     "integration": "vite",
     "sources": false,
     "gzip": false,
@@ -23,7 +23,7 @@
       "format": "other",
       "uncompressed": 262,
       "gzip": 0,
-      "brotli": 105,
+      "brotli": 106,
       "parent": "dist/dpuse-tool-d3-visualiser.es.js"
     },
     {
@@ -64,7 +64,7 @@
       "uncompressed": 4065,
       "gzip": 0,
       "brotli": 231,
-      "parent": "dist/erdDiagram-CxejXoNh.js"
+      "parent": "dist/erdDiagram-Ds-nrw7Q.js"
     },
     {
       "kind": "chunk",
@@ -188,7 +188,7 @@
       "type": "script",
       "uncompressed": 1652,
       "gzip": 0,
-      "brotli": 447
+      "brotli": 449
     },
     {
       "kind": "asset",
@@ -200,11 +200,11 @@
     },
     {
       "kind": "asset",
-      "name": "dist/erdDiagram-CxejXoNh.js",
+      "name": "dist/erdDiagram-Ds-nrw7Q.js",
       "type": "script",
       "uncompressed": 63799,
       "gzip": 0,
-      "brotli": 16614
+      "brotli": 16619
     },
     {
       "kind": "asset",
@@ -301,7 +301,7 @@
       "uncompressed": 56261,
       "gzip": 0,
       "brotli": 15089,
-      "parent": "dist/erdDiagram-CxejXoNh.js"
+      "parent": "dist/erdDiagram-Ds-nrw7Q.js"
     },
     {
       "kind": "filesystem",
@@ -11065,8 +11065,8 @@
       "format": "esm",
       "uncompressed": 3473,
       "gzip": 0,
-      "brotli": 1295,
-      "parent": "dist/erdDiagram-CxejXoNh.js"
+      "brotli": 1300,
+      "parent": "dist/erdDiagram-Ds-nrw7Q.js"
     },
     {
       "kind": "filesystem",
@@ -11082,7 +11082,7 @@
       "format": "esm",
       "uncompressed": 1390,
       "gzip": 0,
-      "brotli": 342,
+      "brotli": 343,
       "parent": "dist/dpuse-tool-d3-visualiser.es.js"
     },
     {
@@ -11222,7 +11222,7 @@
     },
     {
       "kind": "entrypoint",
-      "source": "dist/erdDiagram-CxejXoNh.js",
+      "source": "dist/erdDiagram-Ds-nrw7Q.js",
       "target": "src/erdDiagram.ts",
       "original": null
     },
