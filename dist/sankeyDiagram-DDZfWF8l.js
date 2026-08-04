@@ -1,6 +1,6 @@
 import { t as e } from "./select-BIuoFcZG.js";
 import { n as t, r as n, t as r } from "./sum-BAZU479z.js";
-import { t as i } from "./link-Dti9fi9g.js";
+import { t as i } from "./link-20hHJfDf.js";
 //#region node_modules/d3-sankey/src/align.js
 function a(e, t) {
 	return e.sourceLinks.length ? e.depth : t - 1;
@@ -357,4 +357,4 @@ function k(t, n, r = {}) {
 //#endregion
 export { k as renderSankeyDiagram };
 
-//# sourceMappingURL=sankeyDiagram-Dgf87Zt4.js.map
+//# sourceMappingURL=sankeyDiagram-DDZfWF8l.js.map

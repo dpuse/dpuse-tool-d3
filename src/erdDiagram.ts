@@ -1,7 +1,7 @@
 // ── External Dependencies & Registrations
 import * as dagre from '@dagrejs/dagre';
 import { select } from 'd3-selection';
-import { curveBumpY, line } from 'd3-shape';
+import { curveLinear, line } from 'd3-shape';
 import type { EdgeLabel, GraphLabel, NodeLabel } from '@dagrejs/dagre';
 
 // ── Types ────────────────────────────────────────────────────────────────────────────────────────────────────────────
@@ -104,7 +104,7 @@ export function renderErdDiagram(data: ErdDiagramData, renderTo: HTMLElement, op
         const edgeLine = line<{ x: number; y: number }>()
             .x((point) => point.x)
             .y((point) => point.y)
-            .curve(curveBumpY);
+            .curve(curveLinear);
 
         canvas
             .append('g')

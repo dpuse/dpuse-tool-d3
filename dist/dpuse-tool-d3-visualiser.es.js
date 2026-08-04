@@ -20,7 +20,7 @@ var e = class {
 		};
 	}
 	async renderErdDiagram(e, t, n, r) {
-		let { renderErdDiagram: i } = await import("./erdDiagram-CWFK8bsD.js"), a = i(e, t, n);
+		let { renderErdDiagram: i } = await import("./erdDiagram-C-wRJWHp.js"), a = i(e, t, n);
 		return r?.(), {
 			resize: a.resize,
 			get svg() {
@@ -42,7 +42,7 @@ var e = class {
 		};
 	}
 	async renderSankeyDiagram(e, t, n, r) {
-		let { renderSankeyDiagram: i } = await import("./sankeyDiagram-Dgf87Zt4.js"), a = i(e, t, n);
+		let { renderSankeyDiagram: i } = await import("./sankeyDiagram-DDZfWF8l.js"), a = i(e, t, n);
 		return r?.(), {
 			resize: a.resize,
 			get svg() {
@@ -52,7 +52,7 @@ var e = class {
 		};
 	}
 	async renderTreeDiagram(e, t, n, r) {
-		let { renderTreeDiagram: i } = await import("./treeDiagram-BJ_QF4os.js"), a = i(e, t, n);
+		let { renderTreeDiagram: i } = await import("./treeDiagram-C8jl6ALp.js"), a = i(e, t, n);
 		return r?.(), {
 			resize: a.resize,
 			get svg() {

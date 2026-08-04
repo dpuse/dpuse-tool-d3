@@ -1,5 +1,5 @@
 import { t as e } from "./select-BIuoFcZG.js";
-import { t } from "./link-Dti9fi9g.js";
+import { t } from "./link-20hHJfDf.js";
 //#region node_modules/d3-hierarchy/src/hierarchy/count.js
 function n(e) {
 	var t = 0, n = e.children, r = n && n.length;
@@ -274,4 +274,4 @@ function z(n, r, i = {}) {
 //#endregion
 export { z as renderTreeDiagram };
 
-//# sourceMappingURL=treeDiagram-BJ_QF4os.js.map
+//# sourceMappingURL=treeDiagram-C8jl6ALp.js.map
