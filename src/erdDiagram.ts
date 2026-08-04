@@ -115,7 +115,7 @@ export function renderErdDiagram(data: ErdDiagramData, renderTo: HTMLElement, op
             .data(graph.edges())
             .join('path')
             .attr('marker-end', `url(#${ARROW_MARKER_ID})`)
-            .attr('d', (edge) => (edge.v === edge.w ? buildSelfLoopPath(graph.node(edge.v), selfEdgeSize) : (edgeLine(graph.edge(edge).points ?? []) ?? '')));
+            .attr('d', (edge) => (edge.v === edge.w ? buildSelfLoopPath(graph.node(edge.v), selfEdgeSize) : (edgeLine(buildDirectEdgePoints(graph.node(edge.v), graph.node(edge.w))) ?? '')));
 
         const nodeGroups = canvas
             .append('g')
@@ -164,6 +164,16 @@ export function renderErdDiagram(data: ErdDiagramData, renderTo: HTMLElement, op
 }
 
 // ── Helpers ──────────────────────────────────────────────────────────────────────────────────────────────────────────
+
+// dagre always routes edges through an extra, unnamed "label space" node it inserts between ranks (even when the edge has
+// no label and spans a single rank), and that node's position isn't reachable via orderConstraints. Ordering it can drift
+// edges sideways and cross others, so edges are drawn straight from the source's bottom-centre to the target's top-centre instead.
+function buildDirectEdgePoints(source: NodeLabel, target: NodeLabel): { x: number; y: number }[] {
+    return [
+        { x: source.x ?? 0, y: (source.y ?? 0) + source.height / 2 },
+        { x: target.x ?? 0, y: (target.y ?? 0) - target.height / 2 }
+    ];
+}
 
 function buildSelfLoopPath(node: NodeLabel, selfEdgeSize: number): string {
     const rightX = (node.x ?? 0) + node.width / 2;

@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "0.14.0",
-    "generatedAt": "2026-08-04T10:23:27.575Z",
+    "generatedAt": "2026-08-04T10:31:40.044Z",
     "integration": "vite",
     "sources": false,
     "gzip": false,
@@ -23,7 +23,7 @@
       "format": "other",
       "uncompressed": 262,
       "gzip": 0,
-      "brotli": 104,
+      "brotli": 106,
       "parent": "dist/dpuse-tool-d3-visualiser.es.js"
     },
     {
@@ -61,10 +61,10 @@
       "name": "[unassigned]",
       "type": "other",
       "format": "other",
-      "uncompressed": 4255,
+      "uncompressed": 4266,
       "gzip": 0,
       "brotli": 298,
-      "parent": "dist/erdDiagram-C-wRJWHp.js"
+      "parent": "dist/erdDiagram-BWtgbL8q.js"
     },
     {
       "kind": "chunk",
@@ -208,7 +208,7 @@
       "type": "script",
       "uncompressed": 1652,
       "gzip": 0,
-      "brotli": 440
+      "brotli": 454
     },
     {
       "kind": "asset",
@@ -220,11 +220,11 @@
     },
     {
       "kind": "asset",
-      "name": "dist/erdDiagram-C-wRJWHp.js",
+      "name": "dist/erdDiagram-BWtgbL8q.js",
       "type": "script",
-      "uncompressed": 64260,
+      "uncompressed": 64403,
       "gzip": 0,
-      "brotli": 16773
+      "brotli": 16804
     },
     {
       "kind": "asset",
@@ -334,10 +334,10 @@
       "name": "node_modules/@dagrejs/dagre/dist/dagre.esm.js",
       "type": "script",
       "format": "esm",
-      "uncompressed": 56278,
+      "uncompressed": 56277,
       "gzip": 0,
-      "brotli": 15012,
-      "parent": "dist/erdDiagram-C-wRJWHp.js"
+      "brotli": 15011,
+      "parent": "dist/erdDiagram-BWtgbL8q.js"
     },
     {
       "kind": "filesystem",
@@ -9667,7 +9667,7 @@
       "uncompressed": 970,
       "gzip": 0,
       "brotli": 363,
-      "parent": "dist/erdDiagram-C-wRJWHp.js"
+      "parent": "dist/erdDiagram-BWtgbL8q.js"
     },
     {
       "kind": "filesystem",
@@ -11102,17 +11102,17 @@
       "name": "src/erdDiagram.ts",
       "type": "script",
       "format": "esm",
-      "uncompressed": 4287
+      "uncompressed": 4514
     },
     {
       "kind": "chunk",
       "name": "src/erdDiagram.ts",
       "type": "script",
       "format": "esm",
-      "uncompressed": 2757,
+      "uncompressed": 2890,
       "gzip": 0,
-      "brotli": 1099,
-      "parent": "dist/erdDiagram-C-wRJWHp.js"
+      "brotli": 1132,
+      "parent": "dist/erdDiagram-BWtgbL8q.js"
     },
     {
       "kind": "filesystem",
@@ -11128,7 +11128,7 @@
       "format": "esm",
       "uncompressed": 1390,
       "gzip": 0,
-      "brotli": 336,
+      "brotli": 348,
       "parent": "dist/dpuse-tool-d3-visualiser.es.js"
     },
     {
@@ -11268,7 +11268,7 @@
     },
     {
       "kind": "entrypoint",
-      "source": "dist/erdDiagram-C-wRJWHp.js",
+      "source": "dist/erdDiagram-BWtgbL8q.js",
       "target": "src/erdDiagram.ts",
       "original": null
     },
