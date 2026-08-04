@@ -1,12 +1,11 @@
 // ── External Dependencies & Registrations
 import * as dagre from '@dagrejs/dagre';
 import { select } from 'd3-selection';
-import { curveLinear, line } from 'd3-shape';
 import type { EdgeLabel, GraphLabel, NodeLabel } from '@dagrejs/dagre';
 
 // ── Types ────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
-export type ErdDiagramNodeTypeId = 'child' | 'primary';
+export type ErdDiagramNodeTypeId = 'child' | 'optional' | 'primary';
 
 export interface ErdDiagramNode {
     id: string;
@@ -46,6 +45,7 @@ const DEFAULT_PADDING = 8;
 const DEFAULT_SELF_EDGE_SIZE = 24;
 const DEFAULT_NODE_COLORS: Record<ErdDiagramNodeTypeId, { fill: string; stroke: string }> = {
     child: { fill: '#dae8fc', stroke: '#6c8ebf' },
+    optional: { fill: '#f5f5f5', stroke: '#999999' },
     primary: { fill: '#d5e8d4', stroke: '#82b366' }
 };
 const ARROW_MARKER_ID = 'dpuse-tool-d3-erd-arrow';
@@ -68,9 +68,11 @@ export function renderErdDiagram(data: ErdDiagramData, renderTo: HTMLElement, op
         graph.setDefaultEdgeLabel(() => ({}));
 
         for (const node of data.nodes) graph.setNode(node.id, { width: nodeWidth, height: nodeHeight, label: node.label, typeId: node.typeId });
+        // Self-loops are drawn directly off the node's own position (see buildSelfLoopPath) rather than routed by dagre, so
+        // they're deliberately left out of the layout graph — registering them made dagre reserve extra width around the
+        // node for a loop it never actually routes, widening the gap to its neighbour for no reason.
         for (const edge of data.edges) {
-            if (edge.source === edge.target) graph.setEdge(edge.source, edge.target, { width: selfEdgeSize, height: selfEdgeSize });
-            else graph.setEdge(edge.source, edge.target);
+            if (edge.source !== edge.target) graph.setEdge(edge.source, edge.target);
         }
 
         dagre.layout(graph, { constraints: orderConstraints });
@@ -101,21 +103,20 @@ export function renderErdDiagram(data: ErdDiagramData, renderTo: HTMLElement, op
             .attr('d', 'M 0 0 L 10 5 L 0 10 z')
             .attr('fill', '#6c8ebf');
 
-        const edgeLine = line<{ x: number; y: number }>()
-            .x((point) => point.x)
-            .y((point) => point.y)
-            .curve(curveLinear);
-
         canvas
             .append('g')
             .attr('fill', 'none')
             .attr('stroke', '#6c8ebf')
             .attr('stroke-width', 1.5)
             .selectAll('path')
-            .data(graph.edges())
+            .data(data.edges)
             .join('path')
             .attr('marker-end', `url(#${ARROW_MARKER_ID})`)
-            .attr('d', (edge) => (edge.v === edge.w ? buildSelfLoopPath(graph.node(edge.v), selfEdgeSize) : (edgeLine(buildDirectEdgePoints(graph.node(edge.v), graph.node(edge.w))) ?? '')));
+            .attr('d', (edge) =>
+                edge.source === edge.target
+                    ? buildSelfLoopPath(graph.node(edge.source), selfEdgeSize)
+                    : buildElbowEdgePath(graph.node(edge.source), graph.node(edge.target))
+            );
 
         const nodeGroups = canvas
             .append('g')
@@ -167,12 +168,19 @@ export function renderErdDiagram(data: ErdDiagramData, renderTo: HTMLElement, op
 
 // dagre always routes edges through an extra, unnamed "label space" node it inserts between ranks (even when the edge has
 // no label and spans a single rank), and that node's position isn't reachable via orderConstraints. Ordering it can drift
-// edges sideways and cross others, so edges are drawn straight from the source's bottom-centre to the target's top-centre instead.
-function buildDirectEdgePoints(source: NodeLabel, target: NodeLabel): { x: number; y: number }[] {
-    return [
-        { x: source.x ?? 0, y: (source.y ?? 0) + source.height / 2 },
-        { x: target.x ?? 0, y: (target.y ?? 0) - target.height / 2 }
-    ];
+// edges sideways and cross others, so edges are built directly from the source/target node positions instead. The path is
+// an orthogonal elbow (down, across, down) rather than a diagonal so the arrowhead always enters the target perpendicular
+// to its border, per standard ERD/org-chart connector convention.
+function buildElbowEdgePath(source: NodeLabel, target: NodeLabel): string {
+    const sourceX = source.x ?? 0;
+    const sourceY = (source.y ?? 0) + source.height / 2;
+    const targetX = target.x ?? 0;
+    const targetY = (target.y ?? 0) - target.height / 2;
+
+    if (sourceX === targetX) return `M ${String(sourceX)} ${String(sourceY)} L ${String(targetX)} ${String(targetY)}`;
+
+    const midY = (sourceY + targetY) / 2;
+    return `M ${String(sourceX)} ${String(sourceY)} L ${String(sourceX)} ${String(midY)} L ${String(targetX)} ${String(midY)} L ${String(targetX)} ${String(targetY)}`;
 }
 
 function buildSelfLoopPath(node: NodeLabel, selfEdgeSize: number): string {

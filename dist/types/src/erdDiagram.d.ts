@@ -1,4 +1,4 @@
-export type ErdDiagramNodeTypeId = 'child' | 'primary';
+export type ErdDiagramNodeTypeId = 'child' | 'optional' | 'primary';
 export interface ErdDiagramNode {
     id: string;
     label: string;
