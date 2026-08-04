@@ -23,9 +23,15 @@ export interface ErdDiagramData {
     nodes: ErdDiagramNode[];
 }
 
+export interface ErdDiagramNodeStyle {
+    fill: string;
+    stroke: string;
+    strokeDasharray?: string;
+}
+
 export interface ErdDiagramOptions {
     cornerRadius?: number;
-    nodeColors?: Record<ErdDiagramNodeTypeId, { fill: string; stroke: string }>;
+    nodeColors?: Record<ErdDiagramNodeTypeId, ErdDiagramNodeStyle>;
     nodeHeight?: number;
     nodeWidth?: number;
     orderConstraints?: { left: string; right: string }[];
@@ -45,10 +51,11 @@ const DEFAULT_NODE_HEIGHT = 50;
 const DEFAULT_PADDING = 8;
 const DEFAULT_SELF_EDGE_SIZE = 24;
 const DEFAULT_CORNER_RADIUS = 6;
-const DEFAULT_NODE_COLORS: Record<ErdDiagramNodeTypeId, { fill: string; stroke: string }> = {
+// child: declared in this model. primary: a reference into another (external) model. optional: may not be present.
+const DEFAULT_NODE_COLORS: Record<ErdDiagramNodeTypeId, ErdDiagramNodeStyle> = {
     child: { fill: '#dae8fc', stroke: '#6c8ebf' },
-    optional: { fill: '#f5f5f5', stroke: '#999999' },
-    primary: { fill: '#d5e8d4', stroke: '#82b366' }
+    optional: { fill: '#fafafa', stroke: '#9e9e9e', strokeDasharray: '4 3' },
+    primary: { fill: '#eceff1', stroke: '#78909c' }
 };
 const ARROW_MARKER_ID = 'dpuse-tool-d3-erd-arrow';
 
@@ -137,7 +144,8 @@ export function renderErdDiagram(data: ErdDiagramData, renderTo: HTMLElement, op
             .attr('height', (nodeId) => graph.node(nodeId).height)
             .attr('rx', cornerRadius)
             .attr('fill', (nodeId) => nodeColors[graph.node(nodeId)['typeId'] as ErdDiagramNodeTypeId].fill)
-            .attr('stroke', (nodeId) => nodeColors[graph.node(nodeId)['typeId'] as ErdDiagramNodeTypeId].stroke);
+            .attr('stroke', (nodeId) => nodeColors[graph.node(nodeId)['typeId'] as ErdDiagramNodeTypeId].stroke)
+            .attr('stroke-dasharray', (nodeId) => nodeColors[graph.node(nodeId)['typeId'] as ErdDiagramNodeTypeId].strokeDasharray ?? null);
 
         nodeGroups
             .append('text')

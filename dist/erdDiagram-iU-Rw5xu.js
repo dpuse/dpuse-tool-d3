@@ -2141,12 +2141,13 @@ var zn = 160, Bn = 50, Vn = 8, Hn = 24, Un = 6, Wn = {
 		stroke: "#6c8ebf"
 	},
 	optional: {
-		fill: "#f5f5f5",
-		stroke: "#999999"
+		fill: "#fafafa",
+		stroke: "#9e9e9e",
+		strokeDasharray: "4 3"
 	},
 	primary: {
-		fill: "#d5e8d4",
-		stroke: "#82b366"
+		fill: "#eceff1",
+		stroke: "#78909c"
 	}
 }, Gn = "dpuse-tool-d3-erd-arrow";
 function Kn(t, n, r = {}) {
@@ -2173,7 +2174,7 @@ function Kn(t, n, r = {}) {
 			let t = r.node(e);
 			return `translate(${String((t.x ?? 0) - t.width / 2)}, ${String((t.y ?? 0) - t.height / 2)})`;
 		});
-		v.append("rect").attr("width", (e) => r.node(e).width).attr("height", (e) => r.node(e).height).attr("rx", l).attr("fill", (e) => u[r.node(e).typeId].fill).attr("stroke", (e) => u[r.node(e).typeId].stroke), v.append("text").attr("x", (e) => r.node(e).width / 2).attr("y", (e) => r.node(e).height / 2).attr("text-anchor", "middle").attr("dominant-baseline", "middle").attr("font-family", "Helvetica, Arial, sans-serif").attr("font-size", 14).attr("fill", "#000000").text((e) => r.node(e).label ?? "");
+		v.append("rect").attr("width", (e) => r.node(e).width).attr("height", (e) => r.node(e).height).attr("rx", l).attr("fill", (e) => u[r.node(e).typeId].fill).attr("stroke", (e) => u[r.node(e).typeId].stroke).attr("stroke-dasharray", (e) => u[r.node(e).typeId].strokeDasharray ?? null), v.append("text").attr("x", (e) => r.node(e).width / 2).attr("y", (e) => r.node(e).height / 2).attr("text-anchor", "middle").attr("dominant-baseline", "middle").attr("font-family", "Helvetica, Arial, sans-serif").attr("font-size", 14).attr("fill", "#000000").text((e) => r.node(e).label ?? "");
 		let y = g.node();
 		if (y == null) throw Error("Failed to create ERD diagram SVG element.");
 		return y;
@@ -2208,4 +2209,4 @@ function Jn(e, t) {
 //#endregion
 export { Kn as renderErdDiagram };
 
-//# sourceMappingURL=erdDiagram-BDV0xo6a.js.map
+//# sourceMappingURL=erdDiagram-iU-Rw5xu.js.map

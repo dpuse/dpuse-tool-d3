@@ -12,12 +12,14 @@ export interface ErdDiagramData {
     edges: ErdDiagramEdge[];
     nodes: ErdDiagramNode[];
 }
+export interface ErdDiagramNodeStyle {
+    fill: string;
+    stroke: string;
+    strokeDasharray?: string;
+}
 export interface ErdDiagramOptions {
     cornerRadius?: number;
-    nodeColors?: Record<ErdDiagramNodeTypeId, {
-        fill: string;
-        stroke: string;
-    }>;
+    nodeColors?: Record<ErdDiagramNodeTypeId, ErdDiagramNodeStyle>;
     nodeHeight?: number;
     nodeWidth?: number;
     orderConstraints?: {
