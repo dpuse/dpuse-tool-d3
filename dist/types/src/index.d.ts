@@ -23,9 +23,14 @@ export interface D3BarChartView extends PresentationView {
     chart: Chart;
     destroy: () => void;
 }
+export interface D3TanStackChartsView extends D3View {
+    destroy: () => void;
+}
 export declare class D3Tool {
     renderBillboardJS(data: BarChartData, renderTo: HTMLElement, callback?: () => void): Promise<D3BarChartView>;
     renderObservablePlot(typeId: ObservablePlotChartTypeId, data: BarChartData, renderTo: HTMLElement, callback?: () => void): Promise<D3View>;
+    renderD3BarChart(data: BarChartData, renderTo: HTMLElement, callback?: () => void): Promise<D3View>;
+    renderTanStackCharts(data: BarChartData, renderTo: HTMLElement, callback?: () => void): Promise<D3TanStackChartsView>;
     renderErdDiagram(data: ErdDiagramData, renderTo: HTMLElement, options?: ErdDiagramOptions, callback?: () => void): Promise<D3View>;
     renderNetworkDiagram(data: NetworkDiagramData, renderTo: HTMLElement, options?: NetworkDiagramOptions, callback?: () => void): Promise<D3NetworkView>;
     renderSankeyDiagram(data: SankeyDiagramData, renderTo: HTMLElement, options?: SankeyDiagramOptions, callback?: () => void): Promise<D3View>;

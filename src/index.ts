@@ -35,6 +35,10 @@ export interface D3BarChartView extends PresentationView {
     destroy: () => void;
 }
 
+export interface D3TanStackChartsView extends D3View {
+    destroy: () => void;
+}
+
 // ── Constants ────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 const D3_ID = 'd3';
@@ -66,6 +70,35 @@ export class D3Tool {
                 return handle.svg;
             },
             vendorId: 'observable-plot'
+        };
+    }
+
+    // Actions - Render bar chart using raw D3 primitives (d3-scale, d3-axis - no chart wrapper library).
+    async renderD3BarChart(data: BarChartData, renderTo: HTMLElement, callback?: () => void): Promise<D3View> {
+        const { renderD3BarChart } = await import('@/d3BarChart');
+        const handle = renderD3BarChart(data, renderTo);
+        callback?.();
+        return {
+            resize: handle.resize,
+            get svg() {
+                return handle.svg;
+            },
+            vendorId: D3_ID
+        };
+    }
+
+    // Actions - Render bar chart using TanStack Charts (pre-alpha as of 0.6.4 - its vanilla-DOM mountChart() API is undocumented and may change).
+    async renderTanStackCharts(data: BarChartData, renderTo: HTMLElement, callback?: () => void): Promise<D3TanStackChartsView> {
+        const { renderTanStackCharts } = await import('@/tanStackCharts');
+        const handle = renderTanStackCharts(data, renderTo);
+        callback?.();
+        return {
+            destroy: handle.destroy,
+            resize: handle.resize,
+            get svg() {
+                return handle.svg;
+            },
+            vendorId: 'tanstack-charts'
         };
     }
 

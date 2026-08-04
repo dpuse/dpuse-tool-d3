@@ -1,7 +1,7 @@
 //#region src/index.ts
 var e = class {
 	async renderBillboardJS(e, t, n) {
-		let { renderBillboardJS: r } = await import("./billboardJs-DJFb72FS.js"), i = r(e, t);
+		let { renderBillboardJS: r } = await import("./billboardJs-jmaH9Gag.js"), i = r(e, t);
 		return n?.(), {
 			chart: i.chart,
 			destroy: i.destroy,
@@ -10,13 +10,34 @@ var e = class {
 		};
 	}
 	async renderObservablePlot(e, t, n, r) {
-		let { renderObservablePlot: i } = await import("./observablePlot-D7o8-dnK.js"), a = i(e, t, n);
+		let { renderObservablePlot: i } = await import("./observablePlot-B1CSEvcU.js"), a = i(e, t, n);
 		return r?.(), {
 			resize: a.resize,
 			get svg() {
 				return a.svg;
 			},
 			vendorId: "observable-plot"
+		};
+	}
+	async renderD3BarChart(e, t, n) {
+		let { renderD3BarChart: r } = await import("./d3BarChart-DEzayAyh.js"), i = r(e, t);
+		return n?.(), {
+			resize: i.resize,
+			get svg() {
+				return i.svg;
+			},
+			vendorId: "d3"
+		};
+	}
+	async renderTanStackCharts(e, t, n) {
+		let { renderTanStackCharts: r } = await import("./tanStackCharts-vvQteV9z.js"), i = r(e, t);
+		return n?.(), {
+			destroy: i.destroy,
+			resize: i.resize,
+			get svg() {
+				return i.svg;
+			},
+			vendorId: "tanstack-charts"
 		};
 	}
 	async renderErdDiagram(e, t, n, r) {
@@ -30,7 +51,7 @@ var e = class {
 		};
 	}
 	async renderNetworkDiagram(e, t, n, r) {
-		let { renderNetworkDiagram: i } = await import("./networkDiagram-QWVy8iRy.js"), a = i(e, t, n);
+		let { renderNetworkDiagram: i } = await import("./networkDiagram-HS-SgOZ0.js"), a = i(e, t, n);
 		return r?.(), {
 			destroy: a.destroy,
 			resize: a.resize,
@@ -42,7 +63,7 @@ var e = class {
 		};
 	}
 	async renderSankeyDiagram(e, t, n, r) {
-		let { renderSankeyDiagram: i } = await import("./sankeyDiagram-DlIuwzOl.js"), a = i(e, t, n);
+		let { renderSankeyDiagram: i } = await import("./sankeyDiagram-BXTYCHPV.js"), a = i(e, t, n);
 		return r?.(), {
 			resize: a.resize,
 			get svg() {
@@ -52,7 +73,7 @@ var e = class {
 		};
 	}
 	async renderTreeDiagram(e, t, n, r) {
-		let { renderTreeDiagram: i } = await import("./treeDiagram-Bi5VXDVy.js"), a = i(e, t, n);
+		let { renderTreeDiagram: i } = await import("./treeDiagram-DemHfVnX.js"), a = i(e, t, n);
 		return r?.(), {
 			resize: a.resize,
 			get svg() {
