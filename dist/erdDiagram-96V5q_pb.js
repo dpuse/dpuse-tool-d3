@@ -2149,7 +2149,7 @@ var zn = 160, Bn = 50, Vn = 8, Hn = 24, Un = 6, Wn = {
 		stroke: "#c9c9c9",
 		strokeDasharray: "4 3"
 	}
-}, Gn = "#9e9e9e", Kn = "dpuse-tool-d3-erd-arrow";
+}, Gn = "#c0c0c0", Kn = "dpuse-tool-d3-erd-arrow";
 function qn(t, n, r = {}) {
 	let i = r.nodeWidth ?? zn, o = r.nodeHeight ?? Bn, s = r.padding ?? Vn, c = r.selfEdgeSize ?? Hn, l = r.cornerRadius ?? Un, u = r.nodeColors ?? Wn, d = r.edgeColor ?? Gn, f = r.orderConstraints ?? [];
 	function p() {
@@ -2209,4 +2209,4 @@ function Yn(e, t) {
 //#endregion
 export { qn as renderErdDiagram };
 
-//# sourceMappingURL=erdDiagram-DoKmNFCx.js.map
+//# sourceMappingURL=erdDiagram-96V5q_pb.js.map

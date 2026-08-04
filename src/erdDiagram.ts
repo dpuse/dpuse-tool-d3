@@ -59,7 +59,7 @@ const DEFAULT_NODE_COLORS: Record<ErdDiagramNodeTypeId, ErdDiagramNodeStyle> = {
     optional: { fill: '#fafafa', stroke: '#c9c9c9', strokeDasharray: '4 3' }
 };
 // Neutral, deliberately not matching any single node type's stroke colour — connectors are structural, not typed.
-const DEFAULT_EDGE_COLOR = '#9e9e9e';
+const DEFAULT_EDGE_COLOR = '#c0c0c0';
 const ARROW_MARKER_ID = 'dpuse-tool-d3-erd-arrow';
 
 // ── Actions ──────────────────────────────────────────────────────────────────────────────────────────────────────────
