@@ -24,6 +24,7 @@ export interface ErdDiagramData {
 }
 
 export interface ErdDiagramOptions {
+    cornerRadius?: number;
     nodeColors?: Record<ErdDiagramNodeTypeId, { fill: string; stroke: string }>;
     nodeHeight?: number;
     nodeWidth?: number;
@@ -43,6 +44,7 @@ const DEFAULT_NODE_WIDTH = 160;
 const DEFAULT_NODE_HEIGHT = 50;
 const DEFAULT_PADDING = 8;
 const DEFAULT_SELF_EDGE_SIZE = 24;
+const DEFAULT_CORNER_RADIUS = 6;
 const DEFAULT_NODE_COLORS: Record<ErdDiagramNodeTypeId, { fill: string; stroke: string }> = {
     child: { fill: '#dae8fc', stroke: '#6c8ebf' },
     optional: { fill: '#f5f5f5', stroke: '#999999' },
@@ -57,6 +59,7 @@ export function renderErdDiagram(data: ErdDiagramData, renderTo: HTMLElement, op
     const nodeHeight = options.nodeHeight ?? DEFAULT_NODE_HEIGHT;
     const padding = options.padding ?? DEFAULT_PADDING;
     const selfEdgeSize = options.selfEdgeSize ?? DEFAULT_SELF_EDGE_SIZE;
+    const cornerRadius = options.cornerRadius ?? DEFAULT_CORNER_RADIUS;
     const nodeColors = options.nodeColors ?? DEFAULT_NODE_COLORS;
     const orderConstraints = options.orderConstraints ?? [];
 
@@ -115,7 +118,7 @@ export function renderErdDiagram(data: ErdDiagramData, renderTo: HTMLElement, op
             .attr('d', (edge) =>
                 edge.source === edge.target
                     ? buildSelfLoopPath(graph.node(edge.source), selfEdgeSize)
-                    : buildElbowEdgePath(graph.node(edge.source), graph.node(edge.target))
+                    : buildElbowEdgePath(graph.node(edge.source), graph.node(edge.target), cornerRadius)
             );
 
         const nodeGroups = canvas
@@ -132,7 +135,7 @@ export function renderErdDiagram(data: ErdDiagramData, renderTo: HTMLElement, op
             .append('rect')
             .attr('width', (nodeId) => graph.node(nodeId).width)
             .attr('height', (nodeId) => graph.node(nodeId).height)
-            .attr('rx', 6)
+            .attr('rx', cornerRadius)
             .attr('fill', (nodeId) => nodeColors[graph.node(nodeId)['typeId'] as ErdDiagramNodeTypeId].fill)
             .attr('stroke', (nodeId) => nodeColors[graph.node(nodeId)['typeId'] as ErdDiagramNodeTypeId].stroke);
 
@@ -171,7 +174,7 @@ export function renderErdDiagram(data: ErdDiagramData, renderTo: HTMLElement, op
 // edges sideways and cross others, so edges are built directly from the source/target node positions instead. The path is
 // an orthogonal elbow (down, across, down) rather than a diagonal so the arrowhead always enters the target perpendicular
 // to its border, per standard ERD/org-chart connector convention.
-function buildElbowEdgePath(source: NodeLabel, target: NodeLabel): string {
+function buildElbowEdgePath(source: NodeLabel, target: NodeLabel, cornerRadius: number): string {
     const sourceX = source.x ?? 0;
     const sourceY = (source.y ?? 0) + source.height / 2;
     const targetX = target.x ?? 0;
@@ -180,7 +183,21 @@ function buildElbowEdgePath(source: NodeLabel, target: NodeLabel): string {
     if (sourceX === targetX) return `M ${String(sourceX)} ${String(sourceY)} L ${String(targetX)} ${String(targetY)}`;
 
     const midY = (sourceY + targetY) / 2;
-    return `M ${String(sourceX)} ${String(sourceY)} L ${String(sourceX)} ${String(midY)} L ${String(targetX)} ${String(midY)} L ${String(targetX)} ${String(targetY)}`;
+    const directionX = Math.sign(targetX - sourceX);
+    // Clamp so each bend never eats more of a segment than that segment actually has, otherwise the curve would overshoot
+    // and loop back on itself. Clamping to 0 degrades gracefully to the original sharp-cornered elbow.
+    const radius = Math.max(0, Math.min(cornerRadius, midY - sourceY, targetY - midY, Math.abs(targetX - sourceX) / 2));
+
+    // Each bend is a quadratic curve toward the sharp corner as its control point — tangent to both straight segments,
+    // so it curves the correct way regardless of direction without needing arc sweep-flag bookkeeping.
+    return [
+        `M ${String(sourceX)} ${String(sourceY)}`,
+        `L ${String(sourceX)} ${String(midY - radius)}`,
+        `Q ${String(sourceX)} ${String(midY)} ${String(sourceX + directionX * radius)} ${String(midY)}`,
+        `L ${String(targetX - directionX * radius)} ${String(midY)}`,
+        `Q ${String(targetX)} ${String(midY)} ${String(targetX)} ${String(midY + radius)}`,
+        `L ${String(targetX)} ${String(targetY)}`
+    ].join(' ');
 }
 
 function buildSelfLoopPath(node: NodeLabel, selfEdgeSize: number): string {

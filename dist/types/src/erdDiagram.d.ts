@@ -13,6 +13,7 @@ export interface ErdDiagramData {
     nodes: ErdDiagramNode[];
 }
 export interface ErdDiagramOptions {
+    cornerRadius?: number;
     nodeColors?: Record<ErdDiagramNodeTypeId, {
         fill: string;
         stroke: string;

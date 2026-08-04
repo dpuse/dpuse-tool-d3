@@ -13,7 +13,7 @@ var t = Object.defineProperty, n = (e, n, r) => n in e ? t(e, n, {
 }, i = (e, t, r) => n(e, typeof t == "symbol" ? t : t + "", r), a = {};
 r(a, {
 	Graph: () => c,
-	alg: () => y,
+	alg: () => b,
 	json: () => h,
 	version: () => m
 });
@@ -235,7 +235,7 @@ function p(e, t) {
 }
 var m = "4.0.1", h = {};
 s(h, {
-	read: () => ee,
+	read: () => y,
 	write: () => g
 });
 function g(e) {
@@ -265,7 +265,7 @@ function v(e) {
 		return t.name !== void 0 && (r.name = t.name), n !== void 0 && (r.value = n), r;
 	});
 }
-function ee(e) {
+function y(e) {
 	let t = new c(e.options);
 	return e.value !== void 0 && t.setGraph(e.value), e.nodes.forEach((e) => {
 		t.setNode(e.v, e.value), e.parent && t.setParent(e.v, e.parent);
@@ -277,30 +277,30 @@ function ee(e) {
 		}, e.value);
 	}), t;
 }
-var y = {};
-s(y, {
-	CycleException: () => S,
-	bellmanFord: () => b,
-	components: () => re,
-	dijkstra: () => x,
-	dijkstraAll: () => se,
-	findCycles: () => le,
-	floydWarshall: () => de,
-	isAcyclic: () => pe,
-	postorder: () => _e,
-	preorder: () => ve,
-	prim: () => ye,
-	shortestPaths: () => be,
-	tarjan: () => ce,
-	topsort: () => C
+var b = {};
+s(b, {
+	CycleException: () => C,
+	bellmanFord: () => x,
+	components: () => ne,
+	dijkstra: () => S,
+	dijkstraAll: () => oe,
+	findCycles: () => ce,
+	floydWarshall: () => ue,
+	isAcyclic: () => fe,
+	postorder: () => ge,
+	preorder: () => _e,
+	prim: () => ve,
+	shortestPaths: () => ye,
+	tarjan: () => se,
+	topsort: () => w
 });
-var te = () => 1;
-function b(e, t, n, r) {
-	return ne(e, String(t), n || te, r || function(t) {
+var ee = () => 1;
+function x(e, t, n, r) {
+	return te(e, String(t), n || ee, r || function(t) {
 		return e.outEdges(t);
 	});
 }
-function ne(e, t, n, r) {
+function te(e, t, n, r) {
 	let i = {}, a, o = 0, s = e.nodes(), c = function(e) {
 		let t = n(e);
 		i[e.v].distance + t < i[e.w].distance && (i[e.w] = {
@@ -329,7 +329,7 @@ function ne(e, t, n, r) {
 	if (o === u - 1 && (a = !1, l(), a)) throw Error("The graph contains a negative weight cycle");
 	return i;
 }
-function re(e) {
+function ne(e) {
 	let t = {}, n = [], r;
 	function i(n) {
 		n in t || (t[n] = !0, r.push(n), e.successors(n).forEach(i), e.predecessors(n).forEach(i));
@@ -338,7 +338,7 @@ function re(e) {
 		r = [], i(e), r.length && n.push(r);
 	}), n;
 }
-var ie = class {
+var re = class {
 	constructor() {
 		this._arr = [], this._keyIndices = {};
 	}
@@ -394,14 +394,14 @@ var ie = class {
 		let n = this._arr, r = this._keyIndices, i = n[e], a = n[t];
 		n[e] = a, n[t] = i, r[a.key] = e, r[i.key] = t;
 	}
-}, ae = () => 1;
-function x(e, t, n, r) {
-	return oe(e, String(t), n || ae, r || function(t) {
+}, ie = () => 1;
+function S(e, t, n, r) {
+	return ae(e, String(t), n || ie, r || function(t) {
 		return e.outEdges(t);
 	});
 }
-function oe(e, t, n, r) {
-	let i = {}, a = new ie(), o, s, c = function(e) {
+function ae(e, t, n, r) {
+	let i = {}, a = new re(), o, s, c = function(e) {
 		let t = e.v === o ? e.w : e.v, r = i[t], c = n(e), l = s.distance + c;
 		if (c < 0) throw Error("dijkstra does not allow negative edge weights. Bad edge: " + e + " Weight: " + c);
 		l < r.distance && (r.distance = l, r.predecessor = o, a.decrease(t, l));
@@ -415,12 +415,12 @@ function oe(e, t, n, r) {
 	}); a.size() > 0 && (o = a.removeMin(), s = i[o], s.distance !== Infinity);) r(o).forEach(c);
 	return i;
 }
-function se(e, t, n) {
+function oe(e, t, n) {
 	return e.nodes().reduce(function(r, i) {
-		return r[i] = x(e, i, t, n), r;
+		return r[i] = S(e, i, t, n), r;
 	}, {});
 }
-function ce(e) {
+function se(e) {
 	let t = 0, n = [], r = {}, i = [];
 	function a(o) {
 		let s = r[o] = {
@@ -442,18 +442,18 @@ function ce(e) {
 		e in r || a(e);
 	}), i;
 }
-function le(e) {
-	return ce(e).filter(function(t) {
+function ce(e) {
+	return se(e).filter(function(t) {
 		return t.length > 1 || t.length === 1 && e.hasEdge(t[0], t[0]);
 	});
 }
-var ue = () => 1;
-function de(e, t, n) {
-	return fe(e, t || ue, n || function(t) {
+var le = () => 1;
+function ue(e, t, n) {
+	return de(e, t || le, n || function(t) {
 		return e.outEdges(t);
 	});
 }
-function fe(e, t, n) {
+function de(e, t, n) {
 	let r = {}, i = e.nodes();
 	return i.forEach(function(e) {
 		r[e] = {}, r[e][e] = {
@@ -482,55 +482,55 @@ function fe(e, t, n) {
 		});
 	}), r;
 }
-var S = class extends Error {
+var C = class extends Error {
 	constructor(...e) {
 		super(...e);
 	}
 };
-function C(e) {
+function w(e) {
 	let t = {}, n = {}, r = [];
 	function i(a) {
-		if (a in n) throw new S();
+		if (a in n) throw new C();
 		a in t || (n[a] = !0, t[a] = !0, e.predecessors(a).forEach(i), delete n[a], r.push(a));
 	}
-	if (e.sinks().forEach(i), Object.keys(t).length !== e.nodeCount()) throw new S();
+	if (e.sinks().forEach(i), Object.keys(t).length !== e.nodeCount()) throw new C();
 	return r;
 }
-function pe(e) {
+function fe(e) {
 	try {
-		C(e);
+		w(e);
 	} catch (e) {
-		if (e instanceof S) return !1;
+		if (e instanceof C) return !1;
 		throw e;
 	}
 	return !0;
 }
-function me(e, t, n, r, i) {
+function pe(e, t, n, r, i) {
 	Array.isArray(t) || (t = [t]);
 	let a = ((t) => (e.isDirected() ? e.successors(t) : e.neighbors(t)) ?? []), o = {};
 	return t.forEach(function(t) {
 		if (!e.hasNode(t)) throw Error("Graph does not have node: " + t);
-		i = he(e, t, n === "post", o, a, r, i);
+		i = me(e, t, n === "post", o, a, r, i);
 	}), i;
 }
-function he(e, t, n, r, i, a, o) {
+function me(e, t, n, r, i, a, o) {
 	return t in r || (r[t] = !0, n || (o = a(o, t)), i(t).forEach(function(t) {
-		o = he(e, t, n, r, i, a, o);
+		o = me(e, t, n, r, i, a, o);
 	}), n && (o = a(o, t))), o;
 }
-function ge(e, t, n) {
-	return me(e, t, n, function(e, t) {
+function he(e, t, n) {
+	return pe(e, t, n, function(e, t) {
 		return e.push(t), e;
 	}, []);
 }
+function ge(e, t) {
+	return he(e, t, "post");
+}
 function _e(e, t) {
-	return ge(e, t, "post");
+	return he(e, t, "pre");
 }
 function ve(e, t) {
-	return ge(e, t, "pre");
-}
-function ye(e, t) {
-	let n = new c(), r = {}, i = new ie(), a;
+	let n = new c(), r = {}, i = new re(), a;
 	function o(e) {
 		let n = e.v === a ? e.w : e.v, o = i.priority(n);
 		if (o !== void 0) {
@@ -553,11 +553,11 @@ function ye(e, t) {
 	}
 	return n;
 }
-function be(e, t, n, r) {
-	return xe(e, t, n, r ?? ((t) => e.outEdges(t) ?? []));
+function ye(e, t, n, r) {
+	return be(e, t, n, r ?? ((t) => e.outEdges(t) ?? []));
 }
-function xe(e, t, n, r) {
-	if (n === void 0) return x(e, t, n, r);
+function be(e, t, n, r) {
+	if (n === void 0) return S(e, t, n, r);
 	let i = !1, a = e.nodes();
 	for (let o = 0; o < a.length; o++) {
 		let s = r(a[o]);
@@ -568,16 +568,16 @@ function xe(e, t, n, r) {
 				w: r === t.v ? t.w : t.v
 			}) < 0 && (i = !0);
 		}
-		if (i) return b(e, t, n, r);
+		if (i) return x(e, t, n, r);
 	}
-	return x(e, t, n, r);
+	return S(e, t, n, r);
 }
-function w(e, t, n, r) {
+function T(e, t, n, r) {
 	let i = r;
-	for (; e.hasNode(i);) i = k(r);
+	for (; e.hasNode(i);) i = A(r);
 	return n.dummy = t, e.setNode(i, n), i;
 }
-function Se(e) {
+function xe(e) {
 	let t = new c().setGraph(e.graph());
 	return e.nodes().forEach((n) => t.setNode(n, e.node(n))), e.edges().forEach((n) => {
 		let r = t.edge(n.v, n.w) || {
@@ -590,7 +590,7 @@ function Se(e) {
 		});
 	}), t;
 }
-function T(e) {
+function E(e) {
 	let t = new c({ multigraph: e.isMultigraph() }).setGraph(e.graph());
 	return e.nodes().forEach((n) => {
 		e.children(n).length || t.setNode(n, e.node(n));
@@ -598,7 +598,7 @@ function T(e) {
 		t.setEdge(n, e.edge(n));
 	}), t;
 }
-function E(e, t) {
+function Se(e, t) {
 	let n = e.x, r = e.y, i = t.x - n, a = t.y - r, o = e.width / 2, s = e.height / 2;
 	if (!i && !a) throw Error("Not possible to find intersection inside of the rectangle");
 	let c, l;
@@ -608,7 +608,7 @@ function E(e, t) {
 	};
 }
 function D(e) {
-	let t = A(Oe(e) + 1).map(() => []);
+	let t = j(k(e) + 1).map(() => []);
 	return e.nodes().forEach((n) => {
 		let r = e.node(n), i = r.rank;
 		i !== void 0 && (t[i] || (t[i] = []), t[i][r.order] = n);
@@ -640,7 +640,7 @@ function Te(e, t, n, r) {
 		width: 0,
 		height: 0
 	};
-	return arguments.length >= 4 && (i.rank = n, i.order = r), w(e, "border", i, t);
+	return arguments.length >= 4 && (i.rank = n, i.order = r), T(e, "border", i, t);
 }
 function Ee(e, t = De) {
 	let n = [];
@@ -654,14 +654,14 @@ var De = 65535;
 function O(e, t) {
 	return t.length > De ? e(...Ee(t).map((t) => e(...t))) : e(...t);
 }
-function Oe(e) {
+function k(e) {
 	let t = e.nodes().map((t) => {
 		let n = e.node(t).rank;
 		return n === void 0 ? Number.MIN_VALUE : n;
 	});
 	return O(Math.max, t);
 }
-function ke(e, t) {
+function Oe(e, t) {
 	let n = {
 		lhs: [],
 		rhs: []
@@ -670,14 +670,14 @@ function ke(e, t) {
 		t(e) ? n.lhs.push(e) : n.rhs.push(e);
 	}), n;
 }
-function Ae(e, t) {
+function ke(e, t) {
 	return t();
 }
-var je = 0;
-function k(e) {
-	return e + ("" + ++je);
+var Ae = 0;
+function A(e) {
+	return e + ("" + ++Ae);
 }
-function A(e, t, n = 1) {
+function j(e, t, n = 1) {
 	t ?? (t = e, e = 0);
 	let r = (e) => e < t;
 	n < 0 && (r = (e) => t < e);
@@ -685,20 +685,20 @@ function A(e, t, n = 1) {
 	for (let t = e; r(t); t += n) i.push(t);
 	return i;
 }
-function j(e, t) {
+function M(e, t) {
 	let n = {};
 	for (let r of t) e[r] !== void 0 && (n[r] = e[r]);
 	return n;
 }
-function M(e, t) {
+function N(e, t) {
 	let n;
 	return n = typeof t == "string" ? (e) => e[t] : t, Object.entries(e).reduce((e, [t, r]) => (e[t] = n(r, t), e), {});
 }
-function Me(e, t) {
+function je(e, t) {
 	return e.reduce((e, n, r) => (e[n] = t[r], e), {});
 }
-var N = "\0";
-function Ne(e, t, n) {
+var P = "\0";
+function Me(e, t, n) {
 	if (!(e && t && n && t.dummy === "edge" && n.dummy === "edge" && t.edgeObj && n.edgeObj && e[t.edgeObj.v] && e[n.edgeObj.v] && e[t.edgeObj.w] && e[n.edgeObj.w])) return 0;
 	let r = !0;
 	t.edgeObj.w === n.edgeObj.w && (r = !1);
@@ -707,7 +707,7 @@ function Ne(e, t, n) {
 	let s = a[1].order ?? NaN, c = o[1].order ?? NaN;
 	return isNaN(s - c) ? 0 : s - c;
 }
-var Pe = class {
+var Ne = class {
 	constructor() {
 		i(this, "_sentinel");
 		let e = {};
@@ -715,58 +715,58 @@ var Pe = class {
 	}
 	dequeue() {
 		let e = this._sentinel, t = e._prev;
-		if (t !== e) return Fe(t), t;
+		if (t !== e) return Pe(t), t;
 	}
 	enqueue(e) {
 		let t = this._sentinel;
-		e._prev && e._next && Fe(e), e._next = t._next, t._next._prev = e, t._next = e, e._prev = t;
+		e._prev && e._next && Pe(e), e._next = t._next, t._next._prev = e, t._next = e, e._prev = t;
 	}
 	toString() {
 		let e = [], t = this._sentinel, n = t._prev;
-		for (; n !== t;) e.push(JSON.stringify(n, Ie)), n = n._prev;
+		for (; n !== t;) e.push(JSON.stringify(n, Fe)), n = n._prev;
 		return "[" + e.join(", ") + "]";
 	}
 };
-function Fe(e) {
+function Pe(e) {
 	e._prev._next = e._next, e._next._prev = e._prev, delete e._next, delete e._prev;
 }
-function Ie(e, t) {
+function Fe(e, t) {
 	if (e !== "_next" && e !== "_prev") return t;
 }
-var Le = Pe, Re = () => 1;
-function ze(e, t) {
+var Ie = Ne, Le = () => 1;
+function Re(e, t) {
 	if (e.nodeCount() <= 1) return [];
-	let n = Ve(e, t || Re);
-	return Be(n.graph, n.buckets, n.zeroIdx).flatMap((t) => e.outEdges(t.v, t.w) || []);
+	let n = Be(e, t || Le);
+	return ze(n.graph, n.buckets, n.zeroIdx).flatMap((t) => e.outEdges(t.v, t.w) || []);
 }
-function Be(e, t, n) {
+function ze(e, t, n) {
 	let r = [], i = t[t.length - 1], a = t[0], o;
 	for (; e.nodeCount();) {
-		for (; o = a.dequeue();) P(e, t, n, o);
-		for (; o = i.dequeue();) P(e, t, n, o);
+		for (; o = a.dequeue();) F(e, t, n, o);
+		for (; o = i.dequeue();) F(e, t, n, o);
 		if (e.nodeCount()) {
 			for (let i = t.length - 2; i > 0; --i) if (o = t[i]?.dequeue(), o) {
-				r = r.concat(P(e, t, n, o, !0) || []);
+				r = r.concat(F(e, t, n, o, !0) || []);
 				break;
 			}
 		}
 	}
 	return r;
 }
-function P(e, t, n, r, i) {
+function F(e, t, n, r, i) {
 	let a = [], o = i ? a : void 0;
 	return (e.inEdges(r.v) || []).forEach((r) => {
 		let o = e.edge(r), s = e.node(r.v);
 		i && a.push({
 			v: r.v,
 			w: r.w
-		}), s.out -= o, F(t, n, s);
+		}), s.out -= o, I(t, n, s);
 	}), (e.outEdges(r.v) || []).forEach((r) => {
 		let i = e.edge(r), a = r.w, o = e.node(a);
-		o.in -= i, F(t, n, o);
+		o.in -= i, I(t, n, o);
 	}), e.removeNode(r.v), o;
 }
-function Ve(e, t) {
+function Be(e, t) {
 	let n = new c(), r = 0, i = 0;
 	e.nodes().forEach((e) => {
 		n.setNode(e, {
@@ -780,34 +780,34 @@ function Ve(e, t) {
 		let c = n.node(e.v), l = n.node(e.w);
 		i = Math.max(i, c.out += o), r = Math.max(r, l.in += o);
 	});
-	let a = He(i + r + 3).map(() => new Le()), o = r + 1;
+	let a = Ve(i + r + 3).map(() => new Ie()), o = r + 1;
 	return n.nodes().forEach((e) => {
-		F(a, o, n.node(e));
+		I(a, o, n.node(e));
 	}), {
 		graph: n,
 		buckets: a,
 		zeroIdx: o
 	};
 }
-function F(e, t, n) {
+function I(e, t, n) {
 	var r, i, a;
 	n.out ? n.in ? (a = e[n.out - n.in + t]) == null || a.enqueue(n) : (i = e[e.length - 1]) == null || i.enqueue(n) : (r = e[0]) == null || r.enqueue(n);
 }
-function He(e) {
+function Ve(e) {
 	let t = [];
 	for (let n = 0; n < e; n++) t.push(n);
 	return t;
 }
-function Ue(e, t) {
-	(e.graph().acyclicer === "greedy" ? ze(e, n(e)) : We(e, t ?? null)).forEach((t) => {
+function He(e, t) {
+	(e.graph().acyclicer === "greedy" ? Re(e, n(e)) : Ue(e, t ?? null)).forEach((t) => {
 		let n = e.edge(t);
-		e.removeEdge(t), n.forwardName = t.name, n.reversed = !0, e.setEdge(t.w, t.v, n, k("rev"));
+		e.removeEdge(t), n.forwardName = t.name, n.reversed = !0, e.setEdge(t.w, t.v, n, A("rev"));
 	});
 	function n(e) {
 		return (t) => e.edge(t).weight;
 	}
 }
-function We(e, t) {
+function Ue(e, t) {
 	let n = [], r = {}, i = {};
 	function a(t) {
 		Object.hasOwn(i, t) || (i[t] = !0, r[t] = !0, e.outEdges(t).forEach((e) => {
@@ -817,13 +817,13 @@ function We(e, t) {
 	function o(a) {
 		var s;
 		Object.hasOwn(i, a) || (i[a] = !0, r[a] = !0, (s = e.outEdges(a)) == null || s.forEach((i) => {
-			Object.hasOwn(r, i.w) || t.node(a)?.rank > t.node(i.w)?.rank && Ke(e, i.w, i) ? n.push(i) : o(i.w);
+			Object.hasOwn(r, i.w) || t.node(a)?.rank > t.node(i.w)?.rank && Ge(e, i.w, i) ? n.push(i) : o(i.w);
 		}), delete r[a]);
 	}
 	let s = a;
 	return t && typeof t.node == "function" && (s = o), e.sources().forEach(s), e.nodes().forEach(s), n;
 }
-function Ge(e) {
+function We(e) {
 	e.edges().forEach((t) => {
 		let n = e.edge(t);
 		if (n.reversed) {
@@ -833,7 +833,7 @@ function Ge(e) {
 		}
 	});
 }
-function Ke(e, t, n) {
+function Ge(e, t, n) {
 	let r = /* @__PURE__ */ new Set();
 	function i(t) {
 		if (e.sources().includes(t)) return !0;
@@ -843,10 +843,10 @@ function Ke(e, t, n) {
 	}
 	return i(t);
 }
-function qe(e) {
-	e.graph().dummyChains = [], e.edges().forEach((t) => Je(e, t));
+function Ke(e) {
+	e.graph().dummyChains = [], e.edges().forEach((t) => qe(e, t));
 }
-function Je(e, t) {
+function qe(e, t) {
 	let n = t.v, r = e.node(n).rank, i = t.w, a = e.node(i).rank, o = t.name, s = e.edge(t), c = s.labelRank;
 	if (a === r + 1) return;
 	e.removeEdge(t);
@@ -857,10 +857,10 @@ function Je(e, t) {
 		edgeLabel: s,
 		edgeObj: t,
 		rank: r
-	}, l = w(e, "edge", u, "_d"), r === c && (u.width = s.width, u.height = s.height, u.dummy = "edge-label", u.labelpos = s.labelpos), e.setEdge(n, l, { weight: s.weight }, o), d === 0 && e.graph().dummyChains.push(l), n = l;
+	}, l = T(e, "edge", u, "_d"), r === c && (u.width = s.width, u.height = s.height, u.dummy = "edge-label", u.labelpos = s.labelpos), e.setEdge(n, l, { weight: s.weight }, o), d === 0 && e.graph().dummyChains.push(l), n = l;
 	e.setEdge(n, i, { weight: s.weight }, o);
 }
-function Ye(e) {
+function Je(e) {
 	e.graph().dummyChains.forEach((t) => {
 		let n = e.node(t), r = n.edgeLabel, i;
 		for (e.setEdge(n.edgeObj, r); n.dummy;) i = e.successors(t)[0], e.removeNode(t), r.points.push({
@@ -869,7 +869,7 @@ function Ye(e) {
 		}), n.dummy === "edge-label" && (r.x = n.x, r.y = n.y, r.width = n.width, r.height = n.height), t = i, n = e.node(t);
 	});
 }
-function I(e) {
+function L(e) {
 	let t = {};
 	function n(r) {
 		let i = e.node(r);
@@ -880,56 +880,56 @@ function I(e) {
 	}
 	e.sources().forEach(n);
 }
-function L(e, t) {
+function R(e, t) {
 	return e.node(t.w).rank - e.node(t.v).rank - e.edge(t).minlen;
 }
-var R = Xe;
-function Xe(e) {
+var z = Ye;
+function Ye(e) {
 	let t = new c({ directed: !1 }), n = e.nodes();
 	if (n.length === 0) throw Error("Graph must have at least one node");
 	let r = n[0], i = e.nodeCount();
 	t.setNode(r, {});
 	let a, o;
-	for (; Ze(t, e) < i && (a = Qe(t, e), a);) o = t.hasNode(a.v) ? L(e, a) : -L(e, a), $e(t, e, o);
+	for (; Xe(t, e) < i && (a = Ze(t, e), a);) o = t.hasNode(a.v) ? R(e, a) : -R(e, a), Qe(t, e, o);
 	return t;
 }
-function Ze(e, t) {
+function Xe(e, t) {
 	function n(r) {
 		let i = t.nodeEdges(r);
 		i && i.forEach((i) => {
 			let a = i.v, o = r === a ? i.w : a;
-			!e.hasNode(o) && !L(t, i) && (e.setNode(o, {}), e.setEdge(r, o, {}), n(o));
+			!e.hasNode(o) && !R(t, i) && (e.setNode(o, {}), e.setEdge(r, o, {}), n(o));
 		});
 	}
 	return e.nodes().forEach(n), e.nodeCount();
 }
-function Qe(e, t) {
+function Ze(e, t) {
 	return t.edges().reduce((n, r) => {
 		let i = Infinity;
-		return e.hasNode(r.v) !== e.hasNode(r.w) && (i = L(t, r)), i < n[0] ? [i, r] : n;
+		return e.hasNode(r.v) !== e.hasNode(r.w) && (i = R(t, r)), i < n[0] ? [i, r] : n;
 	}, [Infinity, null])[1];
 }
-function $e(e, t, n) {
+function Qe(e, t, n) {
 	e.nodes().forEach((e) => t.node(e).rank += n);
 }
-var { preorder: et, postorder: tt } = y, nt = z;
-z.initLowLimValues = H, z.initCutValues = B, z.calcCutValue = V, z.leaveEdge = W, z.enterEdge = G, z.exchangeEdges = K;
-function z(e) {
-	e = Se(e), I(e);
-	let t = R(e);
-	H(t), B(t, e);
+var { preorder: $e, postorder: et } = b, tt = B;
+B.initLowLimValues = U, B.initCutValues = V, B.calcCutValue = H, B.leaveEdge = G, B.enterEdge = K, B.exchangeEdges = q;
+function B(e) {
+	e = xe(e), L(e);
+	let t = z(e);
+	U(t), V(t, e);
 	let n, r;
-	for (; n = W(t);) r = G(t, e, n), K(t, e, n, r);
+	for (; n = G(t);) r = K(t, e, n), q(t, e, n, r);
 }
-function B(e, t) {
-	let n = tt(e, e.nodes());
-	n = n.slice(0, n.length - 1), n.forEach((n) => rt(e, t, n));
+function V(e, t) {
+	let n = et(e, e.nodes());
+	n = n.slice(0, n.length - 1), n.forEach((n) => nt(e, t, n));
 }
-function rt(e, t, n) {
+function nt(e, t, n) {
 	let r = e.node(n).parent, i = e.edge(n, r);
-	i.cutvalue = V(e, t, n);
+	i.cutvalue = H(e, t, n);
 }
-function V(e, t, n) {
+function H(e, t, n) {
 	let r = e.node(n).parent, i = !0, a = t.edge(n, r), o = 0;
 	a ||= (i = !1, t.edge(r, n)), o = a.weight;
 	let s = t.nodeEdges(n);
@@ -937,50 +937,50 @@ function V(e, t, n) {
 		let s = a.v === n, c = s ? a.w : a.v;
 		if (c !== r) {
 			let r = s === i, l = t.edge(a).weight;
-			if (o += r ? l : -l, at(e, n, c)) {
+			if (o += r ? l : -l, it(e, n, c)) {
 				let t = e.edge(n, c).cutvalue;
 				o += r ? -t : t;
 			}
 		}
 	}), o;
 }
-function H(e, t) {
-	arguments.length < 2 && (t = e.nodes()[0]), U(e, {}, 1, t);
+function U(e, t) {
+	arguments.length < 2 && (t = e.nodes()[0]), W(e, {}, 1, t);
 }
-function U(e, t, n, r, i) {
+function W(e, t, n, r, i) {
 	let a = n, o = e.node(r);
 	t[r] = !0;
 	let s = e.neighbors(r);
 	return s && s.forEach((i) => {
-		Object.hasOwn(t, i) || (n = U(e, t, n, i, r));
+		Object.hasOwn(t, i) || (n = W(e, t, n, i, r));
 	}), o.low = a, o.lim = n++, i ? o.parent = i : delete o.parent, n;
 }
-function W(e) {
+function G(e) {
 	return e.edges().find((t) => e.edge(t).cutvalue < 0);
 }
-function G(e, t, n) {
+function K(e, t, n) {
 	let r = n.v, i = n.w;
 	t.hasEdge(r, i) || (r = n.w, i = n.v);
 	let a = e.node(r), o = e.node(i), s = a, c = !1;
-	return a.lim > o.lim && (s = o, c = !0), t.edges().filter((t) => c === q(e, e.node(t.v), s) && c !== q(e, e.node(t.w), s)).reduce((e, n) => L(t, n) < L(t, e) ? n : e);
+	return a.lim > o.lim && (s = o, c = !0), t.edges().filter((t) => c === at(e, e.node(t.v), s) && c !== at(e, e.node(t.w), s)).reduce((e, n) => R(t, n) < R(t, e) ? n : e);
 }
-function K(e, t, n, r) {
+function q(e, t, n, r) {
 	let i = n.v, a = n.w;
-	e.removeEdge(i, a), e.setEdge(r.v, r.w, {}), H(e), B(e, t), it(e, t);
+	e.removeEdge(i, a), e.setEdge(r.v, r.w, {}), U(e), V(e, t), rt(e, t);
 }
-function it(e, t) {
+function rt(e, t) {
 	let n = e.nodes().find((t) => !e.node(t).parent);
 	if (!n) return;
-	let r = et(e, [n]);
+	let r = $e(e, [n]);
 	r = r.slice(1), r.forEach((n) => {
 		let r = e.node(n).parent, i = t.edge(n, r), a = !1;
 		i || (i = t.edge(r, n), a = !0), t.node(n).rank = t.node(r).rank + (a ? i.minlen : -i.minlen);
 	});
 }
-function at(e, t, n) {
+function it(e, t, n) {
 	return e.hasEdge(t, n);
 }
-function q(e, t, n) {
+function at(e, t, n) {
 	return n.low <= t.lim && t.lim <= n.lim;
 }
 var ot = st;
@@ -1001,12 +1001,12 @@ function st(e) {
 		default: ut(e);
 	}
 }
-var ct = I;
+var ct = L;
 function lt(e) {
-	I(e), R(e);
+	L(e), z(e);
 }
 function ut(e) {
-	nt(e);
+	tt(e);
 }
 var dt = ft;
 function ft(e) {
@@ -1048,13 +1048,13 @@ function mt(e) {
 			lim: n++
 		};
 	}
-	return e.children(N).forEach(r), t;
+	return e.children(P).forEach(r), t;
 }
 function ht(e) {
-	let t = w(e, "root", {}, "_root"), n = _t(e), r = Object.values(n), i = O(Math.max, r) - 1, a = 2 * i + 1;
+	let t = T(e, "root", {}, "_root"), n = _t(e), r = Object.values(n), i = O(Math.max, r) - 1, a = 2 * i + 1;
 	e.graph().nestingRoot = t, e.edges().forEach((t) => e.edge(t).minlen *= a);
 	let o = vt(e) + 1;
-	e.children(N).forEach((r) => {
+	e.children(P).forEach((r) => {
 		gt(e, t, a, o, i, n, r);
 	}), e.graph().nodeRankFactor = a;
 }
@@ -1091,7 +1091,7 @@ function _t(e) {
 		let a = e.children(r);
 		a && a.length && a.forEach((e) => n(e, i + 1)), t[r] = i;
 	}
-	return e.children(N).forEach((e) => n(e, 1)), t;
+	return e.children(P).forEach((e) => n(e, 1)), t;
 }
 function vt(e) {
 	return e.edges().reduce((t, n) => t + e.edge(n).weight, 0);
@@ -1111,7 +1111,7 @@ function xt(e) {
 			for (let t = i.minRank, r = i.maxRank + 1; t < r; ++t) St(e, "borderLeft", "_bl", n, i, t), St(e, "borderRight", "_br", n, i, t);
 		}
 	}
-	e.children(N).forEach(t);
+	e.children(P).forEach(t);
 }
 function St(e, t, n, r, i, a) {
 	let o = {
@@ -1119,7 +1119,7 @@ function St(e, t, n, r, i, a) {
 		height: 0,
 		rank: a,
 		borderType: t
-	}, s = i[t][a - 1], c = w(e, "border", o, n);
+	}, s = i[t][a - 1], c = T(e, "border", o, n);
 	i[t][a] = c, e.setParent(c, r), s && e.setEdge(s, c, { weight: 1 });
 }
 function Ct(e) {
@@ -1159,7 +1159,7 @@ function Y(e) {
 	e.x = e.y, e.y = t;
 }
 function kt(e, t = null) {
-	let n = {}, r = e.nodes().filter((t) => !e.children(t).length), i = r.map((t) => e.node(t).rank), a = A(O(Math.max, i) + 1).map(() => []);
+	let n = {}, r = e.nodes().filter((t) => !e.children(t).length), i = r.map((t) => e.node(t).rank), a = j(O(Math.max, i) + 1).map(() => []);
 	function o(t) {
 		if (n[t]) return;
 		n[t] = !0;
@@ -1170,7 +1170,7 @@ function kt(e, t = null) {
 	}
 	r.sort((t, n) => e.node(t).rank - e.node(n).rank).forEach(o);
 	function s(n, r) {
-		return Ne(t, e.node(n), e.node(r));
+		return Me(t, e.node(n), e.node(r));
 	}
 	return a;
 }
@@ -1180,7 +1180,7 @@ function At(e, t) {
 	return n;
 }
 function jt(e, t, n) {
-	let r = Me(n, n.map((e, t) => t)), i = t.flatMap((t) => {
+	let r = je(n, n.map((e, t) => t)), i = t.flatMap((t) => {
 		let n = e.outEdges(t);
 		return n ? n.map((t) => ({
 			pos: r[t.w],
@@ -1254,7 +1254,7 @@ function Pt(e) {
 		let i = e.pop();
 		t.push(i), i.in.reverse().forEach(n(i)), i.out.forEach(r(i));
 	}
-	return t.filter((e) => !e.merged).map((e) => j(e, [
+	return t.filter((e) => !e.merged).map((e) => M(e, [
 		"vs",
 		"i",
 		"barycenter",
@@ -1268,7 +1268,7 @@ function Ft(e, t) {
 function It(e, t, n, r, i) {
 	let a = {}, o = null, s = null, c = i;
 	typeof t == "boolean" ? (c = t, a = {}) : t && (a = t, o = n ?? null, s = r ?? null);
-	let l = ke(e, (e) => Object.hasOwn(e, "barycenter")), u = l.lhs, d = l.rhs.sort((e, t) => t.i - e.i), f = [], p = 0, m = 0, h = 0;
+	let l = Oe(e, (e) => Object.hasOwn(e, "barycenter")), u = l.lhs, d = l.rhs.sort((e, t) => t.i - e.i), f = [], p = 0, m = 0, h = 0;
 	u.sort(Rt(s, o, !!c));
 	for (let [e, t] of Object.entries(a)) {
 		let n = u.findIndex((t) => t.vs[0] === e);
@@ -1290,7 +1290,7 @@ function Rt(e, t, n) {
 		if (r.barycenter < i.barycenter) return -1;
 		if (r.barycenter > i.barycenter) return 1;
 		if (e && (typeof r.vs[0] == "string" || typeof i.vs[0] == "string")) {
-			let n = Ne(t, e.node(r.vs[0]), e.node(i.vs[0]));
+			let n = Me(t, e.node(r.vs[0]), e.node(i.vs[0]));
 			if (n !== 0) return n;
 		}
 		return n ? i.i - r.i : r.i - i.i;
@@ -1373,7 +1373,7 @@ function Ht(e, t, n, r) {
 }
 function Ut(e) {
 	let t;
-	for (; e.hasNode(t = k("_root")););
+	for (; e.hasNode(t = A("_root")););
 	return t;
 }
 function Wt(e, t, n) {
@@ -1394,7 +1394,7 @@ function Gt(e, t = {}, n = null) {
 		t.customOrder(e, Gt);
 		return;
 	}
-	let r = Oe(e), i = Kt(e, A(1, r + 1), "inEdges"), a = Kt(e, A(r - 1, -1, -1), "outEdges"), o = kt(e, n);
+	let r = k(e), i = Kt(e, j(1, r + 1), "inEdges"), a = Kt(e, j(r - 1, -1, -1), "outEdges"), o = kt(e, n);
 	if (Jt(e, o), t.disableOptimalOrderHeuristic) return;
 	let s = Infinity, c, l = t.constraints || [];
 	for (let t = 0, r = 0; r < 4; ++t, ++r) {
@@ -1447,7 +1447,7 @@ function Yt(e, t) {
 function Xt(e, t) {
 	let n = {};
 	function r(t, r, i, a, o) {
-		A(r, i).forEach((r) => {
+		j(r, i).forEach((r) => {
 			let i = t[r];
 			if (i !== void 0 && e.node(i).dummy) {
 				let t = e.predecessors(i);
@@ -1610,13 +1610,13 @@ function an(e, t) {
 			let o = n + a, s = e[o];
 			if (!s || s === t) return;
 			let c = Object.values(s), l = r - O(Math.min, c);
-			a !== "l" && (l = i - O(Math.max, c)), l && (e[o] = M(s, (e) => e + l));
+			a !== "l" && (l = i - O(Math.max, c)), l && (e[o] = N(s, (e) => e + l));
 		});
 	});
 }
 function on(e, t = void 0) {
 	let n = e.ul;
-	return n ? M(n, (n, r) => {
+	return n ? N(n, (n, r) => {
 		if (t) {
 			let n = e[t.toLowerCase()];
 			if (n && n[r] !== void 0) return n[r];
@@ -1634,7 +1634,7 @@ function sn(e, t) {
 		a = o === "u" ? n : Object.values(n).reverse(), ["l", "r"].forEach((n) => {
 			n === "r" && (a = a.map((e) => Object.values(e).reverse()));
 			let s = en(e, a, r, (t) => (o === "u" ? e.predecessors(t) : e.successors(t)) || [], t), c = tn(e, a, s.root, s.align, n === "r");
-			n === "r" && (c = M(c, (e) => -e)), i[o + n] = c;
+			n === "r" && (c = N(c, (e) => -e)), i[o + n] = c;
 		});
 	}), an(i, rn(e, i)), on(i, e.graph().align);
 }
@@ -1671,7 +1671,7 @@ function un(e, t, n) {
 	return i !== -1 && a !== -1 && i === (a + 1) % n.length || i === (a - 1) % n.length;
 }
 function dn(e, t) {
-	e = T(e), fn(e), Object.entries(sn(e, t)).forEach(([t, n]) => e.node(t).x = n);
+	e = E(e), fn(e), Object.entries(sn(e, t)).forEach(([t, n]) => e.node(t).x = n);
 }
 function fn(e) {
 	let t = D(e), n = e.graph(), r = n.ranksep, i = n.rankalign, a = 0;
@@ -1688,7 +1688,7 @@ function fn(e) {
 }
 var X = null, Z = null;
 function pn(e, t = {}) {
-	return hn(e, Ae, t), e;
+	return hn(e, ke, t), e;
 }
 function mn(e, t, n) {
 	let r = t;
@@ -1837,7 +1837,7 @@ function hn(e, t, n) {
 	});
 }
 function gn(e, t, n) {
-	n?.useDynamic === !1 && (X = null, Z = null), t("    makeSpaceForEdgeLabels", () => Dn(e)), t("    removeSelfEdges", () => In(e)), t("    acyclic", () => Ue(e, X)), t("    nestingGraph.run", () => ht(e)), t("    rank", () => ot(T(e))), t("    injectEdgeLabelProxies", () => On(e)), t("    removeEmptyRanks", () => we(e)), t("    nestingGraph.cleanup", () => yt(e)), t("    normalizeRanks", () => Ce(e)), t("    assignRankMinMax", () => kn(e)), t("    removeEdgeLabelProxies", () => An(e)), t("    normalize.run", () => qe(e)), t("    parentDummyChains", () => dt(e)), t("    addBorderSegments", () => bt(e)), t("    order", () => Gt(e, n, Z)), t("    insertSelfEdges", () => Ln(e)), t("    adjustCoordinateSystem", () => Ct(e)), t("    position", () => dn(e, n.corePath)), t("    positionSelfEdges", () => Rn(e)), Z = JSON.parse(JSON.stringify(e._nodes)), t("    removeBorderNodes", () => Fn(e)), t("    normalize.undo", () => Ye(e)), t("    fixupEdgeLabelCoords", () => Nn(e)), t("    undoCoordinateSystem", () => wt(e)), t("    translateGraph", () => jn(e)), t("    assignNodeIntersects", () => Mn(e)), t("    reversePoints", () => Pn(e)), t("    acyclic.undo", () => Ge(e)), X = e;
+	n?.useDynamic === !1 && (X = null, Z = null), t("    makeSpaceForEdgeLabels", () => Dn(e)), t("    removeSelfEdges", () => In(e)), t("    acyclic", () => He(e, X)), t("    nestingGraph.run", () => ht(e)), t("    rank", () => ot(E(e))), t("    injectEdgeLabelProxies", () => On(e)), t("    removeEmptyRanks", () => we(e)), t("    nestingGraph.cleanup", () => yt(e)), t("    normalizeRanks", () => Ce(e)), t("    assignRankMinMax", () => kn(e)), t("    removeEdgeLabelProxies", () => An(e)), t("    normalize.run", () => Ke(e)), t("    parentDummyChains", () => dt(e)), t("    addBorderSegments", () => bt(e)), t("    order", () => Gt(e, n, Z)), t("    insertSelfEdges", () => Ln(e)), t("    adjustCoordinateSystem", () => Ct(e)), t("    position", () => dn(e, n.corePath)), t("    positionSelfEdges", () => Rn(e)), Z = JSON.parse(JSON.stringify(e._nodes)), t("    removeBorderNodes", () => Fn(e)), t("    normalize.undo", () => Je(e)), t("    fixupEdgeLabelCoords", () => Nn(e)), t("    undoCoordinateSystem", () => wt(e)), t("    translateGraph", () => jn(e)), t("    assignNodeIntersects", () => Mn(e)), t("    reversePoints", () => Pn(e)), t("    acyclic.undo", () => We(e)), X = e;
 }
 function _n(e, t) {
 	e.nodes().forEach((n) => {
@@ -1892,7 +1892,7 @@ function En(e) {
 		multigraph: !0,
 		compound: !0
 	}), n = $(e.graph());
-	return t.setGraph(Object.assign({}, yn, Q(n, vn), j(n, bn))), e.nodes().forEach((n) => {
+	return t.setGraph(Object.assign({}, yn, Q(n, vn), M(n, bn))), e.nodes().forEach((n) => {
 		let r = Q($(e.node(n)), xn);
 		Object.keys(Sn).forEach((e) => {
 			r[e] === void 0 && (r[e] = Sn[e]);
@@ -1901,7 +1901,7 @@ function En(e) {
 		i !== void 0 && t.setParent(n, i);
 	}), e.edges().forEach((n) => {
 		let r = $(e.edge(n));
-		t.setEdge(n, Object.assign({}, wn, Q(r, Cn), j(r, Tn)));
+		t.setEdge(n, Object.assign({}, wn, Q(r, Cn), M(r, Tn)));
 	}), t;
 }
 function Dn(e) {
@@ -1916,7 +1916,7 @@ function On(e) {
 		let n = e.edge(t);
 		if (n.width && n.height) {
 			let n = e.node(t.v);
-			w(e, "edge-proxy", {
+			T(e, "edge-proxy", {
 				rank: (e.node(t.w).rank - n.rank) / 2 + n.rank,
 				e: t
 			}, "_ep");
@@ -1962,7 +1962,7 @@ function Mn(e) {
 	e.edges().forEach((t) => {
 		if (t.v === t.w) return;
 		let n = e.edge(t), r = e.node(t.v), i = e.node(t.w), a, o;
-		n.points ? (a = n.points[0], o = n.points[n.points.length - 1]) : (n.points = [], a = i, o = r), n.points.unshift(E(r, a)), n.points.push(E(i, o));
+		n.points ? (a = n.points[0], o = n.points[n.points.length - 1]) : (n.points = [], a = i, o = r), n.points.unshift(Se(r, a)), n.points.push(Se(i, o));
 	});
 }
 function Nn(e) {
@@ -2011,7 +2011,7 @@ function Ln(e) {
 		t.forEach((t, r) => {
 			let i = e.node(t);
 			typeof i.rank != "number" && (i.rank = 0), i.order = r + n, (i.selfEdges || []).forEach((t) => {
-				w(e, "selfedge", {
+				T(e, "selfedge", {
 					width: t.label.width,
 					height: t.label.height,
 					rank: i.rank,
@@ -2125,7 +2125,7 @@ function Rn(e) {
 	});
 }
 function Q(e, t) {
-	return M(j(e, t), Number);
+	return N(M(e, t), Number);
 }
 function $(e) {
 	let t = {};
@@ -2135,7 +2135,7 @@ function $(e) {
 }
 //#endregion
 //#region src/erdDiagram.ts
-var zn = 160, Bn = 50, Vn = 8, Hn = 24, Un = {
+var zn = 160, Bn = 50, Vn = 8, Hn = 24, Un = 6, Wn = {
 	child: {
 		fill: "#dae8fc",
 		stroke: "#6c8ebf"
@@ -2148,10 +2148,10 @@ var zn = 160, Bn = 50, Vn = 8, Hn = 24, Un = {
 		fill: "#d5e8d4",
 		stroke: "#82b366"
 	}
-}, Wn = "dpuse-tool-d3-erd-arrow";
-function Gn(t, n, r = {}) {
-	let i = r.nodeWidth ?? zn, o = r.nodeHeight ?? Bn, s = r.padding ?? Vn, c = r.selfEdgeSize ?? Hn, l = r.nodeColors ?? Un, u = r.orderConstraints ?? [];
-	function d() {
+}, Gn = "dpuse-tool-d3-erd-arrow";
+function Kn(t, n, r = {}) {
+	let i = r.nodeWidth ?? zn, o = r.nodeHeight ?? Bn, s = r.padding ?? Vn, c = r.selfEdgeSize ?? Hn, l = r.cornerRadius ?? Un, u = r.nodeColors ?? Wn, d = r.orderConstraints ?? [];
+	function f() {
 		e(n).selectAll("svg").remove();
 		let r = new a.Graph();
 		r.setGraph({
@@ -2166,39 +2166,46 @@ function Gn(t, n, r = {}) {
 			typeId: e.typeId
 		});
 		for (let e of t.edges) e.source !== e.target && r.setEdge(e.source, e.target);
-		pn(r, { constraints: u });
-		let { width: d = 0, height: f = 0 } = r.graph(), p = d + s * 2, m = f + s * 2, h = e(n).append("svg").attr("viewBox", `0 0 ${String(p)} ${String(m)}`).attr("width", p).attr("height", m), g = h.append("g").attr("transform", `translate(${String(s)}, ${String(s)})`);
-		h.append("defs").append("marker").attr("id", Wn).attr("viewBox", "0 0 10 10").attr("refX", 9).attr("refY", 5).attr("markerWidth", 6).attr("markerHeight", 6).attr("orient", "auto-start-reverse").append("path").attr("d", "M 0 0 L 10 5 L 0 10 z").attr("fill", "#6c8ebf"), g.append("g").attr("fill", "none").attr("stroke", "#6c8ebf").attr("stroke-width", 1.5).selectAll("path").data(t.edges).join("path").attr("marker-end", `url(#${Wn})`).attr("d", (e) => e.source === e.target ? qn(r.node(e.source), c) : Kn(r.node(e.source), r.node(e.target)));
-		let _ = g.append("g").selectAll("g").data(r.nodes()).join("g").attr("transform", (e) => {
+		pn(r, { constraints: d });
+		let { width: f = 0, height: p = 0 } = r.graph(), m = f + s * 2, h = p + s * 2, g = e(n).append("svg").attr("viewBox", `0 0 ${String(m)} ${String(h)}`).attr("width", m).attr("height", h), _ = g.append("g").attr("transform", `translate(${String(s)}, ${String(s)})`);
+		g.append("defs").append("marker").attr("id", Gn).attr("viewBox", "0 0 10 10").attr("refX", 9).attr("refY", 5).attr("markerWidth", 6).attr("markerHeight", 6).attr("orient", "auto-start-reverse").append("path").attr("d", "M 0 0 L 10 5 L 0 10 z").attr("fill", "#6c8ebf"), _.append("g").attr("fill", "none").attr("stroke", "#6c8ebf").attr("stroke-width", 1.5).selectAll("path").data(t.edges).join("path").attr("marker-end", `url(#${Gn})`).attr("d", (e) => e.source === e.target ? Jn(r.node(e.source), c) : qn(r.node(e.source), r.node(e.target), l));
+		let v = _.append("g").selectAll("g").data(r.nodes()).join("g").attr("transform", (e) => {
 			let t = r.node(e);
 			return `translate(${String((t.x ?? 0) - t.width / 2)}, ${String((t.y ?? 0) - t.height / 2)})`;
 		});
-		_.append("rect").attr("width", (e) => r.node(e).width).attr("height", (e) => r.node(e).height).attr("rx", 6).attr("fill", (e) => l[r.node(e).typeId].fill).attr("stroke", (e) => l[r.node(e).typeId].stroke), _.append("text").attr("x", (e) => r.node(e).width / 2).attr("y", (e) => r.node(e).height / 2).attr("text-anchor", "middle").attr("dominant-baseline", "middle").attr("font-family", "Helvetica, Arial, sans-serif").attr("font-size", 14).attr("fill", "#000000").text((e) => r.node(e).label ?? "");
-		let v = h.node();
-		if (v == null) throw Error("Failed to create ERD diagram SVG element.");
-		return v;
+		v.append("rect").attr("width", (e) => r.node(e).width).attr("height", (e) => r.node(e).height).attr("rx", l).attr("fill", (e) => u[r.node(e).typeId].fill).attr("stroke", (e) => u[r.node(e).typeId].stroke), v.append("text").attr("x", (e) => r.node(e).width / 2).attr("y", (e) => r.node(e).height / 2).attr("text-anchor", "middle").attr("dominant-baseline", "middle").attr("font-family", "Helvetica, Arial, sans-serif").attr("font-size", 14).attr("fill", "#000000").text((e) => r.node(e).label ?? "");
+		let y = g.node();
+		if (y == null) throw Error("Failed to create ERD diagram SVG element.");
+		return y;
 	}
-	let f = d();
+	let p = f();
 	return {
 		resize: () => {
-			f = d();
+			p = f();
 		},
 		get svg() {
-			return f;
+			return p;
 		}
 	};
 }
-function Kn(e, t) {
-	let n = e.x ?? 0, r = (e.y ?? 0) + e.height / 2, i = t.x ?? 0, a = (t.y ?? 0) - t.height / 2;
-	if (n === i) return `M ${String(n)} ${String(r)} L ${String(i)} ${String(a)}`;
-	let o = (r + a) / 2;
-	return `M ${String(n)} ${String(r)} L ${String(n)} ${String(o)} L ${String(i)} ${String(o)} L ${String(i)} ${String(a)}`;
+function qn(e, t, n) {
+	let r = e.x ?? 0, i = (e.y ?? 0) + e.height / 2, a = t.x ?? 0, o = (t.y ?? 0) - t.height / 2;
+	if (r === a) return `M ${String(r)} ${String(i)} L ${String(a)} ${String(o)}`;
+	let s = (i + o) / 2, c = Math.sign(a - r), l = Math.max(0, Math.min(n, s - i, o - s, Math.abs(a - r) / 2));
+	return [
+		`M ${String(r)} ${String(i)}`,
+		`L ${String(r)} ${String(s - l)}`,
+		`Q ${String(r)} ${String(s)} ${String(r + c * l)} ${String(s)}`,
+		`L ${String(a - c * l)} ${String(s)}`,
+		`Q ${String(a)} ${String(s)} ${String(a)} ${String(s + l)}`,
+		`L ${String(a)} ${String(o)}`
+	].join(" ");
 }
-function qn(e, t) {
+function Jn(e, t) {
 	let n = (e.x ?? 0) + e.width / 2, r = n + t, i = (e.y ?? 0) - e.height / 4, a = (e.y ?? 0) + e.height / 4;
 	return `M ${String(n)} ${String(i)} C ${String(r)} ${String(i)}, ${String(r)} ${String(a)}, ${String(n)} ${String(a)}`;
 }
 //#endregion
-export { Gn as renderErdDiagram };
+export { Kn as renderErdDiagram };
 
-//# sourceMappingURL=erdDiagram-DSsveBpp.js.map
+//# sourceMappingURL=erdDiagram-BDV0xo6a.js.map
