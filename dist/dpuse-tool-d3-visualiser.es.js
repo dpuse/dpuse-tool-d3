@@ -20,7 +20,7 @@ var e = class {
 		};
 	}
 	async renderErdDiagram(e, t, n, r) {
-		let { renderErdDiagram: i } = await import("./erdDiagram-BkF95adh.js"), a = i(e, t, n);
+		let { renderErdDiagram: i } = await import("./erdDiagram-DoKmNFCx.js"), a = i(e, t, n);
 		return r?.(), {
 			resize: a.resize,
 			get svg() {

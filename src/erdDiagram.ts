@@ -54,12 +54,12 @@ const DEFAULT_SELF_EDGE_SIZE = 24;
 const DEFAULT_CORNER_RADIUS = 6;
 // local: declared in this model. external: a reference into another model. optional: may not be present.
 const DEFAULT_NODE_COLORS: Record<ErdDiagramNodeTypeId, ErdDiagramNodeStyle> = {
-    external: { fill: '#f0f0f0', stroke: '#757575' },
-    local: { fill: '#dae8fc', stroke: '#6c8ebf' },
-    optional: { fill: '#fafafa', stroke: '#9e9e9e', strokeDasharray: '4 3' }
+    external: { fill: '#f0f0f0', stroke: '#b0b0b0' },
+    local: { fill: '#dae8fc', stroke: '#9fc0e8' },
+    optional: { fill: '#fafafa', stroke: '#c9c9c9', strokeDasharray: '4 3' }
 };
 // Neutral, deliberately not matching any single node type's stroke colour — connectors are structural, not typed.
-const DEFAULT_EDGE_COLOR = '#616161';
+const DEFAULT_EDGE_COLOR = '#9e9e9e';
 const ARROW_MARKER_ID = 'dpuse-tool-d3-erd-arrow';
 
 // ── Actions ──────────────────────────────────────────────────────────────────────────────────────────────────────────

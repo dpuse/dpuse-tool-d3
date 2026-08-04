@@ -2138,18 +2138,18 @@ function $(e) {
 var zn = 160, Bn = 50, Vn = 8, Hn = 24, Un = 6, Wn = {
 	external: {
 		fill: "#f0f0f0",
-		stroke: "#757575"
+		stroke: "#b0b0b0"
 	},
 	local: {
 		fill: "#dae8fc",
-		stroke: "#6c8ebf"
+		stroke: "#9fc0e8"
 	},
 	optional: {
 		fill: "#fafafa",
-		stroke: "#9e9e9e",
+		stroke: "#c9c9c9",
 		strokeDasharray: "4 3"
 	}
-}, Gn = "#616161", Kn = "dpuse-tool-d3-erd-arrow";
+}, Gn = "#9e9e9e", Kn = "dpuse-tool-d3-erd-arrow";
 function qn(t, n, r = {}) {
 	let i = r.nodeWidth ?? zn, o = r.nodeHeight ?? Bn, s = r.padding ?? Vn, c = r.selfEdgeSize ?? Hn, l = r.cornerRadius ?? Un, u = r.nodeColors ?? Wn, d = r.edgeColor ?? Gn, f = r.orderConstraints ?? [];
 	function p() {
@@ -2209,4 +2209,4 @@ function Yn(e, t) {
 //#endregion
 export { qn as renderErdDiagram };
 
-//# sourceMappingURL=erdDiagram-BkF95adh.js.map
+//# sourceMappingURL=erdDiagram-DoKmNFCx.js.map

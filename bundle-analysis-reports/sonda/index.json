@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "0.14.0",
-    "generatedAt": "2026-08-04T11:45:19.867Z",
+    "generatedAt": "2026-08-04T11:49:48.727Z",
     "integration": "vite",
     "sources": false,
     "gzip": false,
@@ -23,7 +23,7 @@
       "format": "other",
       "uncompressed": 262,
       "gzip": 0,
-      "brotli": 106,
+      "brotli": 107,
       "parent": "dist/dpuse-tool-d3-visualiser.es.js"
     },
     {
@@ -63,8 +63,8 @@
       "format": "other",
       "uncompressed": 4065,
       "gzip": 0,
-      "brotli": 233,
-      "parent": "dist/erdDiagram-BkF95adh.js"
+      "brotli": 231,
+      "parent": "dist/erdDiagram-DoKmNFCx.js"
     },
     {
       "kind": "chunk",
@@ -200,7 +200,7 @@
     },
     {
       "kind": "asset",
-      "name": "dist/erdDiagram-BkF95adh.js",
+      "name": "dist/erdDiagram-DoKmNFCx.js",
       "type": "script",
       "uncompressed": 63798,
       "gzip": 0,
@@ -300,8 +300,8 @@
       "format": "esm",
       "uncompressed": 56261,
       "gzip": 0,
-      "brotli": 15091,
-      "parent": "dist/erdDiagram-BkF95adh.js"
+      "brotli": 15092,
+      "parent": "dist/erdDiagram-DoKmNFCx.js"
     },
     {
       "kind": "filesystem",
@@ -11065,8 +11065,8 @@
       "format": "esm",
       "uncompressed": 3472,
       "gzip": 0,
-      "brotli": 1292,
-      "parent": "dist/erdDiagram-BkF95adh.js"
+      "brotli": 1293,
+      "parent": "dist/erdDiagram-DoKmNFCx.js"
     },
     {
       "kind": "filesystem",
@@ -11082,7 +11082,7 @@
       "format": "esm",
       "uncompressed": 1390,
       "gzip": 0,
-      "brotli": 344,
+      "brotli": 343,
       "parent": "dist/dpuse-tool-d3-visualiser.es.js"
     },
     {
@@ -11222,7 +11222,7 @@
     },
     {
       "kind": "entrypoint",
-      "source": "dist/erdDiagram-BkF95adh.js",
+      "source": "dist/erdDiagram-DoKmNFCx.js",
       "target": "src/erdDiagram.ts",
       "original": null
     },
