@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "0.14.0",
-    "generatedAt": "2026-08-04T12:19:46.757Z",
+    "generatedAt": "2026-08-04T12:21:33.370Z",
     "integration": "vite",
     "sources": false,
     "gzip": false,
@@ -23,7 +23,7 @@
       "format": "other",
       "uncompressed": 262,
       "gzip": 0,
-      "brotli": 106,
+      "brotli": 105,
       "parent": "dist/dpuse-tool-d3-visualiser.es.js"
     },
     {
@@ -63,8 +63,8 @@
       "format": "other",
       "uncompressed": 4065,
       "gzip": 0,
-      "brotli": 232,
-      "parent": "dist/erdDiagram-96V5q_pb.js"
+      "brotli": 231,
+      "parent": "dist/erdDiagram-CxejXoNh.js"
     },
     {
       "kind": "chunk",
@@ -188,7 +188,7 @@
       "type": "script",
       "uncompressed": 1652,
       "gzip": 0,
-      "brotli": 449
+      "brotli": 447
     },
     {
       "kind": "asset",
@@ -200,11 +200,11 @@
     },
     {
       "kind": "asset",
-      "name": "dist/erdDiagram-96V5q_pb.js",
+      "name": "dist/erdDiagram-CxejXoNh.js",
       "type": "script",
-      "uncompressed": 63798,
+      "uncompressed": 63799,
       "gzip": 0,
-      "brotli": 16625
+      "brotli": 16614
     },
     {
       "kind": "asset",
@@ -300,8 +300,8 @@
       "format": "esm",
       "uncompressed": 56261,
       "gzip": 0,
-      "brotli": 15099,
-      "parent": "dist/erdDiagram-96V5q_pb.js"
+      "brotli": 15089,
+      "parent": "dist/erdDiagram-CxejXoNh.js"
     },
     {
       "kind": "filesystem",
@@ -11056,17 +11056,17 @@
       "name": "src/erdDiagram.ts",
       "type": "script",
       "format": "esm",
-      "uncompressed": 5460
+      "uncompressed": 5461
     },
     {
       "kind": "chunk",
       "name": "src/erdDiagram.ts",
       "type": "script",
       "format": "esm",
-      "uncompressed": 3472,
+      "uncompressed": 3473,
       "gzip": 0,
-      "brotli": 1294,
-      "parent": "dist/erdDiagram-96V5q_pb.js"
+      "brotli": 1295,
+      "parent": "dist/erdDiagram-CxejXoNh.js"
     },
     {
       "kind": "filesystem",
@@ -11082,7 +11082,7 @@
       "format": "esm",
       "uncompressed": 1390,
       "gzip": 0,
-      "brotli": 343,
+      "brotli": 342,
       "parent": "dist/dpuse-tool-d3-visualiser.es.js"
     },
     {
@@ -11222,7 +11222,7 @@
     },
     {
       "kind": "entrypoint",
-      "source": "dist/erdDiagram-96V5q_pb.js",
+      "source": "dist/erdDiagram-CxejXoNh.js",
       "target": "src/erdDiagram.ts",
       "original": null
     },

@@ -121,7 +121,7 @@ export function renderErdDiagram(data: ErdDiagramData, renderTo: HTMLElement, op
             .append('g')
             .attr('fill', 'none')
             .attr('stroke', edgeColor)
-            .attr('stroke-width', 1.5)
+            .attr('stroke-width', 1.25)
             .selectAll('path')
             .data(data.edges)
             .join('path')

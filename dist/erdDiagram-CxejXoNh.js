@@ -2169,7 +2169,7 @@ function qn(t, n, r = {}) {
 		for (let e of t.edges) e.source !== e.target && r.setEdge(e.source, e.target);
 		pn(r, { constraints: f });
 		let { width: p = 0, height: m = 0 } = r.graph(), h = p + s * 2, g = m + s * 2, _ = e(n).append("svg").attr("viewBox", `0 0 ${String(h)} ${String(g)}`).attr("width", h).attr("height", g), v = _.append("g").attr("transform", `translate(${String(s)}, ${String(s)})`);
-		_.append("defs").append("marker").attr("id", Kn).attr("viewBox", "0 0 10 10").attr("refX", 9).attr("refY", 5).attr("markerWidth", 6).attr("markerHeight", 6).attr("orient", "auto-start-reverse").append("path").attr("d", "M 0 0 L 10 5 L 0 10 z").attr("fill", d), v.append("g").attr("fill", "none").attr("stroke", d).attr("stroke-width", 1.5).selectAll("path").data(t.edges).join("path").attr("marker-end", `url(#${Kn})`).attr("d", (e) => e.source === e.target ? Yn(r.node(e.source), c) : Jn(r.node(e.source), r.node(e.target), l));
+		_.append("defs").append("marker").attr("id", Kn).attr("viewBox", "0 0 10 10").attr("refX", 9).attr("refY", 5).attr("markerWidth", 6).attr("markerHeight", 6).attr("orient", "auto-start-reverse").append("path").attr("d", "M 0 0 L 10 5 L 0 10 z").attr("fill", d), v.append("g").attr("fill", "none").attr("stroke", d).attr("stroke-width", 1.25).selectAll("path").data(t.edges).join("path").attr("marker-end", `url(#${Kn})`).attr("d", (e) => e.source === e.target ? Yn(r.node(e.source), c) : Jn(r.node(e.source), r.node(e.target), l));
 		let y = v.append("g").selectAll("g").data(r.nodes()).join("g").attr("transform", (e) => {
 			let t = r.node(e);
 			return `translate(${String((t.x ?? 0) - t.width / 2)}, ${String((t.y ?? 0) - t.height / 2)})`;
@@ -2209,4 +2209,4 @@ function Yn(e, t) {
 //#endregion
 export { qn as renderErdDiagram };
 
-//# sourceMappingURL=erdDiagram-96V5q_pb.js.map
+//# sourceMappingURL=erdDiagram-CxejXoNh.js.map
