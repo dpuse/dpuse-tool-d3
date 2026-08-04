@@ -16,10 +16,10 @@ const data: ErdDiagramData = {
         { source: 'person', target: 'nationality' }
     ],
     nodes: [
-        { id: 'organisation', label: 'Organisation', typeId: 'primary' },
-        { id: 'organisationalUnit', label: 'Organisational Unit', typeId: 'child' },
-        { id: 'person', label: 'Person', typeId: 'primary' },
-        { id: 'nationality', label: 'Nationality', typeId: 'child' }
+        { id: 'organisation', label: 'Organisation', typeId: 'external' },
+        { id: 'organisationalUnit', label: 'Organisational Unit', typeId: 'local' },
+        { id: 'person', label: 'Person', typeId: 'external' },
+        { id: 'nationality', label: 'Nationality', typeId: 'local' }
     ]
 };
 

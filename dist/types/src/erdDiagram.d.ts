@@ -1,4 +1,4 @@
-export type ErdDiagramNodeTypeId = 'child' | 'optional' | 'primary';
+export type ErdDiagramNodeTypeId = 'external' | 'local' | 'optional';
 export interface ErdDiagramNode {
     id: string;
     label: string;
@@ -19,6 +19,7 @@ export interface ErdDiagramNodeStyle {
 }
 export interface ErdDiagramOptions {
     cornerRadius?: number;
+    edgeColor?: string;
     nodeColors?: Record<ErdDiagramNodeTypeId, ErdDiagramNodeStyle>;
     nodeHeight?: number;
     nodeWidth?: number;

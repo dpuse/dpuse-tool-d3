@@ -5,7 +5,7 @@ import type { EdgeLabel, GraphLabel, NodeLabel } from '@dagrejs/dagre';
 
 // ── Types ────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
-export type ErdDiagramNodeTypeId = 'child' | 'optional' | 'primary';
+export type ErdDiagramNodeTypeId = 'external' | 'local' | 'optional';
 
 export interface ErdDiagramNode {
     id: string;
@@ -31,6 +31,7 @@ export interface ErdDiagramNodeStyle {
 
 export interface ErdDiagramOptions {
     cornerRadius?: number;
+    edgeColor?: string;
     nodeColors?: Record<ErdDiagramNodeTypeId, ErdDiagramNodeStyle>;
     nodeHeight?: number;
     nodeWidth?: number;
@@ -51,12 +52,14 @@ const DEFAULT_NODE_HEIGHT = 50;
 const DEFAULT_PADDING = 8;
 const DEFAULT_SELF_EDGE_SIZE = 24;
 const DEFAULT_CORNER_RADIUS = 6;
-// child: declared in this model. primary: a reference into another (external) model. optional: may not be present.
+// local: declared in this model. external: a reference into another model. optional: may not be present.
 const DEFAULT_NODE_COLORS: Record<ErdDiagramNodeTypeId, ErdDiagramNodeStyle> = {
-    child: { fill: '#dae8fc', stroke: '#6c8ebf' },
-    optional: { fill: '#fafafa', stroke: '#9e9e9e', strokeDasharray: '4 3' },
-    primary: { fill: '#eceff1', stroke: '#78909c' }
+    external: { fill: '#f0f0f0', stroke: '#757575' },
+    local: { fill: '#dae8fc', stroke: '#6c8ebf' },
+    optional: { fill: '#fafafa', stroke: '#9e9e9e', strokeDasharray: '4 3' }
 };
+// Neutral, deliberately not matching any single node type's stroke colour — connectors are structural, not typed.
+const DEFAULT_EDGE_COLOR = '#616161';
 const ARROW_MARKER_ID = 'dpuse-tool-d3-erd-arrow';
 
 // ── Actions ──────────────────────────────────────────────────────────────────────────────────────────────────────────
@@ -68,6 +71,7 @@ export function renderErdDiagram(data: ErdDiagramData, renderTo: HTMLElement, op
     const selfEdgeSize = options.selfEdgeSize ?? DEFAULT_SELF_EDGE_SIZE;
     const cornerRadius = options.cornerRadius ?? DEFAULT_CORNER_RADIUS;
     const nodeColors = options.nodeColors ?? DEFAULT_NODE_COLORS;
+    const edgeColor = options.edgeColor ?? DEFAULT_EDGE_COLOR;
     const orderConstraints = options.orderConstraints ?? [];
 
     function draw(): SVGSVGElement {
@@ -111,12 +115,12 @@ export function renderErdDiagram(data: ErdDiagramData, renderTo: HTMLElement, op
             .attr('orient', 'auto-start-reverse')
             .append('path')
             .attr('d', 'M 0 0 L 10 5 L 0 10 z')
-            .attr('fill', '#6c8ebf');
+            .attr('fill', edgeColor);
 
         canvas
             .append('g')
             .attr('fill', 'none')
-            .attr('stroke', '#6c8ebf')
+            .attr('stroke', edgeColor)
             .attr('stroke-width', 1.5)
             .selectAll('path')
             .data(data.edges)
