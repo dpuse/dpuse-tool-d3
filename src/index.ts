@@ -1,3 +1,5 @@
+// TODO: See https://d3-graph-gallery.com/index.html.
+
 // ── External Dependencies & Registrations
 import type { Chart } from 'billboard.js';
 
