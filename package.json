@@ -1,8 +1,8 @@
 {
     "name": "@dpuse/dpuse-tool-d3-visualiser",
-    "version": "0.0.35",
+    "version": "0.0.37",
     "private": false,
-    "description": "A TypeScript wrapper for D3, Billboard.js, and Observable Plot that implements the Data Positioning chart-rendering interface, providing ERD (dagre), Sankey (d3-sankey), network (d3-force), tree (d3-hierarchy), and bar chart (billboard.js, Observable Plot) renderers.",
+    "description": "A TypeScript wrapper for D3, Billboard.js, Observable Plot, and Unovis that implements the Data Positioning chart-rendering interface, providing ERD (dagre), Sankey (d3-sankey), chord (Unovis), network (d3-force), tree (d3-hierarchy), and bar chart (billboard.js, Observable Plot) renderers.",
     "license": "MIT",
     "author": "Jonathan Terrell <terrell.jm@gmail.com>",
     "type": "module",
@@ -34,6 +34,7 @@
     "allowScripts": {
         "esbuild@0.28.1": true,
         "fsevents@2.3.3": true,
+        "maplibre-gl@2.4.0": true,
         "sharp@0.34.5": true,
         "unrs-resolver@1.12.2": true,
         "workerd@1.20260730.1": true
@@ -44,7 +45,7 @@
         "check": "node -e \"import('@dpuse/dpuse-development').then(m => m.checkConfigFiles())\" && node -e \"import('@dpuse/dpuse-development').then(m => m.checkDependencies())\"",
         "document": "npm run documentOpening && npm run documentUsage && npm run documentDependencies && npm run documentGovernance",
         "documentBundleSizes": "node -e \"import('@dpuse/dpuse-development').then(m => m.documentBundleSizes({ moduleLevel: true }))\"",
-        "documentDependencies": "node -e \"import('@dpuse/dpuse-development').then(m => m.documentDependencies('BSD-3-Clause;ISC;MIT;Unlicense'))\"",
+        "documentDependencies": "node -e \"import('@dpuse/dpuse-development').then(m => m.documentDependencies('0BSD;Apache-2.0;BSD-2-Clause;BSD-3-Clause;EPL-2.0;ISC;MIT;Unlicense'))\"",
         "documentGovernance": "node -e \"import('@dpuse/dpuse-development').then(m => m.documentGovernance())\"",
         "documentOpening": "node -e \"import('@dpuse/dpuse-development').then(m => m.documentOpening())\"",
         "documentUsage": "node -e \"import('@dpuse/dpuse-development').then(m => m.documentUsage())\"",
@@ -58,7 +59,8 @@
         "@dagrejs/dagre": "^3.1.0",
         "@dpuse/dpuse-shared": "^0.3.760",
         "@observablehq/plot": "^0.6.17",
-        "@tanstack/charts": "^0.6.4",
+        "@tanstack/charts": "^0.6.5",
+        "@unovis/ts": "^1.6.7",
         "billboard.js": "^4.0.3",
         "d3-axis": "^3.0.0",
         "d3-drag": "^3.0.0",

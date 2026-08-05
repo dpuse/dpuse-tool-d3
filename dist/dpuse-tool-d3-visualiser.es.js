@@ -1,7 +1,7 @@
 //#region src/index.ts
 var e = class {
 	async renderBillboardJS(e, t, n) {
-		let { renderBillboardJS: r } = await import("./billboardJs-jmaH9Gag.js"), i = r(e, t);
+		let { renderBillboardJS: r } = await import("./billboardJs-DS82ViEw.js"), i = r(e, t);
 		return n?.(), {
 			chart: i.chart,
 			destroy: i.destroy,
@@ -10,7 +10,7 @@ var e = class {
 		};
 	}
 	async renderObservablePlot(e, t, n, r) {
-		let { renderObservablePlot: i } = await import("./observablePlot-B1CSEvcU.js"), a = i(e, t, n);
+		let { renderObservablePlot: i } = await import("./observablePlot-C7764aFq.js"), a = i(e, t, n);
 		return r?.(), {
 			resize: a.resize,
 			get svg() {
@@ -20,7 +20,7 @@ var e = class {
 		};
 	}
 	async renderD3BarChart(e, t, n) {
-		let { renderD3BarChart: r } = await import("./d3BarChart-DEzayAyh.js"), i = r(e, t);
+		let { renderD3BarChart: r } = await import("./d3BarChart-DIN2KQsU.js"), i = r(e, t);
 		return n?.(), {
 			resize: i.resize,
 			get svg() {
@@ -30,7 +30,7 @@ var e = class {
 		};
 	}
 	async renderTanStackCharts(e, t, n) {
-		let { renderTanStackCharts: r } = await import("./tanStackCharts-vvQteV9z.js"), i = r(e, t);
+		let { renderTanStackCharts: r } = await import("./tanStackCharts-BJAX22lS.js"), i = r(e, t);
 		return n?.(), {
 			destroy: i.destroy,
 			resize: i.resize,
@@ -38,6 +38,16 @@ var e = class {
 				return i.svg;
 			},
 			vendorId: "tanstack-charts"
+		};
+	}
+	async renderChordDiagram(e, t, n, r) {
+		let { renderChordDiagram: i } = await import("./chordDiagram-Cz0sVVgD.js"), a = i(e, t, n);
+		return r?.(), {
+			resize: a.resize,
+			get svg() {
+				return a.svg;
+			},
+			vendorId: "unovis"
 		};
 	}
 	async renderErdDiagram(e, t, n, r) {
@@ -51,7 +61,7 @@ var e = class {
 		};
 	}
 	async renderNetworkDiagram(e, t, n, r) {
-		let { renderNetworkDiagram: i } = await import("./networkDiagram-HS-SgOZ0.js"), a = i(e, t, n);
+		let { renderNetworkDiagram: i } = await import("./networkDiagram-yraPhqxN.js"), a = i(e, t, n);
 		return r?.(), {
 			destroy: a.destroy,
 			resize: a.resize,
@@ -63,7 +73,7 @@ var e = class {
 		};
 	}
 	async renderSankeyDiagram(e, t, n, r) {
-		let { renderSankeyDiagram: i } = await import("./sankeyDiagram-BXTYCHPV.js"), a = i(e, t, n);
+		let { renderSankeyDiagram: i } = await import("./sankeyDiagram-BT2RCRpi.js"), a = i(e, t, n);
 		return r?.(), {
 			resize: a.resize,
 			get svg() {
@@ -73,7 +83,7 @@ var e = class {
 		};
 	}
 	async renderTreeDiagram(e, t, n, r) {
-		let { renderTreeDiagram: i } = await import("./treeDiagram-DemHfVnX.js"), a = i(e, t, n);
+		let { renderTreeDiagram: i } = await import("./treeDiagram-DsHUD8ou.js"), a = i(e, t, n);
 		return r?.(), {
 			resize: a.resize,
 			get svg() {

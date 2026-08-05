@@ -9,6 +9,7 @@ import type { PresentationView } from '@dpuse/dpuse-shared/component/presentatio
 // ── Local Framework
 import type { BarChartData } from '@/billboardJs';
 import type { ObservablePlotChartTypeId } from '@/observablePlot';
+import type { ChordDiagramData, ChordDiagramOptions } from '@/chordDiagram';
 import type { ErdDiagramData, ErdDiagramOptions } from '@/erdDiagram';
 import type { NetworkDiagramData, NetworkDiagramOptions } from '@/networkDiagram';
 import type { SankeyDiagramData, SankeyDiagramOptions } from '@/sankeyDiagram';
@@ -17,6 +18,7 @@ import type { TreeDiagramNode, TreeDiagramOptions } from '@/treeDiagram';
 // ── Types ────────────────────────────────────────────────────────────────────────────────────────────────────────────
 
 export type { BarChartData, BarChartSeries } from '@/billboardJs';
+export type { ChordDiagramData, ChordDiagramLink, ChordDiagramNode, ChordDiagramOptions } from '@/chordDiagram';
 export type { ErdDiagramData, ErdDiagramEdge, ErdDiagramNode, ErdDiagramNodeTypeId, ErdDiagramOptions } from '@/erdDiagram';
 export type { NetworkDiagramData, NetworkDiagramLink, NetworkDiagramNode, NetworkDiagramOptions } from '@/networkDiagram';
 export type { ObservablePlotChartTypeId } from '@/observablePlot';
@@ -101,6 +103,20 @@ export class D3Tool {
                 return handle.svg;
             },
             vendorId: 'tanstack-charts'
+        };
+    }
+
+    // Actions - Render chord diagram (Unovis).
+    async renderChordDiagram(data: ChordDiagramData, renderTo: HTMLElement, options?: ChordDiagramOptions, callback?: () => void): Promise<D3View> {
+        const { renderChordDiagram } = await import('@/chordDiagram');
+        const handle = renderChordDiagram(data, renderTo, options);
+        callback?.();
+        return {
+            resize: handle.resize,
+            get svg() {
+                return handle.svg;
+            },
+            vendorId: 'unovis'
         };
     }
 
